@@ -1,0 +1,89 @@
+# =========================
+# Visual Studio / .NET build output
+# =========================
+.vs/
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+*.pdb
+*.cache
+*.log
+*.tmp
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Packages / dependencies
+# =========================
+packages/
+node_modules/
+
+# =========================
+# Local-only config / secrets
+# (ajusta nombres si él usa otros)
+# =========================
+web.config.local
+app.config.local
+connectionStrings.config
+*.secrets.*
+*.local.*
+
+# =========================
+# Attachments / handoff files (your case)
+# =========================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.csv
+*.pdf
+*.ppt
+*.pptx
+
+*.txt
+*.rtf
+
+# Images often included in handoffs
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.map
+# Emails / exports
+*.msg
+*.eml
+
+# =========================
+# Backups / diff scratch
+# =========================
+*.bak
+*.old
+*.orig
+*~
+*_backup/
+backup/
+_backups/
+temp/
+tmp/
+
+# =========================
+# OS junk
+# =========================
+Thumbs.db
+Desktop.ini
+.DS_Store
