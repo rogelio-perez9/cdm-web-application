@@ -1,0 +1,1834 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <meta charset=utf-8>
+      <title>
+         Web Based Freight Forwarding Operations
+      </title>
+      <meta name="Description" content="U.S. Customs certified software provider for freight forwarders, NVOCC and logistics companies">
+      <meta name="Keywords" content="Intermodal,Intermodal Tracking,Container,Container Tracking,Equipment Tracking,Chassis,GPS,RFID">
+      <link rel="shortcut icon" href="images/cdm-logo.jpg" type="image/x-icon">
+      <link rel="apple-touch-icon" href="images/cdm-logo.jpg">
+      <link media="screen" rel="stylesheet" type="text/css" href="css/top-blue.css?v=20250415103013"/>
+      <link media="screen" rel="stylesheet" type="text/css" href="css/jquery.token-input.css?v=20250415103013" />
+      <link media="screen" rel="stylesheet" type="text/css" href="css/dataentry.css?v=20250415103013" />
+      <link media="screen" rel="stylesheet" type="text/css" href="css/dragndrop.css?v=20250415103013" />
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" type="text/javascript"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js" type="text/javascript"></script>
+      <script src="js/jslib-html5-camera-photo.min.js"></script>
+      <script src="js/jquery.tokeninput.min.js"></script>
+      <script src="js/html5-qrcode.min.js"></script>
+      <script>
+         (function(){ window.ldfdr = window.ldfdr || {}; (function(d, s, ss, fs){ fs = d.getElementsByTagName(s)[0]; function ce(src){ var cs = d.createElement(s); cs.src = src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)}, 1); } ce(ss); })(document, 'script', 'https://sc.lfeeder.com/lftracker_v1_kn9Eq4Rz1wY4RlvP.js'); })(); 
+      </script>
+      <style>
+         .tooltip .tooltiptext {        visibility: hidden;        width: 140px;        background-color: #4863a0;        color: #fff;        z-index: 1;        top: -6px;        right: 105%;        text-align: center;        border-radius: 6px;        padding: 5px 0;        position: absolute;     }     .tooltip {        position: relative;        display: inline-block;     }     .tooltip:hover .tooltiptext {         visibility: visible;     }     .tooltip2 .tooltiptext2 {        visibility: hidden;        width: 100px;        background-color: #4863a0;        color: #fff;        z-index: 1;        top: -6px;        left: 100%;        text-align: center;        border-radius: 6px;        padding: 5px 0;        position: absolute;     }     .tooltip2 {        position: relative;        display: inline-block;     }     .tooltip2:hover .tooltiptext2 {         visibility: visible;     } 
+      </style>
+   </head>
+   <body>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113444990-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-113444990-1'); 
+      </script>
+      <div id="wrapper">
+         <div id="content">
+            <div id="page">
+               <div class="inner">
+                  <div class="section table_section">
+                     <div class="title_wrapper">
+                        <h2>
+                           TOPOCEAN CONSOLIDATION SERVICE
+                        </h2>
+                        <h2 style="cursor: pointer; position: absolute; top: 0; right: 12px;">
+                           WELCOME <strong>
+                           CDM SUPPORT</strong>
+                           (<a href="webfrt.dll?MID=g8g0-8g5i-r6l2">
+                           LOG OUT</a>
+                           )
+                        </h2>
+                     </div>
+                     <div class="section_content">
+                        <div class="section_content_padding">
+                           <div class="dashboard_menu_wrapper">
+                              <ul class="dashboard_menu">
+                                 <li>
+                                    <a class="back"          href="topocn.dll?MID=G8G0-8G5I-R6L2&LINK=FCE4B8B4-90D3-4A40-9A6D-B2CC6960EAB3&RID=755ACD29-C796-409C-9317-32C6986A1E48">
+                                    <span>
+                                    Shipment Details</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="section table_section">
+                     <div class="title_wrapper">
+                        <h2>
+                           <b>
+                           Delivery Order</b>
+                        </h2>
+                        <h2 style="cursor: pointer; position: absolute; top: 0; right: 12px;">
+                           Last Updated: 04/03/2025 @ 12:34:46
+                        </h2>
+                     </div>
+                     <div class="section_content">
+                        <div class="table_wrapper">
+                           <div class="table_wrapper_inner" style="padding:0;">
+                              <div style="max-height: 250px; overflow: auto;">
+                                 <table>
+                                    <thead style="position: sticky; top: 0; z-index: 10; background: #E7F3F8;">
+                                       <tr>
+                                          <th style="text-align:center;">
+                                             D.O. No.
+                                          </th>
+                                          <th style="text-align:center;">
+                                             D.O. Date
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Location
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Deliver To
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Trucker
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Actions
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody id="delivery_order_table_body">
+                                       <tr id="tr_delivery_order_DOLI25030001">
+                                          <th style="text-align:center;">
+                                             DOLI25030001
+                                          </th>
+                                          <th style="text-align:center;">
+                                             04/03/2025
+                                          </th>
+                                          <th style="text-align:center;">
+                                             BALTIMORE - SEAGIRT MARINE TERMINAL - C324
+                                          </th>
+                                          <th style="text-align:center;">
+                                             2600 BROENING HWY, BALTIMORE
+                                          </th>
+                                          <th style="text-align:center;">
+                                             EVANS DELIVERY - BALTIMORE
+                                          </th>
+                                          <th style="text-align:center;">
+                                             <div class="tooltip">
+                                                <a class="action_delete" onClick="onDeleteDeliveryOrder('DOLI25030001')">Delete</a>
+                                                <span class="tooltiptext">
+                                                Void Delivery Order</span>
+                                             </div>
+                                             &nbsp;
+                                          </th>
+                                       </tr>
+                                       <tr id="tr_delivery_order_DOLI25030003">
+                                           <th style="text-align:center;">
+                                               DOLI25030003
+                                           </th>
+                                           <th style="text-align:center;">
+                                               04/02/2025
+                                           </th>
+                                           <th style="text-align:center;">
+                                               NORFOLK SOUTHERN AUSTELL RAMP L690
+                                           </th>
+                                           <th style="text-align:center;">
+                                               4900 N COMMERCE DR. SUITE #100, EAST POINT
+                                           </th>
+                                           <th style="text-align:center;">
+                                               CARGOMATIC - ATLANTA
+                                           </th>
+                                           <th style="text-align:center;">
+                                               <div class="tooltip">
+                                                   <a class="action_delete" onClick="onDeleteDeliveryOrder('DOLI25030003')">
+                                                       Delete
+                                                   </a>
+                                                   <span class="tooltiptext">
+                                                       Void Delivery Order
+                                                   </span>
+                                               </div>
+                                               &nbsp;
+                                           </th>
+                                       </tr>
+                                       <tr id="tr_delivery_order_DOLI25030006">
+                                           <th style="text-align:center;">
+                                               DOLI25030006
+                                           </th>
+                                           <th style="text-align:center;">
+                                               03/27/2025
+                                           </th>
+                                           <th style="text-align:center;">
+                                               BNSF - HASLET TX T926
+                                           </th>
+                                           <th style="text-align:center;">
+                                               12248 HWY 287 N, HASLETT TX
+                                           </th>
+                                           <th style="text-align:center;">
+                                               GULF INTERMODAL SERVICES -MOBILE
+                                           </th>
+                                           <th style="text-align:center;">
+                                               <div class="tooltip">
+                                                   <a class="action_delete" onClick="onDeleteDeliveryOrder('DOLI25030006')">
+                                                       Delete
+                                                   </a>
+                                                   <span class="tooltiptext">
+                                                       Void Delivery Order
+                                                   </span>
+                                               </div>
+                                               &nbsp;
+                                           </th>
+                                       </tr>
+                                       <tr id="tr_delivery_order_DOLI25030007">
+                                           <th style="text-align:center;">
+                                               DOLI25030007
+                                           </th>
+                                           <th style="text-align:center;">
+                                               03/27/2025
+                                           </th>
+                                           <th style="text-align:center;">
+                                               &nbsp;
+                                           </th>
+                                           <th style="text-align:center;">
+                                               1801 INTERMODAL PKWY, FORT WORTH TX
+                                           </th>
+                                           <th style="text-align:center;">
+                                               HEPTARUN,INC-HOUSTON
+                                           </th>
+                                           <th style="text-align:center;">
+                                               <div class="tooltip">
+                                                   <a class="action_delete" onClick="onDeleteDeliveryOrder('DOLI25030007')">
+                                                       Delete
+                                                   </a>
+                                                   <span class="tooltiptext">
+                                                       Void Delivery Order
+                                                   </span>
+                                               </div>
+                                               &nbsp;
+                                           </th>
+                                       </tr>
+                                       <tr id="tr_delivery_order_DOLI25030008">
+                                           <th style="text-align:center;">
+                                               DOLI25030008
+                                           </th>
+                                           <th style="text-align:center;">
+                                               03/27/2025
+                                           </th>
+                                           <th style="text-align:center;">
+                                               BNSF HOUSTON - S639
+                                           </th>
+                                           <th style="text-align:center;">
+                                               3131 WEST LITTLE YORK,, HOUSTON
+                                           </th>
+                                           <th style="text-align:center;">
+                                               HEPTARUN,INC-HOUSTON
+                                           </th>
+                                           <th style="text-align:center;">
+                                               <div class="tooltip">
+                                                   <a class="action_delete" onClick="onDeleteDeliveryOrder('DOLI25030008')">
+                                                       Delete
+                                                   </a>
+                                                   <span class="tooltiptext">
+                                                       Void Delivery Order
+                                                   </span>
+                                               </div>
+                                               &nbsp;
+                                           </th>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div style="text-align:center;color:#fff;background-color:#C24641;font-size:24px;">
+                                 DO HELPER - TBC CORPORATION (110049)                               
+                              </div>
+                              <div style="max-height: 250px; overflow: auto;">
+                                 <table id="dohelp_table">
+                                    <thead style="position: sticky; top: 0; z-index: 10; background: #E7F3F8;">
+                                       <tr>
+                                          <th style="text-align:center;">
+                                             Select
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Location<br>
+                                             <input type="text" size="30" maxlength="30" id="sloc" name="sloc" value="">
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Deliver To<br>
+                                             <input type="text" size="30" maxlength="30" id="sdelv" name="sdelv" value="">
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Trucker<br>
+                                             <input type="text" size="30" maxlength="30" id="struck" name="struck" value="">
+                                          </th>
+                                          <th style="text-align:center;">
+                                             Actions
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody id="dohelp_table_body">
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <table style="margin-left:auto;margin-right:auto;width:50%;">
+                                 <tr>
+                                    <th style="text-align:center;width:25%;">
+                                       <form action="dohelp.dll?MID=G8G0-8G5I-R6L2&LINK=FCE4B8B4-90D3-4A40-9A6D-B2CC6960EAB3&RID=755ACD29-C796-409C-9317-32C6986A1E48&MOD=OCN&NEW=Y" method="POST">
+                                          <input type="submit" id="" name="" value="  N E W * D E L I V E R Y * O R D E R  " style="border:1 solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#fff;background-color:#0059ff;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;" onClick="">
+                                          <input type=hidden id="LINK"          name="LINK"         value="FCE4B8B4-90D3-4A40-9A6D-B2CC6960EAB3">
+                                          <input type=hidden id="RID"           name="RID"          value="755ACD29-C796-409C-9317-32C6986A1E48">
+                                          <input type=hidden id="MID"           name="MID"          value="G8G0-8G5I-R6L2">
+                                          <input type=hidden id="MODULE"        name="MODULE"       value="OCN">
+                                       </form>
+                                    </th>
+                                    <th style="text-align:center;width:25%;">
+                                       <form action="prtdo2.dll?MID=G8G0-8G5I-R6L2&LINK=FCE4B8B4-90D3-4A40-9A6D-B2CC6960EAB3&RID=755ACD29-C796-409C-9317-32C6986A1E48&MOD=OCN&DOID=101" method="POST">
+                                          <input type="submit" id="" name="" value="  P R I N T  " style="border:1 solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#fff;background-color:#0059ff;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;" onClick="">
+                                          <input type=hidden id="LINK"          name="LINK"         value="FCE4B8B4-90D3-4A40-9A6D-B2CC6960EAB3">
+                                          <input type=hidden id="RID"           name="RID"          value="755ACD29-C796-409C-9317-32C6986A1E48">
+                                          <input type=hidden id="MID"           name="MID"          value="G8G0-8G5I-R6L2">
+                                          <input type=hidden id="MODULE"        name="MODULE"       value="OCN">
+                                       </form>
+                                    </th>
+                                     <th>
+                                    <form action="dohelp.dll?MID=G8G0-8G5I-R6L2&LINK=FCE4B8B4-90D3-4A40-9A6D-B2CC6960EAB3&RID=755ACD29-C796-409C-9317-32C6986A1E48" method="POST">
+                                        <input type=hidden id="sqid" name="sqid" value="topoceanusa">
+                                        <input type=hidden id="LINK" name="LINK" value="FCE4B8B4-90D3-4A40-9A6D-B2CC6960EAB3">
+                                        <input type=hidden id="RID" name="RID" value="755ACD29-C796-409C-9317-32C6986A1E48">
+                                        <input type=hidden id="MID" name="MID" value="G8G0-8G5I-R6L2">
+                                        <input type=hidden id="FORMUPDATE" name="FORMUPDATE" value="Y">
+                                        <input type=hidden id="PRINID" name="PRINID" value="110049">
+                                        <input type=hidden id="DOID" name="DOID" value="101">
+                                        <input type=hidden id="USERID" name="USERID" value="support@cdmsoft.com">
+                                        </form>
+                                         </th>
+                                        <th style="text-align:center;width:25%;">
+                                          <input type="submit" id="" name="" value="  S A V E  " style="border:1 solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#fff;background-color:#cc5500;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;" onClick="">
+                                       </th>
+                                       <th style="text-align:center;width:25%;">
+                                          <input type="button" id="C1" name="C1" value="  C A N C E L  " style="border:1 solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#000000;background-color:#38acec;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;">
+                                       </th>
+                                     </tr>
+                              </table>
+                              <table>
+                              <tr>
+                              <th>
+                              HBL No.</th>
+                              <th>
+                              TCS9ZO913124</th>
+                              <th>
+                              Display Broker</th>
+                              <th>
+                              <input type="checkbox" id="dodispbrk" name="dodispbrk" value="1" >
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Date</th>
+                              <th>
+                              <input type="text" size="10" maxlength="10" id="dodate" name="dodate" value="04/03/2025">
+                              </th>
+                              <th>
+                              D.O. No.</th>
+                              <th>
+                              <input type="text" size="15" maxlength="15" id="dono" name="dono" value="DOLI25030001" READONLY>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Cargo Location ID</th>
+                              <th>
+                              <input type="text" size="15" maxlength="15" id="dolocid" name="dolocid" value="BUSALSEA6Y001">
+                              </th>
+                              <th>
+                              Cargo Location Name</th>
+                              <th>
+                              <input type="text" size="45" maxlength="45" id="dolocname" name="dolocname" value="BALTIMORE - SEAGIRT MARINE TERMINAL - C324">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              ETA To</th>
+                              <th>
+                              <select name="doetato" id="doetato" size="1"   >
+                              <option value="">
+                              </option>
+                              <option value="PORT" SELECTED>
+                              PORT</option>
+                              <option value="RAMP">
+                              RAMP</option>
+                              <option value="RAMP (CFS)">
+                              RAMP (CFS)</option>
+                              </select>
+                              </th>
+                              <th>
+                              Date</th>
+                              <th>
+                              <input type="text" size="10" maxlength="10" id="doeta" name="doeta" value="01/31/2025">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Cargo Type</th>
+                              <th>
+                              <select name="doservice" id="doservice" size="1"   >
+                              <option value="">
+                              </option>
+                              <option value="BREAKBULK">
+                              BREAKBULK</option>
+                              <option value="CFS/CFS">
+                              CFS/CFS</option>
+                              <option value="CFS/CFS(DOOR)">
+                              CFS/CFS(DOOR)</option>
+                              <option value="CFS/CY">
+                              CFS/CY</option>
+                              <option value="CFS/CY(DOOR)">
+                              CFS/CY(DOOR)</option>
+                              <option value="CFS/CY(RAMP)">
+                              CFS/CY(RAMP)</option>
+                              <option value="CFS/DOOR">
+                              CFS/DOOR</option>
+                              <option value="CFS/IPI/DOOR">
+                              CFS/IPI/DOOR</option>
+                              <option value="CFS/RAMP">
+                              CFS/RAMP</option>
+                              <option value="COMBINED">
+                              COMBINED</option>
+                              <option value="CY/CFS">
+                              CY/CFS</option>
+                              <option value="CY/CY">
+                              CY/CY</option>
+                              <option value="CY/DOOR" SELECTED>
+                              CY/DOOR</option>
+                              <option value="CY/I.T/PORT">
+                              CY/I.T/PORT</option>
+                              <option value="CY/IPI/DOOR">
+                              CY/IPI/DOOR</option>
+                              <option value="CY/RAMP">
+                              CY/RAMP</option>
+                              <option value="DOOR/CFS">
+                              DOOR/CFS</option>
+                              <option value="DOOR/CY">
+                              DOOR/CY</option>
+                              <option value="DOOR/DOOR">
+                              DOOR/DOOR</option>
+                              <option value="DOOR/HUB">
+                              DOOR/HUB</option>
+                              <option value="DOOR/PORT">
+                              DOOR/PORT</option>
+                              <option value="DOOR/RAMP">
+                              DOOR/RAMP</option>
+                              <option value="FI/FO">
+                              FI/FO</option>
+                              <option value="FI/LO">
+                              FI/LO</option>
+                              <option value="FTL">
+                              FTL</option>
+                              <option value="FTL CROSS BORDER">
+                              FTL CROSS BORDER</option>
+                              <option value="FTL/RAIL">
+                              FTL/RAIL</option>
+                              <option value="HEADLOAD">
+                              HEADLOAD</option>
+                              <option value="HEADLOAD/DOOR">
+                              HEADLOAD/DOOR</option>
+                              <option value="HUB/DOOR">
+                              HUB/DOOR</option>
+                              <option value="HUB/HUB">
+                              HUB/HUB</option>
+                              <option value="LI/FO">
+                              LI/FO</option>
+                              <option value="LI/LO">
+                              LI/LO</option>
+                              <option value="LL-FILE">
+                              LL-FILE</option>
+                              <option value="LL/DOOR">
+                              LL/DOOR</option>
+                              <option value="LL/IPI/DOOR">
+                              LL/IPI/DOOR</option>
+                              <option value="LL/PORT">
+                              LL/PORT</option>
+                              <option value="LL/RAMP">
+                              LL/RAMP</option>
+                              <option value="LTL">
+                              LTL</option>
+                              <option value="LTL CROSS BORDER">
+                              LTL CROSS BORDER</option>
+                              <option value="NON-USA">
+                              NON-USA</option>
+                              <option value="PORT/DOOR">
+                              PORT/DOOR</option>
+                              <option value="PORT/PORT">
+                              PORT/PORT</option>
+                              <option value="RAMP/CY">
+                              RAMP/CY</option>
+                              <option value="RAMP/DOOR">
+                              RAMP/DOOR</option>
+                              <option value="RAMP/RAMP">
+                              RAMP/RAMP</option>
+                              </select>
+                              </th>
+                              <th colspan=2>
+                              &nbsp;</th>
+                              </tr>
+                              <tr>
+                              <th colspan=2>
+                              <table>
+                              <tr>
+                              <th>
+                              For Delivery To Company ID</th>
+                              <th id="delvid_th">
+                              <input name="delvid" id="delvid" type="text" size="15" value="CUSJTIR16Y001">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Company Name</th>
+                              <th>
+                              <input name="delvname" id="delvname" type="text" size="45" value="BALTIMORE - SEAGIRT MARINE TERMINAL - C324">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Address Line 1..3</th>
+                              <th>
+                              <input name="delvadd1" id="delvadd1" type="text" size="45" value="2600 BROENING HWY">
+                              <br>
+                              <input name="delvadd2" id="delvadd2" type="text" size="45" value="">
+                              <br>
+                              <input name="delvadd3" id="delvadd3" type="text" size="45" value="">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              City, State, Zip</th>
+                              <th>
+                              <input name="delvcity" id="delvcity" type="text" size="45" value="BALTIMORE">
+                              ,&nbsp; <select name="delvst" id="delvst" size="1"   >
+                              <option value="" SELECTED>
+                              </option>
+                              <option value="AG">
+                              AGUASCALIENTES</option>
+                              <option value="AL">
+                              ALABAMA</option>
+                              <option value="AK">
+                              ALASKA</option>
+                              <option value="AB">
+                              ALBERTA</option>
+                              <option value="AZ">
+                              ARIZONA</option>
+                              <option value="AR">
+                              ARKANSAS</option>
+                              <option value="BN">
+                              BAJA CALIFORNIA NORT</option>
+                              <option value="BS">
+                              BAJA CALIFORNIA SUR</option>
+                              <option value="BC">
+                              BRITISH COLUMBIA</option>
+                              <option value="CA">
+                              CALIFORNIA</option>
+                              <option value="CM">
+                              CAMPECHE</option>
+                              <option value="CS">
+                              CHIAPAS</option>
+                              <option value="CH">
+                              CHIHUAHUA</option>
+                              <option value="CO">
+                              COAHUILA</option>
+                              <option value="CL">
+                              COLIMA</option>
+                              <option value="CO">
+                              COLORADO</option>
+                              <option value="CT">
+                              CONNECTICUT</option>
+                              <option value="DE">
+                              DELAWARE</option>
+                              <option value="DC">
+                              DISTRICT OF COLUMBIA</option>
+                              <option value="DF">
+                              DISTRITO FEDERAL</option>
+                              <option value="DG">
+                              DURANGO</option>
+                              <option value="FL">
+                              FLORIDA</option>
+                              <option value="GA">
+                              GEORGIA</option>
+                              <option value="GT">
+                              GUANAJUATO</option>
+                              <option value="GR">
+                              GUERRERO</option>
+                              <option value="HI">
+                              HAWAII</option>
+                              <option value="HG">
+                              HIDALGO</option>
+                              <option value="ID">
+                              IDAHO</option>
+                              <option value="IL">
+                              ILLINOIS</option>
+                              <option value="IN">
+                              INDIANA</option>
+                              <option value="IA">
+                              IOWA</option>
+                              <option value="JA">
+                              JALISCO</option>
+                              <option value="KS">
+                              KANSAS</option>
+                              <option value="KY">
+                              KENTUCKY</option>
+                              <option value="LA">
+                              LOUISIANA</option>
+                              <option value="ME">
+                              MAINE</option>
+                              <option value="MB">
+                              MANOTOBA</option>
+                              <option value="MD">
+                              MARYLAND</option>
+                              <option value="MA">
+                              MASSACHUSETTS</option>
+                              <option value="MX">
+                              MEXICO</option>
+                              <option value="MI">
+                              MICHIGAN</option>
+                              <option value="MI">
+                              MICHOACAN</option>
+                              <option value="MN">
+                              MINNESOTA</option>
+                              <option value="MS">
+                              MISSISSIPPI</option>
+                              <option value="MO">
+                              MISSOURI</option>
+                              <option value="MT">
+                              MONTANA</option>
+                              <option value="MO">
+                              MORELOS</option>
+                              <option value="NA">
+                              NAYARIT</option>
+                              <option value="NE">
+                              NEBRASKA</option>
+                              <option value="NV">
+                              NEVEDA</option>
+                              <option value="NB">
+                              NEW BRUNSWICK</option>
+                              <option value="NH">
+                              NEW HAMPSHIRE</option>
+                              <option value="NJ">
+                              NEW JERSEY</option>
+                              <option value="NM">
+                              NEW MEXICO</option>
+                              <option value="NY">
+                              NEW YORK</option>
+                              <option value="NF">
+                              NEWFOUNDLAND</option>
+                              <option value="NC">
+                              NORTH CAROLINA</option>
+                              <option value="ND">
+                              NORTH DAKOTA</option>
+                              <option value="NT">
+                              NORTHERN TERRITORIES</option>
+                              <option value="NS">
+                              NOVA SCOTIA</option>
+                              <option value="NL">
+                              NUEVO LEON</option>
+                              <option value="OA">
+                              OAXACA</option>
+                              <option value="OH">
+                              OHIO</option>
+                              <option value="OK">
+                              OKLAHOMA</option>
+                              <option value="ON">
+                              ONTARIO</option>
+                              <option value="OR">
+                              OREGON</option>
+                              <option value="PA">
+                              PENNSYLVANIA</option>
+                              <option value="PE">
+                              PRINCE EDWARD ISLAND</option>
+                              <option value="PU">
+                              PUEBLA</option>
+                              <option value="PR">
+                              PUERTO RICO</option>
+                              <option value="QC">
+                              QUEBEC</option>
+                              <option value="QT">
+                              QUERETARO</option>
+                              <option value="QR">
+                              QUINTANA ROO</option>
+                              <option value="RI">
+                              RHODE ISLAND</option>
+                              <option value="SL">
+                              SAN LUIS POTOSI</option>
+                              <option value="SK">
+                              SASKATCHEWAN</option>
+                              <option value="SI">
+                              SINALOA</option>
+                              <option value="SO">
+                              SONORA</option>
+                              <option value="SC">
+                              SOUTH CAROLINA</option>
+                              <option value="SD">
+                              SOUTH DAKOTA</option>
+                              <option value="TB">
+                              TABASCO</option>
+                              <option value="TM">
+                              TAMAULIPAS</option>
+                              <option value="TN">
+                              TENNESSEE</option>
+                              <option value="TX">
+                              TEXAS</option>
+                              <option value="TL">
+                              TLAXCALA</option>
+                              <option value="UT">
+                              UTAH</option>
+                              <option value="VE">
+                              VERACRUZ</option>
+                              <option value="VT">
+                              VERMONT</option>
+                              <option value="VA">
+                              VIRGINIA</option>
+                              <option value="WA">
+                              WASHINGTON</option>
+                              <option value="WV">
+                              WEST VIRGINIA</option>
+                              <option value="WI">
+                              WISCONSIN</option>
+                              <option value="WY">
+                              WYOMING</option>
+                              <option value="YU">
+                              YUCATAN</option>
+                              <option value="YT">
+                              YUKON TERRITORY</option>
+                              <option value="ZA">
+                              ZACATECAS</option>
+                              </select>
+                              &nbsp;                                       <input name="delvzip" id="delvzip" type="text" size="10" value="21224">
+                              &nbsp;                                   </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Country</th>
+                              <th>
+                              <select name="delviso" id="delviso" size="1"   >
+                              <option value="">
+                              -- SELECT FROM LIST --</option>
+                              <option value="MM">
+                              *** DO NOT USER *** (MM)</option>
+                              <option value="AF">
+                              AFGANISTAN (AF)</option>
+                              <option value="AL">
+                              ALBANIA (AL)</option>
+                              <option value="DZ">
+                              ALGERIA (DZ)</option>
+                              <option value="AS">
+                              AMERICAN SAMOA (AS)</option>
+                              <option value="AD">
+                              ANDORRA (AD)</option>
+                              <option value="AO">
+                              ANGOLA (AO)</option>
+                              <option value="AI">
+                              ANGUILLA (AI)</option>
+                              <option value="AG">
+                              ANTIGUA AND BARBUDA (AG)</option>
+                              <option value="AR">
+                              ARGENTINA (AR)</option>
+                              <option value="AM">
+                              ARMENIA (AM)</option>
+                              <option value="AW">
+                              ARUBA (AW)</option>
+                              <option value="AU">
+                              AUSTRALIA (AU)</option>
+                              <option value="AT">
+                              AUSTRIA (AT)</option>
+                              <option value="AZ">
+                              AZERBAIJAN (AZ)</option>
+                              <option value="BS">
+                              BAHAMAS (BS)</option>
+                              <option value="BH">
+                              BAHRAIN (BH)</option>
+                              <option value="BD">
+                              BANGLADESH (BD)</option>
+                              <option value="BB">
+                              BARBADOS (BB)</option>
+                              <option value="BY">
+                              BELARUS (BY)</option>
+                              <option value="BE">
+                              BELGIUM (BE)</option>
+                              <option value="BZ">
+                              BELIZE (BZ)</option>
+                              <option value="BJ">
+                              BENIN (BJ)</option>
+                              <option value="BM">
+                              BERMUDA (BM)</option>
+                              <option value="BT">
+                              BHUTAN (BT)</option>
+                              <option value="BO">
+                              BOLIVIA (BO)</option>
+                              <option value="BA">
+                              BOSNIA-HERCEGOVINA (BA)</option>
+                              <option value="BW">
+                              BOTSWANA (BW)</option>
+                              <option value="BR">
+                              BRAZIL (BR)</option>
+                              <option value="IO">
+                              BRITISH INDIAN OCEAN TERR (IO)</option>
+                              <option value="VG">
+                              BRITISH VIRGIN ISLANDS (VG)</option>
+                              <option value="BN">
+                              BRUNEI (BN)</option>
+                              <option value="BG">
+                              BULGARIA (BG)</option>
+                              <option value="BF">
+                              BURKINA (BF)</option>
+                              <option value="BU">
+                              BURMA (MYANMAR) (BU)</option>
+                              <option value="BI">
+                              BURUNDI (BI)</option>
+                              <option value="KH">
+                              CAMBODIA (KH)</option>
+                              <option value="CM">
+                              CAMEROON (CM)</option>
+                              <option value="CA">
+                              CANADA (CA)</option>
+                              <option value="CV">
+                              CAPE VERDE (CV)</option>
+                              <option value="KY">
+                              CAYMAN ISLANDS (KY)</option>
+                              <option value="CF">
+                              CENTRAL AFRICAN REPUBLIC (CF)</option>
+                              <option value="TD">
+                              CHAD (TD)</option>
+                              <option value="CL">
+                              CHILE (CL)</option>
+                              <option value="CN">
+                              CHINA (CN)</option>
+                              <option value="CX">
+                              CHRISTMAS ISLAND (CX)</option>
+                              <option value="CC">
+                              COCOS (KEELING) ISLAND (CC)</option>
+                              <option value="CO">
+                              COLOMBIA (CO)</option>
+                              <option value="KM">
+                              COMOROS (KM)</option>
+                              <option value="CG">
+                              CONGO (BRAZZAVILLE) (CG)</option>
+                              <option value="CD">
+                              CONGO (KINSHASA) (CD)</option>
+                              <option value="CK">
+                              COOK ISLANDS (CK)</option>
+                              <option value="CR">
+                              COSTA RICA (CR)</option>
+                              <option value="HR">
+                              CROATIA (HR)</option>
+                              <option value="CU">
+                              CUBA (CU)</option>
+                              <option value="CW">
+                              CURACAO (CW)</option>
+                              <option value="CY">
+                              CYPRUS (CY)</option>
+                              <option value="CZ">
+                              CZECH REPUBLIC (CZ)</option>
+                              <option value="DK">
+                              DENMARK (DK)</option>
+                              <option value="DJ">
+                              DJIBOUTI (DJ)</option>
+                              <option value="DM">
+                              DOMINICA (DM)</option>
+                              <option value="DO">
+                              DOMINICAN REPUBLIC (DO)</option>
+                              <option value="TL">
+                              EAST TIMOR (TL)</option>
+                              <option value="EC">
+                              ECUADOR (EC)</option>
+                              <option value="EG">
+                              EGYPT (EG)</option>
+                              <option value="SV">
+                              EL SALVADOR (SV)</option>
+                              <option value="GQ">
+                              EQUATORIAL GUINEA (GQ)</option>
+                              <option value="ER">
+                              ERITREA (ER)</option>
+                              <option value="EE">
+                              ESTONIA (EE)</option>
+                              <option value="ET">
+                              ETHIOPIA (ET)</option>
+                              <option value="FK">
+                              FALKLAND ISLANDS (FK)</option>
+                              <option value="FO">
+                              FAROE ISLANDS (FO)</option>
+                              <option value="FM">
+                              FEDRATED STATES OF MICRONESIA (FM)</option>
+                              <option value="FJ">
+                              FIJI (FJ)</option>
+                              <option value="FI">
+                              FINLAND (FI)</option>
+                              <option value="FR">
+                              FRANCE (FR)</option>
+                              <option value="GF">
+                              FRENCH GUIANA (GF)</option>
+                              <option value="PF">
+                              FRENCH POLYNESIA (PF)</option>
+                              <option value="TF">
+                              FRENCH SOUTHERN AND ANTARCTIC LANDS (TF)</option>
+                              <option value="GA">
+                              GABON (GA)</option>
+                              <option value="GM">
+                              GAMBIA (GM)</option>
+                              <option value="GZ">
+                              GAZA STRIP ADMINISTERED BY ISRAEL (GZ)</option>
+                              <option value="GE">
+                              GEORGIA (GE)</option>
+                              <option value="DE">
+                              GERMANY (DE)</option>
+                              <option value="GH">
+                              GHANA (GH)</option>
+                              <option value="GI">
+                              GIBRALTAR (GI)</option>
+                              <option value="GR">
+                              GREECE (GR)</option>
+                              <option value="GL">
+                              GREENLAND (GL)</option>
+                              <option value="GD">
+                              GRENADA (GD)</option>
+                              <option value="GP">
+                              GUADELOUPE (GP)</option>
+                              <option value="GU">
+                              GUAM (GU)</option>
+                              <option value="GT">
+                              GUATEMALA (GT)</option>
+                              <option value="GN">
+                              GUINEA (GN)</option>
+                              <option value="GW">
+                              GUINEA-BISSAU (GW)</option>
+                              <option value="GY">
+                              GUYANA (GY)</option>
+                              <option value="HT">
+                              HAITI (HT)</option>
+                              <option value="HM">
+                              HEARD AND MCDONALD ISLANDS (HM)</option>
+                              <option value="HN">
+                              HONDURAS (HN)</option>
+                              <option value="HK">
+                              HONG KONG (HK)</option>
+                              <option value="HU">
+                              HUNGARY (HU)</option>
+                              <option value="IS">
+                              ICELAND (IS)</option>
+                              <option value="IN">
+                              INDIA (IN)</option>
+                              <option value="ID">
+                              INDONESIA (ID)</option>
+                              <option value="IR">
+                              IRAN (IR)</option>
+                              <option value="IQ">
+                              IRAQ (IQ)</option>
+                              <option value="IE">
+                              IRELAND (IE)</option>
+                              <option value="IL">
+                              ISRAEL (IL)</option>
+                              <option value="IT">
+                              ITALY (IT)</option>
+                              <option value="CI">
+                              IVORY COAST (CI)</option>
+                              <option value="JM">
+                              JAMAICA (JM)</option>
+                              <option value="JP">
+                              JAPAN (JP)</option>
+                              <option value="JO">
+                              JORDAN (JO)</option>
+                              <option value="KZ">
+                              KAZAKHSTAN (KZ)</option>
+                              <option value="KE">
+                              KENYA (KE)</option>
+                              <option value="KI">
+                              KIRIBATI (KI)</option>
+                              <option value="KR">
+                              KOREA, SOUTH (KR)</option>
+                              <option value="KW">
+                              KUWAIT (KW)</option>
+                              <option value="KG">
+                              KYRGYZSTAN (KG)</option>
+                              <option value="LA">
+                              LAOS (LA)</option>
+                              <option value="LV">
+                              LATVIA (LV)</option>
+                              <option value="LB">
+                              LEBANON (LB)</option>
+                              <option value="LS">
+                              LESOTHO (LS)</option>
+                              <option value="LR">
+                              LIBERIA (LR)</option>
+                              <option value="LY">
+                              LIBYA (LY)</option>
+                              <option value="LI">
+                              LIECHTENSTEIN (LI)</option>
+                              <option value="LT">
+                              LITHUANIA (LT)</option>
+                              <option value="LU">
+                              LUXEMBOURG (LU)</option>
+                              <option value="MO">
+                              MACAO (MO)</option>
+                              <option value="MK">
+                              MACEDONIA (SKOPJE) (MK)</option>
+                              <option value="MG">
+                              MADAGASCAR (MG)</option>
+                              <option value="MW">
+                              MALAWI (MW)</option>
+                              <option value="MY">
+                              MALAYSIA (MY)</option>
+                              <option value="MV">
+                              MALDIVES (MV)</option>
+                              <option value="ML">
+                              MALI (ML)</option>
+                              <option value="MT">
+                              MALTA (MT)</option>
+                              <option value="MH">
+                              MARSHALL ISLANDS (MH)</option>
+                              <option value="MQ">
+                              MARTINIQUE (MQ)</option>
+                              <option value="MR">
+                              MAURITANIA (MR)</option>
+                              <option value="MU">
+                              MAURITIUS (MU)</option>
+                              <option value="YT">
+                              MAYOTTE (YT)</option>
+                              <option value="MX">
+                              MEXICO (MX)</option>
+                              <option value="MD">
+                              MOLDOVA (MD)</option>
+                              <option value="MC">
+                              MONACO (MC)</option>
+                              <option value="MN">
+                              MONGOLIA (MN)</option>
+                              <option value="ME">
+                              MONTENEGRO (ME)</option>
+                              <option value="MS">
+                              MONTSERRAT (MS)</option>
+                              <option value="MA">
+                              MOROCCO (MA)</option>
+                              <option value="MZ">
+                              MOZAMBIQUE (MZ)</option>
+                              <option value="NA">
+                              NAMIBIA (NA)</option>
+                              <option value="NR">
+                              NAURU (NR)</option>
+                              <option value="NP">
+                              NEPAL (NP)</option>
+                              <option value="NL">
+                              NETHERLANDS (NL)</option>
+                              <option value="AN">
+                              NETHERLANDS ANTILLES (AN)</option>
+                              <option value="NC">
+                              NEW CALEDONIA (NC)</option>
+                              <option value="NZ">
+                              NEW ZEALAND (NZ)</option>
+                              <option value="NI">
+                              NICARAGUA (NI)</option>
+                              <option value="NE">
+                              NIGER (NE)</option>
+                              <option value="NG">
+                              NIGERIA (NG)</option>
+                              <option value="NU">
+                              NIUE (NU)</option>
+                              <option value="NF">
+                              NORFOLK ISLAND (NF)</option>
+                              <option value="KP">
+                              NORTH KOREA (KP)</option>
+                              <option value="MP">
+                              NORTHERN MARIANA ISLANDS (MP)</option>
+                              <option value="NO">
+                              NORWAY (NO)</option>
+                              <option value="OM">
+                              OMAN (OM)</option>
+                              <option value="PK">
+                              PAKISTAN (PK)</option>
+                              <option value="PW">
+                              PALAU (PW)</option>
+                              <option value="PA">
+                              PANAMA (PA)</option>
+                              <option value="PG">
+                              PAPUA NEW GUINEA (PG)</option>
+                              <option value="PY">
+                              PARAGUAY (PY)</option>
+                              <option value="PE">
+                              PERU (PE)</option>
+                              <option value="PH">
+                              PHILIPPINES (PH)</option>
+                              <option value="PN">
+                              PITCAIRN ISLAND (PN)</option>
+                              <option value="PL">
+                              POLAND (PL)</option>
+                              <option value="PT">
+                              PORTUGAL (PT)</option>
+                              <option value="PR">
+                              PUERTO RICO (PR)</option>
+                              <option value="QA">
+                              QATAR (QA)</option>
+                              <option value="YE">
+                              REPUBLIC OF YEMEN (YE)</option>
+                              <option value="RE">
+                              REUNION (RE)</option>
+                              <option value="RO">
+                              ROMANIA (RO)</option>
+                              <option value="RU">
+                              RUSSIA (RU)</option>
+                              <option value="RW">
+                              RWANDA (RW)</option>
+                              <option value="SM">
+                              SAN MARINO (SM)</option>
+                              <option value="ST">
+                              SAO TOME AND PRINCIPE (ST)</option>
+                              <option value="SA">
+                              SAUDI ARABIA (SA)</option>
+                              <option value="SN">
+                              SENEGAL (SN)</option>
+                              <option value="RS">
+                              SERBIA (RS)</option>
+                              <option value="SC">
+                              SEYCHELLES (SC)</option>
+                              <option value="SL">
+                              SIERRA LEONE (SL)</option>
+                              <option value="SG">
+                              SINGAPORE (SG)</option>
+                              <option value="SX">
+                              SINT MAARTEN (SX)</option>
+                              <option value="SK">
+                              SLOVAKIA (SK)</option>
+                              <option value="SI">
+                              SLOVENIA (SI)</option>
+                              <option value="SB">
+                              SOLOMON ISLANDS (SB)</option>
+                              <option value="SO">
+                              SOMALIA (SO)</option>
+                              <option value="ZA">
+                              SOUTH AFRICA (ZA)</option>
+                              <option value="SS">
+                              SOUTH SUDAN (SS)</option>
+                              <option value="ES">
+                              SPAIN (ES)</option>
+                              <option value="LK">
+                              SRI LANKA (LK)</option>
+                              <option value="BL">
+                              ST BARTHELEMY (BL)</option>
+                              <option value="SH">
+                              ST HELENA (SH)</option>
+                              <option value="KN">
+                              ST KITTS AND NEVIS (KN)</option>
+                              <option value="LC">
+                              ST LUCIA (LC)</option>
+                              <option value="PM">
+                              ST PIERRE AND MIQUELON (PM)</option>
+                              <option value="VC">
+                              ST VINCENT AND THE GRENADINES (VC)</option>
+                              <option value="SD">
+                              SUDAN (SD)</option>
+                              <option value="SR">
+                              SURINAME (SR)</option>
+                              <option value="SJ">
+                              SVALBARD, JAN MAYEN ISLAND (SJ)</option>
+                              <option value="SZ">
+                              SWAZILAND (SZ)</option>
+                              <option value="SE">
+                              SWEDEN (SE)</option>
+                              <option value="CH">
+                              SWITZERLAND (CH)</option>
+                              <option value="SY">
+                              SYRIA (SY)</option>
+                              <option value="TW">
+                              TAIWAN (TW)</option>
+                              <option value="TJ">
+                              TAJIKISTAN (TJ)</option>
+                              <option value="TZ">
+                              TANZANIA (TZ)</option>
+                              <option value="TH">
+                              THAILAND (TH)</option>
+                              <option value="TG">
+                              TOGO (TG)</option>
+                              <option value="TK">
+                              TOKELAU (TK)</option>
+                              <option value="TO">
+                              TONGA (TO)</option>
+                              <option value="TT">
+                              TRINIDAD AND TOBAGO (TT)</option>
+                              <option value="TN">
+                              TUNISIA (TN)</option>
+                              <option value="TR">
+                              TURKEY (TR)</option>
+                              <option value="TM">
+                              TURKMENISTAN (TM)</option>
+                              <option value="TC">
+                              TURKS AND CAICOS ISLANDS (TC)</option>
+                              <option value="TV">
+                              TUVALU (TV)</option>
+                              <option value="UG">
+                              UGANDA (UG)</option>
+                              <option value="UA">
+                              UKRAINE (UA)</option>
+                              <option value="AE">
+                              UNITED ARAB EMIRATES (AE)</option>
+                              <option value="GB">
+                              UNITED KINGDOM (GB)</option>
+                              <option value="US" SELECTED>
+                              UNITED STATES (US)</option>
+                              <option value="UY">
+                              URUGUAY (UY)</option>
+                              <option value="UM">
+                              US MINOR OUTLYING ISLANDS (UM)</option>
+                              <option value="UZ">
+                              UZBEKISTAN (UZ)</option>
+                              <option value="VU">
+                              VANUATU (VU)</option>
+                              <option value="VA">
+                              VATICAN CITY (VA)</option>
+                              <option value="VE">
+                              VENEZUELA (VE)</option>
+                              <option value="VN">
+                              VIETNAM (VN)</option>
+                              <option value="VI">
+                              VIRGIN ISLANDS OF THE UNITED STATES (VI)</option>
+                              <option value="WF">
+                              WALLIS AND FUTUNA (WF)</option>
+                              <option value="WE">
+                              WEST BANK ADMINISTERED BY ISRAEL (WE)</option>
+                              <option value="EH">
+                              WESTERN SAHARA (EH)</option>
+                              <option value="WS">
+                              WESTERN SAMOA (WS)</option>
+                              <option value="ZM">
+                              ZAMBIA (ZM)</option>
+                              <option value="ZW">
+                              ZIMBABWE (ZW)</option>
+                              </select>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Contact</th>
+                              <th>
+                              <input name="delvcont" id="delvcont" type="text" size="30" value="">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Telephone</th>
+                              <th>
+                              <input name="delvph" id="delvph" type="text" size="20" value="">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              E-mail</th>
+                              <th>
+                              <input name="delvemail" id="delvemail" type="text" size="50" value="">
+                              </th>
+                              </tr>
+                              </table>
+                              </th>
+                              <th colspan=2>
+                              <table>
+                              <tr>
+                              <th>
+                              Deliver By Trucker ID</th>
+                              <th id="precarrid_th">
+                              <input name="precarrid" id="precarrid" type="text" size="15" value="20856">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Company Name</th>
+                              <th>
+                              <input name="precarrname" id="precarrname" type="text" size="45" value="EVANS DELIVERY - BALTIMORE">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Contact</th>
+                              <th>
+                              <input name="precarrcont" id="precarrcont" type="text" size="30" value="410-388-9191">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Telephone</th>
+                              <th>
+                              <input name="precarrph" id="precarrph" type="text" size="20" value="">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Mobile</th>
+                              <th>
+                              <input name="precarrph2" id="precarrph2" type="text" size="20" value="">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              E-mail</th>
+                              <th>
+                              <input name="precarremail" id="precarremail" type="text" size="50" value="STEPHANIE ELTRINGHAM">
+                              </th>
+                              </tr>
+                              </table>
+                              </th>
+                              </tr>
+                              <tr valign="top">
+                              <th>
+                              <b>
+                              Bill To Party</b>
+                              <br>
+                              <input type="radio" name="dobillto" value="1" checked REQUIRED>
+                              Bill To Us                             <br>
+                              <input type="radio" name="dobillto" value="2"  REQUIRED>
+                              Bill To Consignee                             <br>
+                              <input type="radio" name="dobillto" value="3"  REQUIRED>
+                              Bill To Carrier                             <br>
+                              <input type="radio" name="dobillto" value="4"  REQUIRED>
+                              Bill To Third Party                                    <table>
+                              <tr>
+                              <th id="dobillid_th">
+                              <input name="dobillid" id="dobillid" type="text" size="15" value="TTLAX">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              <input name="dobillname" id="dobillname" type="text" size="45" value="TOPLAND TRUCKING INC">
+                              </th>
+                              </tr>
+                              </table>
+                              </th>
+                              <th colspan=3>
+                              <table>
+                              <tr>
+                              <th colspan=3>
+                              <b>
+                              DO Options:</b>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Print SOC <input type="checkbox" id="prtsoc" name="prtsoc" value="1" CHECKED>
+                              </th>
+                              <th>
+                              Print Trucking Charges <input type="checkbox" id="prtchg" name="prtchg" value="1" >
+                              </th>
+                              <th>
+                              Carrier Door Move <input type="checkbox" id="doinland" name="doinland" value="1" CHECKED>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Chassis Provider ID</th>
+                              <th id="dochassid_th">
+                              <input name="dochassid" id="dochassid" type="text" size="15" value="TLIUS">
+                              </th>
+                              <th>
+                              Company Name: <input name="dochassname" id="dochassname" type="text" size="45" value="TOPLAND LOGISTICS INC">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th colspan=3>
+                              &nbsp;</th>
+                              </tr>
+                              <tr>
+                              <th colspan=3>
+                              <b>
+                              Scheduling Instructions:</b>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              <input type="radio" name="doschedule" value="1" checked>
+                              Topocean will schedule delivery directly</th>
+                              <th colspan=2>
+                              <input type="radio" name="doschedule" value="2" >
+                              Please call for delivery appointment</th>
+                              </tr>
+                              </table>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th>
+                              Please Call</th>
+                              <th colspan=3>
+                              <select name="docallname" id="docallname" size="1"   >
+                              <option value="">
+                              </option>
+                              <option value="AlexandraYu">
+                              ALEXANDRA YU (562-908-1688)</option>
+                              <option value="AlexYang">
+                              ALEX YANG (562-908-1688)</option>
+                              <option value="AmyLohrungruang">
+                              AMY LOHRUNGRUANG (562-908-1688)</option>
+                              <option value="AmyTran">
+                              AMY TRAN (562-908-1688)</option>
+                              <option value="AnaRojas">
+                              ANA ROJAS (562-908-1688)</option>
+                              <option value="AustinMejia">
+                              AUSTIN MEJIA (562-908-1688)</option>
+                              <option value="BonnieMa">
+                              BONNIE MA (562-908-1688)</option>
+                              <option value="BonnyChen">
+                              BONNY CHEN (562-908-1688)</option>
+                              <option value="BRANDONTANG" SELECTED>
+                              BRANDON TANG (562-908-1688)</option>
+                              <option value="BrendaCam">
+                              BRENDA CAM (562-908-1688)</option>
+                              <option value="BrianKim">
+                              BRIAN KIM (562-908-1688)</option>
+                              <option value="BrianLoughney">
+                              BRIAN LOUGHNEY (562-908-1688)</option>
+                              <option value="CalvinKuang">
+                              CALVIN KUANG (562-908-1688)</option>
+                              <option value="CandaceWalsh">
+                              CANDACE WALSH (562-908-1688)</option>
+                              <option value="CareyLau">
+                              CAREY LAU (562-908-1688)</option>
+                              <option value="CatharineChung">
+                              CATHARINE CHUNG (562-908-1688)</option>
+                              <option value="CatherineLopez">
+                              CATHERINE LOPEZ (562-908-1688)</option>
+                              <option value="CeciliaYu">
+                              CECILIA YU (562-908-1688)</option>
+                              <option value="CeliaLau">
+                              CELIA LAU (562-908-1688)</option>
+                              <option value="ChapmanKwan">
+                              CHAPMAN KWAN (562-908-1688)</option>
+                              <option value="ChauPhong">
+                              CHAU PHONG (562-908-1688)</option>
+                              <option value="CindyRamos">
+                              CINDY RAMOS (562-908-1688)</option>
+                              <option value="ClaudiaDomingue">
+                              CLAUDIA DOMINGUEZ (562-908-1688)</option>
+                              <option value="ConnieLai">
+                              CONNIE LAI (562-908-1688)</option>
+                              <option value="ConnieYu">
+                              CONNIE YU (562-908-1688)</option>
+                              <option value="CruzeMa">
+                              CRUZE MA (562-908-1688)</option>
+                              <option value="DaisySi">
+                              DAISY SI (562-908-1688)</option>
+                              <option value="DannyHa">
+                              DANNY HA (562-908-1688)</option>
+                              <option value="DavidPerez">
+                              DAVID PEREZ (562-908-1688)</option>
+                              <option value="DavidZ">
+                              DAVID ZHU (562-908-1688)</option>
+                              <option value="DianaArenas">
+                              DIANA ARENAS (562-908-1688)</option>
+                              <option value="DillonAguilar">
+                              DILLON    AGUILAR (562-908-1688)</option>
+                              <option value="DongLiu">
+                              DONG LIU (562-908-1688)</option>
+                              <option value="EuniceKong">
+                              EUNICE KONG (562-908-1688)</option>
+                              <option value="FionChiu">
+                              FION  CHIU (562-908-1688)</option>
+                              <option value="HanahTran">
+                              HANAH TRAN (562-908-1688)</option>
+                              <option value="HelenGip">
+                              HELEN GIP (562-908-1688)</option>
+                              <option value="HelenYong">
+                              HELEN YONG (562-908-1688)</option>
+                              <option value="HennySalim">
+                              HENNY SALIM (562-908-1688)</option>
+                              <option value="IsaacNguyen">
+                              ISAAC NGUYEN (562-908-1688)</option>
+                              <option value="JamesLin">
+                              JAMES LIN (562-908-1688)</option>
+                              <option value="JamieTang">
+                              JAMIE TANG (562-908-1688)</option>
+                              <option value="JasonHuang">
+                              JASON HUANG (562-908-1688)</option>
+                              <option value="JasonWen">
+                              JASON WEN (562-908-1688)</option>
+                              <option value="JayKong">
+                              JAY KONG (562-908-1688)</option>
+                              <option value="JeffCabradilla">
+                              JEFF CABRADILLA (562-908-1688)</option>
+                              <option value="JeffreySze">
+                              JEFFREY SZE (562-908-1688)</option>
+                              <option value="JennyTao">
+                              JENNY TAO (562-908-1688)</option>
+                              <option value="JesseHuang">
+                              JESSE HUANG (562-908-1688)</option>
+                              <option value="JessicaLam">
+                              JESSICA LAM (562-908-1688)</option>
+                              <option value="JessicaMLam">
+                              JESSICA LAM (562-908-1688)</option>
+                              <option value="JessicaRamirez">
+                              JESSICA  RAMIREZ (562-908-1688)</option>
+                              <option value="JingLi">
+                              JING LI (562-908-1688)</option>
+                              <option value="JobitaRamirez">
+                              JOBITA  RAMIREZ (562-908-1688)</option>
+                              <option value="JonathanYen">
+                              JONATHAN YEN (562-908-1688)</option>
+                              <option value="JosephHWang">
+                              JOSEPH WANG (562-908-1688)</option>
+                              <option value="JudyLo">
+                              JUDY LO (562-908-1688)</option>
+                              <option value="JustinGao">
+                              JUSTIN GAO (562-908-1688)</option>
+                              <option value="KarenKuan">
+                              KAREN KUAN (562-908-1688)</option>
+                              <option value="KarenZheng">
+                              KAREN ZHENG (562-908-1688)</option>
+                              <option value="KellyWu">
+                              KELLY WU (562-908-1688)</option>
+                              <option value="KelvinYu">
+                              KELVIN YU (562-908-1688)</option>
+                              <option value="KennyThai">
+                              KENNY THAI (562-908-1688)</option>
+                              <option value="KevinJian">
+                              KEVIN JIAN (562-908-1688)</option>
+                              <option value="KhonaryOu">
+                              KHONARY OU (562-908-1688)</option>
+                              <option value="KietNgo">
+                              KIET  NGO (562-908-1688)</option>
+                              <option value="LawrenceWang">
+                              LAWRENCE WANG (562-908-1688)</option>
+                              <option value="LinMa">
+                              LIN MA (562-908-1688)</option>
+                              <option value="MaggieRong">
+                              MAGGIE RONG (562-908-1688)</option>
+                              <option value="MayIglesia">
+                              MAY IGLESIA (562-908-1688)</option>
+                              <option value="MayraVillalpand">
+                              MAYRA VILLALPANDO (562-908-1688)</option>
+                              <option value="MeiryLynn">
+                              MEIRY LYNN (562-908-1688)</option>
+                              <option value="MonicaZamora">
+                              MONICA   ZAMORA (562-908-1688)</option>
+                              <option value="MonicaZavala">
+                              MONICA ZAVALA (562-908-1688)</option>
+                              <option value="MyrisPolintan">
+                              MYRIS POLINTAN-GOSE (562-908-1688)</option>
+                              <option value="NathalieMoreno">
+                              NATHALIE MORENO (562-908-1688)</option>
+                              <option value="PedroMeneses">
+                              PEDRO MENESES (562-908-1688)</option>
+                              <option value="RachelWei">
+                              RACHEL WEI (562-908-1688)</option>
+                              <option value="RandyChao">
+                              RANDY CHAO (562-908-1688)</option>
+                              <option value="RandyLu">
+                              RANDY LU (562-908-1688)</option>
+                              <option value="RaymondBach">
+                              RAYMOND BACH (562-908-1688)</option>
+                              <option value="RoyChang">
+                              ROY CHANG (562-908-1688)</option>
+                              <option value="SabrinaChung">
+                              SABRINA CHUNG (562-908-1688)</option>
+                              <option value="SamanthaHuang">
+                              SAMANTHA HUANG (562-908-1688)</option>
+                              <option value="SamanthaPong">
+                              SAMANTHA PONG (562-908-1688)</option>
+                              <option value="SammiLiu">
+                              SAMMI LIU (562-908-1688)</option>
+                              <option value="SammiYu">
+                              SAMMI YU (562-908-1688)</option>
+                              <option value="SandyLin">
+                              SANDY LIN (562-908-1688)</option>
+                              <option value="SarahLai">
+                              SARAH LAI (562-908-1688)</option>
+                              <option value="SarahLui">
+                              SARAH LUI (562-908-1688)</option>
+                              <option value="SeanChen">
+                              SEAN CHEN (562-908-1688)</option>
+                              <option value="SergioMeneses">
+                              SERGIO MENESES (562-908-1688)</option>
+                              <option value="SharonChiang">
+                              SHARON CHIANG (562-908-1688)</option>
+                              <option value="SherineLynn">
+                              SHERINE LYNN (562-908-1688)</option>
+                              <option value="SherryMui">
+                              SHERRY MUI (562-908-1688)</option>
+                              <option value="SonnyLeong">
+                              SONNY LEONG (562-908-1688)</option>
+                              <option value="StaceySiu">
+                              STACEY    SIU (562-908-1688)</option>
+                              <option value="StephanieSun">
+                              STEPHANIE SUN (562-908-1688)</option>
+                              <option value="StephenWu">
+                              STEPHEN  WU (562-908-1688)</option>
+                              <option value="StevenCheng">
+                              STEVEN CHENG (562-908-1688)</option>
+                              <option value="StevenOu">
+                              STEVEN OU (562-908-1688)</option>
+                              <option value="SuhaniLu">
+                              SUHANI LU (562-908-1688)</option>
+                              <option value="SunnyYSun">
+                              SUNNY SUN (562-908-1688)</option>
+                              <option value="SUPPORT@CDMSOFT.COM">
+                              CDM SUPPORT (281-298-8880)</option>
+                              <option value="SylviaLai">
+                              SYLVIA LAI (562-908-1688)</option>
+                              <option value="TiffanyTseng">
+                              TIFFANY TSENG (562-908-1688)</option>
+                              <option value="tolax.admin">
+                              TOLAX.ADMIN (562-908-1688)</option>
+                              <option value="tolax.it.admin">
+                              IT (562-908-1688)</option>
+                              <option value="TommyLam">
+                              TOMMY LAM (562-908-1688)</option>
+                              <option value="TonyHuang">
+                              TONY HUANG (562-908-1688)</option>
+                              <option value="TrentFairbanks">
+                              TRENT FAIRBANKS (562-908-1688)</option>
+                              <option value="TylerHsieh">
+                              TYLER HSIEH (562-908-1688)</option>
+                              <option value="UlyChu">
+                              ULY CHU (562-908-1688)</option>
+                              <option value="VanessaAngulo">
+                              VANESSA ANGULO (562-908-1688)</option>
+                              <option value="VickiTsoi">
+                              VICKI TSOI (562-908-1688)</option>
+                              <option value="VictorMorales">
+                              VICTOR MORALES (562-908-1688)</option>
+                              <option value="WinnieNg">
+                              WINNIE NG (562-908-1688)</option>
+                              </select>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th colspan=4 style="text-align:center;font-size:20px;color:#fff;background-color:#C24641;">
+                              <b>
+                              ADDITIONAL COMMENTS</b>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th colspan=4 style="text-align:center;font-size:20px;background-color:#C24641;">
+                              <textarea id="docomment" name="docomment" rows="5" cols="180">
+                              </textarea>
+                              </th>
+                              </tr>
+                              <th colspan=4>
+                              <table>
+                              <tr>
+                              <th style="text-align:center;color:#F62817;font-size:24px;" colspan=11>
+                              CONTAINER DETAILS</th>
+                              </tr>
+                              <tr>
+                              <th style="text-align:center;font-size:18px;">
+                              Print</th>
+                              <th style="text-align:center;font-size:18px;">
+                              Container No.</th>
+                              <th style="text-align:center;font-size:18px;">
+                              H B/L</th>
+                              <th style="text-align:center;font-size:18px;">
+                              Size</th>
+                              <th style="text-align:center;font-size:18px;">
+                              PKG</th>
+                              <th style="text-align:center;font-size:18px;">
+                              WT (KG/LB)</th>
+                              <th style="text-align:center;font-size:18px;">
+                              CBM</th>
+                              <th style="text-align:center;font-size:18px;">
+                              PO #</th>
+                              <th style="text-align:center;font-size:18px;">
+                              P/U#</th>
+                              <th style="text-align:center;font-size:18px;">
+                              LFD</th>
+                              <th style="text-align:center;font-size:18px;">
+                              APPT</th>
+                              </tr>
+                              <tr>
+                              <th style="text-align:center;">
+                              <input type="checkbox" id="CTNR001" name="CTNR001" value="74739" CHECKED>
+                              </th>
+                              <th style="text-align:center;">
+                              ABC123578</th>
+                              <th style="text-align:center;">
+                              TCS9ZO913124</th>
+                              <th style="text-align:center;">
+                              20</th>
+                              <th style="text-align:center;">
+                              150</th>
+                              <th style="text-align:center;">
+                              12,345.00 / 27,215.79</th>
+                              <th style="text-align:center;">
+                              1.000</th>
+                              <th style="text-align:center;">
+                              TEST1234567891011121314,TEST12345678910111213</th>
+                              <th style="text-align:center;">
+                              test001</th>
+                              <th style="text-align:center;">
+                              02/10/2025</th>
+                              <th style="text-align:center;">
+                              02/14/2025 @ 2324</th>
+                              </tr>
+                              <tr>
+                              <th style="text-align:center;">
+                              <input type="checkbox" id="CTNR002" name="CTNR002" value="74749" CHECKED>
+                              </th>
+                              <th style="text-align:center;">
+                              TOPU1234567</th>
+                              <th style="text-align:center;">
+                              TCS9ZO913124</th>
+                              <th style="text-align:center;">
+                              40</th>
+                              <th style="text-align:center;">
+                              1,200</th>
+                              <th style="text-align:center;">
+                              18,000.00 / 39,682.80</th>
+                              <th style="text-align:center;">
+                              66.000</th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              </th>
+                              </tr>
+                              <tr>
+                              <th style="text-align:center;">
+                              <input type="checkbox" id="CTNR003" name="CTNR003" value="74765" CHECKED>
+                              </th>
+                              <th style="text-align:center;">
+                              MAEU123456</th>
+                              <th style="text-align:center;">
+                              TCS9ZO913124</th>
+                              <th style="text-align:center;">
+                              40</th>
+                              <th style="text-align:center;">
+                              10</th>
+                              <th style="text-align:center;">
+                              12,345.00 / 27,215.79</th>
+                              <th style="text-align:center;">
+                              1.000</th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              test002</th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              @ 0000</th>
+                              </tr>
+                              <tr>
+                              <th style="text-align:center;">
+                              <input type="checkbox" id="CTNR004" name="CTNR004" value="74741" >
+                              </th>
+                              <th style="text-align:center;">
+                              XYZ123456</th>
+                              <th style="text-align:center;">
+                              TCS9ZO913124</th>
+                              <th style="text-align:center;">
+                              20</th>
+                              <th style="text-align:center;">
+                              100</th>
+                              <th style="text-align:center;">
+                              12,345.00 / 27,215.79</th>
+                              <th style="text-align:center;">
+                              1.000</th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              02/03/2025</th>
+                              <th style="text-align:center;">
+                              02/12/2025 @ 1618</th>
+                              </tr>
+                              <tr>
+                              <th style="text-align:center;">
+                              <input type="checkbox" id="CTNR005" name="CTNR005" value="74742" >
+                              </th>
+                              <th style="text-align:center;">
+                              TOP123456</th>
+                              <th style="text-align:center;">
+                              TCS9ZO913124</th>
+                              <th style="text-align:center;">
+                              40</th>
+                              <th style="text-align:center;">
+                              80</th>
+                              <th style="text-align:center;">
+                              12,345.00 / 27,215.79</th>
+                              <th style="text-align:center;">
+                              1.000</th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              </th>
+                              <th style="text-align:center;">
+                              02/03/2025</th>
+                              <th style="text-align:center;">
+                              02/12/2025 @ 1618</th>
+                              </tr>
+                              </table>
+                              </th>
+                              </tr>
+                              <tr>
+                              <th style="text-align:center;" colspan=4>
+                              <input type="submit" id="" name="" value="  S A V E  " style="border:1 solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#fff;background-color:#cc5500;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;" onClick="">
+                              &nbsp; <input type="button" id="C1" name="C1" value="  C A N C E L  " style="border:1 solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#000000;background-color:#38acec;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;">
+                              </form>
+                              </th>
+                              </tr>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="footer" style="">
+         <div id="footer_inner">
+            <dl class="copy">
+               <dt>
+                  <strong>
+                  CDM Web Freight&trade; 2025</strong>
+                  - <em>
+                  April 14, 2025 &nbsp;&bull;&nbsp; 0633</em>
+               </dt>
+               <dd>
+                  &copy; 1988-2025 CDM Software Solutions, Inc.&nbsp;&bull;&nbsp;All rights reserved&nbsp;&bull;&nbsp;<a href=mailto:support@cdmsoft.com>
+                  <b>
+                  E-Mail Support</b>
+                  </a>
+                  &nbsp;&bull;&nbsp;(281) 298-8880
+               </dd>
+            </dl>
+         </div>
+      </div>
+      <div id="contact-dialog" title="Add New Contact">
+         <div id="divInDialog"></div>
+      </div>
+      <div id="ctnrlist-dialog" title="CONTAINER LIST">
+         <div id="divInDialog"></div>
+      </div>
+      <div id="guide-dialog" title="CDM Web Freight� Dashboard Help">
+         <div id="dialog-content"></div>
+      </div>
+      <div id="camera-dialog">
+         <div id="divInDialog"></div>
+      </div>
+      <div id="signature-dialog" title="Signature Capture">
+         <div id="divInDialog"></div>
+      </div>
+      <div id="qr-reader-container">
+         <div id="qr-reader"></div>
+         <button id="qr-reader-stop" onclick="onStopQRReader();">
+         stop</button>
+      </div>
+      <a href="javascript:void(0);" class="icon-scrolltop" id="gotop">
+      <img src="images/icon-slide-up.png" />
+      </a>
+      <script src="js/dragndrop.js?v=20250415103014"></script>
+      <script src="js/dataentry.js?v=20250415103014"></script>
+      <script src="js/qbpw.js?v=20250415103014"></script>
+      <script src="js/calc.js?v=20250415103014"></script>
+      <script src="js/calc2.js?v=20250415103014"></script>
+      <script src="js/dohelp.js"></script>
+      <div id="delivery-order-confirm-dialog" title="Confirm">
+         <div id="divInDialog"></div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,44 @@
+.dock-door-maps {
+    padding: 20px 10px;
+    position: relative;
+}
+
+.dock-door-btns {
+    display: inline-flex;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+}
+
+.dock-door-btns .dock-door-btn {
+    width: 256px;
+    border: 1px solid blue;
+    text-align: right;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background: #E7F3F8;
+    cursor: pointer;
+}
+
+.dock-door-btns .dock-door-btn:hover {
+    background: #ADD8E6;
+}
+
+.dock-door-btns .dock-door-btn.is-matched {
+    background: #FDD017;
+    background-image: url(../images/rfid.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+.dock-door-border {
+    border: 2px solid black;
+    display: inline-block;
+    margin-left: 75px;
+    position: absolute;
+    height: calc(100% - 44px);
+    width: calc(100% - 100px);
+    min-width: 100px;
+    max-width: 300px;
+}

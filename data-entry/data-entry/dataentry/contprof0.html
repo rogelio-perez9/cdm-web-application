@@ -1,0 +1,1896 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+        Web Based Freight Forwarding Operations
+    </title>
+    <meta name="Description" content="U.S. Customs certified software provider for freight forwarders, NVOCC and logistics companies">
+    <meta name="Keywords" content="Intermodal,Intermodal Tracking,Container,Container Tracking,Equipment Tracking,Chassis,GPS,RFID">
+    <link rel="shortcut icon" href="images/cdm-logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/cdm-logo.jpg">
+    <link media="screen" rel="stylesheet" type="text/css" href="css/top-red.css?v=20250527065003" />
+    <link media="screen" rel="stylesheet" type="text/css" href="css/jquery.token-input.css?v=20250527065003" />
+    <link media="screen" rel="stylesheet" type="text/css" href="css/dataentry.css?v=20250527065003" />
+    <link media="screen" rel="stylesheet" type="text/css" href="css/dragndrop.css?v=20250527065003" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" type="text/javascript">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" type="text/javascript">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js" type="text/javascript">
+    </script>
+    <script src="js/jslib-html5-camera-photo.min.js">
+    </script>
+    <script src="js/jquery.tokeninput.min.js">
+    </script>
+    <script src="js/html5-qrcode.min.js">
+    </script>
+    <script>
+        (function () { window.ldfdr = window.ldfdr || {}; (function (d, s, ss, fs) { fs = d.getElementsByTagName(s)[0]; function ce(src) { var cs = d.createElement(s); cs.src = src; setTimeout(function () { fs.parentNode.insertBefore(cs, fs) }, 1) } ce(ss) })(document, 'script', 'https://sc.lfeeder.com/lftracker_v1_kn9Eq4Rz1wY4RlvP.js') })()</script>
+    <style>
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 140px;
+            background-color: #4863a0;
+            color: #fff;
+            z-index: 1;
+            top: -6px;
+            right: 105%;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+
+        .tooltip2 .tooltiptext2 {
+            visibility: hidden;
+            width: 100px;
+            background-color: #4863a0;
+            color: #fff;
+            z-index: 1;
+            top: -6px;
+            left: 100%;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+        }
+
+        .tooltip2 {
+            position: relative;
+            display: inline-block;
+        }
+
+            .tooltip2:hover .tooltiptext2 {
+                visibility: visible;
+            }
+    </style>
+</head>
+<body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113444990-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'UA-113444990-1')</script>
+    <div id="wrapper">
+        <div id="head">
+            <div id="logo_user_details">
+                <h1 id="logo">
+                    <a href="#">
+                        <img src="images/TOPOCEAN_ASIA.JPG" alt="">
+                    </a>
+                </h1>
+                <div id="user_details">
+                    <ul id="user_details_menu">
+                        <li>
+                            Welcome <strong>
+                                CDM SUPPORT
+                            </strong>
+                        </li>
+                        <li class="user_details_menu_options">
+                            <ul id="user_access">
+                                <li class="first">
+                                    <a target="_blank" href="#">
+                                        User Guide
+                                    </a>
+                                </li>
+                                <li class="user_access_line">
+                                    |
+                                </li>
+                                <li class="last">
+                                    <a href="webfrt.dll?MID=8g0a-8b0-1b5y">
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="page">
+                <div class="inner">
+                    <div class="section table_section">
+                        <div class="title_wrapper">
+                            <h2>
+                                <b>
+                                    TOPOCEAN CONSOLIDATION SERVICE (CHINA) LTD. SHENZH
+                                </b>
+                                - TOSGH;TOSZX
+                            </h2>
+                        </div>
+                        <div class="section_content">
+                            <div class="section_content_padding">
+                                <div class="dashboard_menu_wrapper">
+                                    <ul class="dashboard_menu">
+                                        <li>
+                                            <a class="contact" href="contupd.dll?MID=8G0A-8B0-1B5Y&LINK=F5025EEE-2DE9-4BC7-B62D-161BE10601E6&RID=807E4BDF-9A7C-433D-9169-03C7EE9D11AA">
+                                                <span>
+                                                    Contact Details
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="top06" href="contprof2.dll?MID=8G0A-8B0-1B5Y&LINK=F5025EEE-2DE9-4BC7-B62D-161BE10601E6&RID=10035&PID=5">
+                                                <span>
+                                                    ISF (10+2) Inst
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="top01" href="contprof3.dll?MID=8G0A-8B0-1B5Y&LINK=F5025EEE-2DE9-4BC7-B62D-161BE10601E6&RID=10035&PID=5">
+                                                <span>
+                                                    Freight Release Inst
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="top02" href="contprof4.dll?MID=8G0A-8B0-1B5Y&LINK=F5025EEE-2DE9-4BC7-B62D-161BE10601E6&RID=10035&PID=5">
+                                                <span>
+                                                    Billing Inst
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="back" href="contlist.dll?MID=8G0A-8B0-1B5Y&LINK=F5025EEE-2DE9-4BC7-B62D-161BE10601E6">
+                                                <span>
+                                                    Contact List
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="d7" href="dashboard.dll?MID=8G0A-8B0-1B5Y&LINK=F5025EEE-2DE9-4BC7-B62D-161BE10601E6">
+                                                <span>
+                                                    Dashboard
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section table_section">
+                        <div class="title_wrapper">
+                            <h2 id="contacts-cust">
+                            </h2>
+                        </div>
+                        <div class="section_content">
+                            <form action="contprof0.dll?MID=8G0A-8B0-1B5Y&LINK=F5025EEE-2DE9-4BC7-B62D-161BE10601E6&RID=10035&PID=5" method="POST">
+                                <input type=hidden id="sqid" name="sqid" value="topoceanasia">
+                                <div class="table_wrapper">
+                                    <div class="table_wrapper_inner" style="padding:0;">
+                                        <table>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Station ID
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="15" maxlength="15" id="custid" name="custid" value="TOSGH" READONLY>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Local Company Name
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="45" maxlength="45" id="localname" name="localname" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Local Address
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="45" maxlength="45" id="localadd1" name="localadd1" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    &nbsp;
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="45" maxlength="45" id="localadd2" name="localadd2" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    &nbsp;
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="45" maxlength="45" id="localadd3" name="localadd3" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    City
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="45" maxlength="45" id="localcity" name="localcity" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    State / Province
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="5" maxlength="5" id="localst" name="localst" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Zip / Postal Code
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="10" maxlength="10" id="localzip" name="localzip" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Country
+                                                </th>
+                                                <th>
+                                                    <select name="localiso" id="localiso" size="1">
+                                                        <option value="" SELECTED>
+                                                            -- SELECT FROM LIST --
+                                                        </option>
+                                                        <option value="MM">
+                                                            *** DO NOT USER *** (MM)
+                                                        </option>
+                                                        <option value="AF">
+                                                            AFGANISTAN (AF)
+                                                        </option>
+                                                        <option value="AL">
+                                                            ALBANIA (AL)
+                                                        </option>
+                                                        <option value="DZ">
+                                                            ALGERIA (DZ)
+                                                        </option>
+                                                        <option value="AS">
+                                                            AMERICAN SAMOA (AS)
+                                                        </option>
+                                                        <option value="AD">
+                                                            ANDORRA (AD)
+                                                        </option>
+                                                        <option value="AO">
+                                                            ANGOLA (AO)
+                                                        </option>
+                                                        <option value="AI">
+                                                            ANGUILLA (AI)
+                                                        </option>
+                                                        <option value="AG">
+                                                            ANTIGUA AND BARBUDA (AG)
+                                                        </option>
+                                                        <option value="AR">
+                                                            ARGENTINA (AR)
+                                                        </option>
+                                                        <option value="AM">
+                                                            ARMENIA (AM)
+                                                        </option>
+                                                        <option value="AW">
+                                                            ARUBA (AW)
+                                                        </option>
+                                                        <option value="AU">
+                                                            AUSTRALIA (AU)
+                                                        </option>
+                                                        <option value="AT">
+                                                            AUSTRIA (AT)
+                                                        </option>
+                                                        <option value="AZ">
+                                                            AZERBAIJAN (AZ)
+                                                        </option>
+                                                        <option value="BS">
+                                                            BAHAMAS (BS)
+                                                        </option>
+                                                        <option value="BH">
+                                                            BAHRAIN (BH)
+                                                        </option>
+                                                        <option value="BD">
+                                                            BANGLADESH (BD)
+                                                        </option>
+                                                        <option value="BB">
+                                                            BARBADOS (BB)
+                                                        </option>
+                                                        <option value="BY">
+                                                            BELARUS (BY)
+                                                        </option>
+                                                        <option value="BE">
+                                                            BELGIUM (BE)
+                                                        </option>
+                                                        <option value="BZ">
+                                                            BELIZE (BZ)
+                                                        </option>
+                                                        <option value="BJ">
+                                                            BENIN (BJ)
+                                                        </option>
+                                                        <option value="BM">
+                                                            BERMUDA (BM)
+                                                        </option>
+                                                        <option value="BT">
+                                                            BHUTAN (BT)
+                                                        </option>
+                                                        <option value="BO">
+                                                            BOLIVIA (BO)
+                                                        </option>
+                                                        <option value="BA">
+                                                            BOSNIA-HERCEGOVINA (BA)
+                                                        </option>
+                                                        <option value="BW">
+                                                            BOTSWANA (BW)
+                                                        </option>
+                                                        <option value="BR">
+                                                            BRAZIL (BR)
+                                                        </option>
+                                                        <option value="IO">
+                                                            BRITISH INDIAN OCEAN TERR (IO)
+                                                        </option>
+                                                        <option value="VG">
+                                                            BRITISH VIRGIN ISLANDS (VG)
+                                                        </option>
+                                                        <option value="BN">
+                                                            BRUNEI (BN)
+                                                        </option>
+                                                        <option value="BG">
+                                                            BULGARIA (BG)
+                                                        </option>
+                                                        <option value="BF">
+                                                            BURKINA (BF)
+                                                        </option>
+                                                        <option value="BU">
+                                                            BURMA (MYANMAR) (BU)
+                                                        </option>
+                                                        <option value="BI">
+                                                            BURUNDI (BI)
+                                                        </option>
+                                                        <option value="KH">
+                                                            CAMBODIA (KH)
+                                                        </option>
+                                                        <option value="CM">
+                                                            CAMEROON (CM)
+                                                        </option>
+                                                        <option value="CA">
+                                                            CANADA (CA)
+                                                        </option>
+                                                        <option value="CV">
+                                                            CAPE VERDE (CV)
+                                                        </option>
+                                                        <option value="KY">
+                                                            CAYMAN ISLANDS (KY)
+                                                        </option>
+                                                        <option value="CF">
+                                                            CENTRAL AFRICAN REPUBLIC (CF)
+                                                        </option>
+                                                        <option value="TD">
+                                                            CHAD (TD)
+                                                        </option>
+                                                        <option value="CL">
+                                                            CHILE (CL)
+                                                        </option>
+                                                        <option value="CN">
+                                                            CHINA (CN)
+                                                        </option>
+                                                        <option value="CX">
+                                                            CHRISTMAS ISLAND (CX)
+                                                        </option>
+                                                        <option value="CC">
+                                                            COCOS (KEELING) ISLAND (CC)
+                                                        </option>
+                                                        <option value="CO">
+                                                            COLOMBIA (CO)
+                                                        </option>
+                                                        <option value="KM">
+                                                            COMOROS (KM)
+                                                        </option>
+                                                        <option value="CG">
+                                                            CONGO (BRAZZAVILLE) (CG)
+                                                        </option>
+                                                        <option value="CD">
+                                                            CONGO (KINSHASA) (CD)
+                                                        </option>
+                                                        <option value="CK">
+                                                            COOK ISLANDS (CK)
+                                                        </option>
+                                                        <option value="CR">
+                                                            COSTA RICA (CR)
+                                                        </option>
+                                                        <option value="HR">
+                                                            CROATIA (HR)
+                                                        </option>
+                                                        <option value="CU">
+                                                            CUBA (CU)
+                                                        </option>
+                                                        <option value="CW">
+                                                            CURACAO (CW)
+                                                        </option>
+                                                        <option value="CY">
+                                                            CYPRUS (CY)
+                                                        </option>
+                                                        <option value="CZ">
+                                                            CZECH REPUBLIC (CZ)
+                                                        </option>
+                                                        <option value="DK">
+                                                            DENMARK (DK)
+                                                        </option>
+                                                        <option value="DJ">
+                                                            DJIBOUTI (DJ)
+                                                        </option>
+                                                        <option value="DM">
+                                                            DOMINICA (DM)
+                                                        </option>
+                                                        <option value="DO">
+                                                            DOMINICAN REPUBLIC (DO)
+                                                        </option>
+                                                        <option value="TL">
+                                                            EAST TIMOR (TL)
+                                                        </option>
+                                                        <option value="EC">
+                                                            ECUADOR (EC)
+                                                        </option>
+                                                        <option value="EG">
+                                                            EGYPT (EG)
+                                                        </option>
+                                                        <option value="SV">
+                                                            EL SALVADOR (SV)
+                                                        </option>
+                                                        <option value="GQ">
+                                                            EQUATORIAL GUINEA (GQ)
+                                                        </option>
+                                                        <option value="ER">
+                                                            ERITREA (ER)
+                                                        </option>
+                                                        <option value="EE">
+                                                            ESTONIA (EE)
+                                                        </option>
+                                                        <option value="ET">
+                                                            ETHIOPIA (ET)
+                                                        </option>
+                                                        <option value="FK">
+                                                            FALKLAND ISLANDS (FK)
+                                                        </option>
+                                                        <option value="FO">
+                                                            FAROE ISLANDS (FO)
+                                                        </option>
+                                                        <option value="FM">
+                                                            FEDRATED STATES OF MICRONESIA (FM)
+                                                        </option>
+                                                        <option value="FJ">
+                                                            FIJI (FJ)
+                                                        </option>
+                                                        <option value="FI">
+                                                            FINLAND (FI)
+                                                        </option>
+                                                        <option value="FR">
+                                                            FRANCE (FR)
+                                                        </option>
+                                                        <option value="GF">
+                                                            FRENCH GUIANA (GF)
+                                                        </option>
+                                                        <option value="PF">
+                                                            FRENCH POLYNESIA (PF)
+                                                        </option>
+                                                        <option value="TF">
+                                                            FRENCH SOUTHERN AND ANTARCTIC LANDS (TF)
+                                                        </option>
+                                                        <option value="GA">
+                                                            GABON (GA)
+                                                        </option>
+                                                        <option value="GM">
+                                                            GAMBIA (GM)
+                                                        </option>
+                                                        <option value="GZ">
+                                                            GAZA STRIP ADMINISTERED BY ISRAEL (GZ)
+                                                        </option>
+                                                        <option value="GE">
+                                                            GEORGIA (GE)
+                                                        </option>
+                                                        <option value="DE">
+                                                            GERMANY (DE)
+                                                        </option>
+                                                        <option value="GH">
+                                                            GHANA (GH)
+                                                        </option>
+                                                        <option value="GI">
+                                                            GIBRALTAR (GI)
+                                                        </option>
+                                                        <option value="GR">
+                                                            GREECE (GR)
+                                                        </option>
+                                                        <option value="GL">
+                                                            GREENLAND (GL)
+                                                        </option>
+                                                        <option value="GD">
+                                                            GRENADA (GD)
+                                                        </option>
+                                                        <option value="GP">
+                                                            GUADELOUPE (GP)
+                                                        </option>
+                                                        <option value="GU">
+                                                            GUAM (GU)
+                                                        </option>
+                                                        <option value="GT">
+                                                            GUATEMALA (GT)
+                                                        </option>
+                                                        <option value="GN">
+                                                            GUINEA (GN)
+                                                        </option>
+                                                        <option value="GW">
+                                                            GUINEA-BISSAU (GW)
+                                                        </option>
+                                                        <option value="GY">
+                                                            GUYANA (GY)
+                                                        </option>
+                                                        <option value="HT">
+                                                            HAITI (HT)
+                                                        </option>
+                                                        <option value="HM">
+                                                            HEARD AND MCDONALD ISLANDS (HM)
+                                                        </option>
+                                                        <option value="HN">
+                                                            HONDURAS (HN)
+                                                        </option>
+                                                        <option value="HK">
+                                                            HONG KONG (HK)
+                                                        </option>
+                                                        <option value="HU">
+                                                            HUNGARY (HU)
+                                                        </option>
+                                                        <option value="IS">
+                                                            ICELAND (IS)
+                                                        </option>
+                                                        <option value="IN">
+                                                            INDIA (IN)
+                                                        </option>
+                                                        <option value="ID">
+                                                            INDONESIA (ID)
+                                                        </option>
+                                                        <option value="IR">
+                                                            IRAN (IR)
+                                                        </option>
+                                                        <option value="IQ">
+                                                            IRAQ (IQ)
+                                                        </option>
+                                                        <option value="IE">
+                                                            IRELAND (IE)
+                                                        </option>
+                                                        <option value="IL">
+                                                            ISRAEL (IL)
+                                                        </option>
+                                                        <option value="IT">
+                                                            ITALY (IT)
+                                                        </option>
+                                                        <option value="CI">
+                                                            IVORY COAST (CI)
+                                                        </option>
+                                                        <option value="JM">
+                                                            JAMAICA (JM)
+                                                        </option>
+                                                        <option value="JP">
+                                                            JAPAN (JP)
+                                                        </option>
+                                                        <option value="JO">
+                                                            JORDAN (JO)
+                                                        </option>
+                                                        <option value="KZ">
+                                                            KAZAKHSTAN (KZ)
+                                                        </option>
+                                                        <option value="KE">
+                                                            KENYA (KE)
+                                                        </option>
+                                                        <option value="KI">
+                                                            KIRIBATI (KI)
+                                                        </option>
+                                                        <option value="KR">
+                                                            KOREA, SOUTH (KR)
+                                                        </option>
+                                                        <option value="KW">
+                                                            KUWAIT (KW)
+                                                        </option>
+                                                        <option value="KG">
+                                                            KYRGYZSTAN (KG)
+                                                        </option>
+                                                        <option value="LA">
+                                                            LAOS (LA)
+                                                        </option>
+                                                        <option value="LV">
+                                                            LATVIA (LV)
+                                                        </option>
+                                                        <option value="LB">
+                                                            LEBANON (LB)
+                                                        </option>
+                                                        <option value="LS">
+                                                            LESOTHO (LS)
+                                                        </option>
+                                                        <option value="LR">
+                                                            LIBERIA (LR)
+                                                        </option>
+                                                        <option value="LY">
+                                                            LIBYA (LY)
+                                                        </option>
+                                                        <option value="LI">
+                                                            LIECHTENSTEIN (LI)
+                                                        </option>
+                                                        <option value="LT">
+                                                            LITHUANIA (LT)
+                                                        </option>
+                                                        <option value="LU">
+                                                            LUXEMBOURG (LU)
+                                                        </option>
+                                                        <option value="MO">
+                                                            MACAO (MO)
+                                                        </option>
+                                                        <option value="MK">
+                                                            MACEDONIA (SKOPJE) (MK)
+                                                        </option>
+                                                        <option value="MG">
+                                                            MADAGASCAR (MG)
+                                                        </option>
+                                                        <option value="MW">
+                                                            MALAWI (MW)
+                                                        </option>
+                                                        <option value="MY">
+                                                            MALAYSIA (MY)
+                                                        </option>
+                                                        <option value="MV">
+                                                            MALDIVES (MV)
+                                                        </option>
+                                                        <option value="ML">
+                                                            MALI (ML)
+                                                        </option>
+                                                        <option value="MT">
+                                                            MALTA (MT)
+                                                        </option>
+                                                        <option value="MH">
+                                                            MARSHALL ISLANDS (MH)
+                                                        </option>
+                                                        <option value="MQ">
+                                                            MARTINIQUE (MQ)
+                                                        </option>
+                                                        <option value="MR">
+                                                            MAURITANIA (MR)
+                                                        </option>
+                                                        <option value="MU">
+                                                            MAURITIUS (MU)
+                                                        </option>
+                                                        <option value="YT">
+                                                            MAYOTTE (YT)
+                                                        </option>
+                                                        <option value="MX">
+                                                            MEXICO (MX)
+                                                        </option>
+                                                        <option value="MD">
+                                                            MOLDOVA (MD)
+                                                        </option>
+                                                        <option value="MC">
+                                                            MONACO (MC)
+                                                        </option>
+                                                        <option value="MN">
+                                                            MONGOLIA (MN)
+                                                        </option>
+                                                        <option value="ME">
+                                                            MONTENEGRO (ME)
+                                                        </option>
+                                                        <option value="MS">
+                                                            MONTSERRAT (MS)
+                                                        </option>
+                                                        <option value="MA">
+                                                            MOROCCO (MA)
+                                                        </option>
+                                                        <option value="MZ">
+                                                            MOZAMBIQUE (MZ)
+                                                        </option>
+                                                        <option value="NA">
+                                                            NAMIBIA (NA)
+                                                        </option>
+                                                        <option value="NR">
+                                                            NAURU (NR)
+                                                        </option>
+                                                        <option value="NP">
+                                                            NEPAL (NP)
+                                                        </option>
+                                                        <option value="NL">
+                                                            NETHERLANDS (NL)
+                                                        </option>
+                                                        <option value="AN">
+                                                            NETHERLANDS ANTILLES (AN)
+                                                        </option>
+                                                        <option value="NC">
+                                                            NEW CALEDONIA (NC)
+                                                        </option>
+                                                        <option value="NZ">
+                                                            NEW ZEALAND (NZ)
+                                                        </option>
+                                                        <option value="NI">
+                                                            NICARAGUA (NI)
+                                                        </option>
+                                                        <option value="NE">
+                                                            NIGER (NE)
+                                                        </option>
+                                                        <option value="NG">
+                                                            NIGERIA (NG)
+                                                        </option>
+                                                        <option value="NU">
+                                                            NIUE (NU)
+                                                        </option>
+                                                        <option value="NF">
+                                                            NORFOLK ISLAND (NF)
+                                                        </option>
+                                                        <option value="KP">
+                                                            NORTH KOREA (KP)
+                                                        </option>
+                                                        <option value="MP">
+                                                            NORTHERN MARIANA ISLANDS (MP)
+                                                        </option>
+                                                        <option value="NO">
+                                                            NORWAY (NO)
+                                                        </option>
+                                                        <option value="OM">
+                                                            OMAN (OM)
+                                                        </option>
+                                                        <option value="PK">
+                                                            PAKISTAN (PK)
+                                                        </option>
+                                                        <option value="PW">
+                                                            PALAU (PW)
+                                                        </option>
+                                                        <option value="PA">
+                                                            PANAMA (PA)
+                                                        </option>
+                                                        <option value="PG">
+                                                            PAPUA NEW GUINEA (PG)
+                                                        </option>
+                                                        <option value="PY">
+                                                            PARAGUAY (PY)
+                                                        </option>
+                                                        <option value="PE">
+                                                            PERU (PE)
+                                                        </option>
+                                                        <option value="PH">
+                                                            PHILIPPINES (PH)
+                                                        </option>
+                                                        <option value="PN">
+                                                            PITCAIRN ISLAND (PN)
+                                                        </option>
+                                                        <option value="PL">
+                                                            POLAND (PL)
+                                                        </option>
+                                                        <option value="PT">
+                                                            PORTUGAL (PT)
+                                                        </option>
+                                                        <option value="PR">
+                                                            PUERTO RICO (PR)
+                                                        </option>
+                                                        <option value="QA">
+                                                            QATAR (QA)
+                                                        </option>
+                                                        <option value="YE">
+                                                            REPUBLIC OF YEMEN (YE)
+                                                        </option>
+                                                        <option value="RE">
+                                                            REUNION (RE)
+                                                        </option>
+                                                        <option value="RO">
+                                                            ROMANIA (RO)
+                                                        </option>
+                                                        <option value="RU">
+                                                            RUSSIA (RU)
+                                                        </option>
+                                                        <option value="RW">
+                                                            RWANDA (RW)
+                                                        </option>
+                                                        <option value="SM">
+                                                            SAN MARINO (SM)
+                                                        </option>
+                                                        <option value="ST">
+                                                            SAO TOME AND PRINCIPE (ST)
+                                                        </option>
+                                                        <option value="SA">
+                                                            SAUDI ARABIA (SA)
+                                                        </option>
+                                                        <option value="SN">
+                                                            SENEGAL (SN)
+                                                        </option>
+                                                        <option value="RS">
+                                                            SERBIA (RS)
+                                                        </option>
+                                                        <option value="SC">
+                                                            SEYCHELLES (SC)
+                                                        </option>
+                                                        <option value="SL">
+                                                            SIERRA LEONE (SL)
+                                                        </option>
+                                                        <option value="SG">
+                                                            SINGAPORE (SG)
+                                                        </option>
+                                                        <option value="SX">
+                                                            SINT MAARTEN (SX)
+                                                        </option>
+                                                        <option value="SK">
+                                                            SLOVAKIA (SK)
+                                                        </option>
+                                                        <option value="SI">
+                                                            SLOVENIA (SI)
+                                                        </option>
+                                                        <option value="SB">
+                                                            SOLOMON ISLANDS (SB)
+                                                        </option>
+                                                        <option value="SO">
+                                                            SOMALIA (SO)
+                                                        </option>
+                                                        <option value="ZA">
+                                                            SOUTH AFRICA (ZA)
+                                                        </option>
+                                                        <option value="SS">
+                                                            SOUTH SUDAN (SS)
+                                                        </option>
+                                                        <option value="ES">
+                                                            SPAIN (ES)
+                                                        </option>
+                                                        <option value="LK">
+                                                            SRI LANKA (LK)
+                                                        </option>
+                                                        <option value="BL">
+                                                            ST BARTHELEMY (BL)
+                                                        </option>
+                                                        <option value="SH">
+                                                            ST HELENA (SH)
+                                                        </option>
+                                                        <option value="KN">
+                                                            ST KITTS AND NEVIS (KN)
+                                                        </option>
+                                                        <option value="LC">
+                                                            ST LUCIA (LC)
+                                                        </option>
+                                                        <option value="PM">
+                                                            ST PIERRE AND MIQUELON (PM)
+                                                        </option>
+                                                        <option value="VC">
+                                                            ST VINCENT AND THE GRENADINES (VC)
+                                                        </option>
+                                                        <option value="SD">
+                                                            SUDAN (SD)
+                                                        </option>
+                                                        <option value="SR">
+                                                            SURINAME (SR)
+                                                        </option>
+                                                        <option value="SJ">
+                                                            SVALBARD, JAN MAYEN ISLAND (SJ)
+                                                        </option>
+                                                        <option value="SZ">
+                                                            SWAZILAND (SZ)
+                                                        </option>
+                                                        <option value="SE">
+                                                            SWEDEN (SE)
+                                                        </option>
+                                                        <option value="CH">
+                                                            SWITZERLAND (CH)
+                                                        </option>
+                                                        <option value="SY">
+                                                            SYRIA (SY)
+                                                        </option>
+                                                        <option value="TW">
+                                                            TAIWAN (TW)
+                                                        </option>
+                                                        <option value="TJ">
+                                                            TAJIKISTAN (TJ)
+                                                        </option>
+                                                        <option value="TZ">
+                                                            TANZANIA (TZ)
+                                                        </option>
+                                                        <option value="TH">
+                                                            THAILAND (TH)
+                                                        </option>
+                                                        <option value="TG">
+                                                            TOGO (TG)
+                                                        </option>
+                                                        <option value="TK">
+                                                            TOKELAU (TK)
+                                                        </option>
+                                                        <option value="TO">
+                                                            TONGA (TO)
+                                                        </option>
+                                                        <option value="TT">
+                                                            TRINIDAD AND TOBAGO (TT)
+                                                        </option>
+                                                        <option value="TN">
+                                                            TUNISIA (TN)
+                                                        </option>
+                                                        <option value="TR">
+                                                            TURKEY (TR)
+                                                        </option>
+                                                        <option value="TM">
+                                                            TURKMENISTAN (TM)
+                                                        </option>
+                                                        <option value="TC">
+                                                            TURKS AND CAICOS ISLANDS (TC)
+                                                        </option>
+                                                        <option value="TV">
+                                                            TUVALU (TV)
+                                                        </option>
+                                                        <option value="UG">
+                                                            UGANDA (UG)
+                                                        </option>
+                                                        <option value="UA">
+                                                            UKRAINE (UA)
+                                                        </option>
+                                                        <option value="AE">
+                                                            UNITED ARAB EMIRATES (AE)
+                                                        </option>
+                                                        <option value="GB">
+                                                            UNITED KINGDOM (GB)
+                                                        </option>
+                                                        <option value="US">
+                                                            UNITED STATES (US)
+                                                        </option>
+                                                        <option value="UY">
+                                                            URUGUAY (UY)
+                                                        </option>
+                                                        <option value="UM">
+                                                            US MINOR OUTLYING ISLANDS (UM)
+                                                        </option>
+                                                        <option value="UZ">
+                                                            UZBEKISTAN (UZ)
+                                                        </option>
+                                                        <option value="VU">
+                                                            VANUATU (VU)
+                                                        </option>
+                                                        <option value="VA">
+                                                            VATICAN CITY (VA)
+                                                        </option>
+                                                        <option value="VE">
+                                                            VENEZUELA (VE)
+                                                        </option>
+                                                        <option value="VN">
+                                                            VIETNAM (VN)
+                                                        </option>
+                                                        <option value="VI">
+                                                            VIRGIN ISLANDS OF THE UNITED STATES (VI)
+                                                        </option>
+                                                        <option value="WF">
+                                                            WALLIS AND FUTUNA (WF)
+                                                        </option>
+                                                        <option value="WE">
+                                                            WEST BANK ADMINISTERED BY ISRAEL (WE)
+                                                        </option>
+                                                        <option value="EH">
+                                                            WESTERN SAHARA (EH)
+                                                        </option>
+                                                        <option value="WS">
+                                                            WESTERN SAMOA (WS)
+                                                        </option>
+                                                        <option value="ZM">
+                                                            ZAMBIA (ZM)
+                                                        </option>
+                                                        <option value="ZW">
+                                                            ZIMBABWE (ZW)
+                                                        </option>
+                                                    </select>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Local Code / Tax ID
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="20" maxlength="20" id="localtaxcode" name="localtaxcode" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Following Sales
+                                                </th>
+                                                <th>
+                                                    <select name="fsales" id="fsales" size="1">
+                                                        <option value="" SELECTED>
+                                                            -- SELECT FROM LIST --
+                                                        </option>
+                                                        <option value="TJN002">
+                                                            AARON LI
+                                                        </option>
+                                                        <option value="NGB005">
+                                                            ADA RONG
+                                                        </option>
+                                                        <option value="BLW003">
+                                                            AGUSTINA ONG
+                                                        </option>
+                                                        <option value="PEN003">
+                                                            AILENE LEE
+                                                        </option>
+                                                        <option value="SHANS011">
+                                                            AKEN HU
+                                                        </option>
+                                                        <option value="NYC004">
+                                                            ALAN FAVICCHIO
+                                                        </option>
+                                                        <option value="NGBNS003">
+                                                            ALAN ZHANG
+                                                        </option>
+                                                        <option value="LAX047">
+                                                            ALEXANDRA YU
+                                                        </option>
+                                                        <option value="VNM008">
+                                                            ALICE ANH
+                                                        </option>
+                                                        <option value="TAONS009">
+                                                            ALINA WANG
+                                                        </option>
+                                                        <option value="XMNNS011">
+                                                            ALLY WEN
+                                                        </option>
+                                                        <option value="TAONS003">
+                                                            AMY WANG
+                                                        </option>
+                                                        <option value="LAX048">
+                                                            ANA ROJAS
+                                                        </option>
+                                                        <option value="SHANS013">
+                                                            ANDERSON YIN
+                                                        </option>
+                                                        <option value="LAX001">
+                                                            ANDREW TAN
+                                                        </option>
+                                                        <option value="NYC008">
+                                                            ANDY TRUONG
+                                                        </option>
+                                                        <option value="LAX040">
+                                                            ANDY WANG
+                                                        </option>
+                                                        <option value="GZONS003">
+                                                            ANNA LEE
+                                                        </option>
+                                                        <option value="TJN005">
+                                                            ANNA SHANG
+                                                        </option>
+                                                        <option value="VNM006">
+                                                            ANNA THU
+                                                        </option>
+                                                        <option value="XMNNS009">
+                                                            ANNANIE YAN
+                                                        </option>
+                                                        <option value="SFO009">
+                                                            ANNIE FONG
+                                                        </option>
+                                                        <option value="SHA034">
+                                                            ARYA YANG
+                                                        </option>
+                                                        <option value="SHANS010">
+                                                            ASHLEY LIU
+                                                        </option>
+                                                        <option value="NGBNS004">
+                                                            ATHENA CHEN
+                                                        </option>
+                                                        <option value="LAX049">
+                                                            AUSTIN MEJIA
+                                                        </option>
+                                                        <option value="SRG004">
+                                                            BAYUDEA EARVINT
+                                                        </option>
+                                                        <option value="LAX041">
+                                                            BERYL BI
+                                                        </option>
+                                                        <option value="SZXNS002">
+                                                            BESSY LUO
+                                                        </option>
+                                                        <option value="NYC003">
+                                                            BILLIAM LUI
+                                                        </option>
+                                                        <option value="SHA006">
+                                                            BINGO JIANG
+                                                        </option>
+                                                        <option value="LAX012">
+                                                            BONNY CHEN
+                                                        </option>
+                                                        <option value="SHA022">
+                                                            BRETT SHI
+                                                        </option>
+                                                        <option value="XMN010">
+                                                            CASSELL YU
+                                                        </option>
+                                                        <option value="XMNNS008">
+                                                            CATHY LI
+                                                        </option>
+                                                        <option value="SHA039">
+                                                            CHASE LU
+                                                        </option>
+                                                        <option value="GZONS001">
+                                                            CHERISH ZHENG
+                                                        </option>
+                                                        <option value="TJN003">
+                                                            CHERRY ZHANG
+                                                        </option>
+                                                        <option value="TPE001">
+                                                            CHRIS CHUNG
+                                                        </option>
+                                                        <option value="JKT003">
+                                                            CHRISTOPHER SUJADI
+                                                        </option>
+                                                        <option value="GZO006">
+                                                            CONNOR HUANG
+                                                        </option>
+                                                        <option value="NGBNS002">
+                                                            CORA ZHOU
+                                                        </option>
+                                                        <option value="LAX053">
+                                                            CRUZE MA
+                                                        </option>
+                                                        <option value="SHANS008">
+                                                            DAHLIA OUYANG
+                                                        </option>
+                                                        <option value="LAX006">
+                                                            DAISY SI
+                                                        </option>
+                                                        <option value="TAO007">
+                                                            DAMON LIU
+                                                        </option>
+                                                        <option value="SHA002">
+                                                            DAVID DING
+                                                        </option>
+                                                        <option value="SHA011">
+                                                            DEAL GONG
+                                                        </option>
+                                                        <option value="XMNNS013">
+                                                            DEMI ZHOU
+                                                        </option>
+                                                        <option value="NYC007">
+                                                            DENNIS TRIEU
+                                                        </option>
+                                                        <option value="SFO005">
+                                                            DERRICK CHUE
+                                                        </option>
+                                                        <option value="ORD005">
+                                                            DEVIN CHOU
+                                                        </option>
+                                                        <option value="THI003">
+                                                            DUANGRAT KETRATANABORVORN
+                                                        </option>
+                                                        <option value="NGB011">
+                                                            EASON ZHU
+                                                        </option>
+                                                        <option value="SZX002">
+                                                            EASY CHEN
+                                                        </option>
+                                                        <option value="SHA007">
+                                                            EDEN ZHANG
+                                                        </option>
+                                                        <option value="XMN020">
+                                                            ELSIE ZHENG
+                                                        </option>
+                                                        <option value="SHA004">
+                                                            ELVA ZHANG
+                                                        </option>
+                                                        <option value="DAI008">
+                                                            EVAN ZHANG
+                                                        </option>
+                                                        <option value="TAONS006">
+                                                            FAIRY WU
+                                                        </option>
+                                                        <option value="SZX003">
+                                                            FAYE LIANG
+                                                        </option>
+                                                        <option value="HKG001">
+                                                            FRANCO YIP
+                                                        </option>
+                                                        <option value="SHANS003">
+                                                            FRANK CHEN
+                                                        </option>
+                                                        <option value="SHA018">
+                                                            GEORGE GUI
+                                                        </option>
+                                                        <option value="NGBNS005">
+                                                            GRETA HUANG
+                                                        </option>
+                                                        <option value="JKT005">
+                                                            HANSSEN
+                                                        </option>
+                                                        <option value="XMN003">
+                                                            HARDEN CHEN
+                                                        </option>
+                                                        <option value="TAONS005">
+                                                            HEAVEN ZHANG
+                                                        </option>
+                                                        <option value="NYC001">
+                                                            HOLLY LOHREN
+                                                        </option>
+                                                        <option value="HOUSE">
+                                                            HOUSE ACCOUNT
+                                                        </option>
+                                                        <option value="AGT000">
+                                                            HOUSE AGENT
+                                                        </option>
+                                                        <option value="AGT999">
+                                                            HOUSE AGENT
+                                                        </option>
+                                                        <option value="BAL000">
+                                                            HOUSE BAL
+                                                        </option>
+                                                        <option value="BLW000">
+                                                            HOUSE BLW
+                                                        </option>
+                                                        <option value="DAI000">
+                                                            HOUSE DAI
+                                                        </option>
+                                                        <option value="JKT000">
+                                                            HOUSE JKT
+                                                        </option>
+                                                        <option value="LAX000">
+                                                            HOUSE LAX
+                                                        </option>
+                                                        <option value="NGB000">
+                                                            HOUSE NGB
+                                                        </option>
+                                                        <option value="NNJ000">
+                                                            HOUSE NNJ
+                                                        </option>
+                                                        <option value="NYC000">
+                                                            HOUSE NYC
+                                                        </option>
+                                                        <option value="ORD000">
+                                                            HOUSE ORD
+                                                        </option>
+                                                        <option value="PEN000">
+                                                            HOUSE PEN
+                                                        </option>
+                                                        <option value="SFO000">
+                                                            HOUSE SFO
+                                                        </option>
+                                                        <option value="SHA000">
+                                                            HOUSE SHA
+                                                        </option>
+                                                        <option value="SRG000">
+                                                            HOUSE SMG
+                                                        </option>
+                                                        <option value="SUR000">
+                                                            HOUSE SUR
+                                                        </option>
+                                                        <option value="SZX000">
+                                                            HOUSE SZX
+                                                        </option>
+                                                        <option value="TAO000">
+                                                            HOUSE TAO
+                                                        </option>
+                                                        <option value="TJN000">
+                                                            HOUSE TJN
+                                                        </option>
+                                                        <option value="TWN000">
+                                                            HOUSE TWN
+                                                        </option>
+                                                        <option value="VNM000">
+                                                            HOUSE VNM
+                                                        </option>
+                                                        <option value="XMN000">
+                                                            HOUSE XMN
+                                                        </option>
+                                                        <option value="SFO001">
+                                                            HOWARD LIANG
+                                                        </option>
+                                                        <option value="TAONS001">
+                                                            ICE LI
+                                                        </option>
+                                                        <option value="TAONS008">
+                                                            ICE QI
+                                                        </option>
+                                                        <option value="XMN001">
+                                                            IVAN LI
+                                                        </option>
+                                                        <option value="SFO004">
+                                                            JACK CHEN
+                                                        </option>
+                                                        <option value="SHA024">
+                                                            JACQUELINE JIA
+                                                        </option>
+                                                        <option value="NYC010">
+                                                            JANICE PEARSON
+                                                        </option>
+                                                        <option value="TAO001">
+                                                            JASON CHEN
+                                                        </option>
+                                                        <option value="SHA038">
+                                                            JASON GUO
+                                                        </option>
+                                                        <option value="LAX045">
+                                                            JASON HUANG
+                                                        </option>
+                                                        <option value="MAL001">
+                                                            JASON LOO
+                                                        </option>
+                                                        <option value="SHA003">
+                                                            JASON WANG
+                                                        </option>
+                                                        <option value="SHA032">
+                                                            JEFFREY ZHU
+                                                        </option>
+                                                        <option value="XMNNS001">
+                                                            JENNEY YU
+                                                        </option>
+                                                        <option value="SHANS009">
+                                                            JENNIE JIANG
+                                                        </option>
+                                                        <option value="NGB001">
+                                                            JENNIFER ZHANG
+                                                        </option>
+                                                        <option value="TAONS004">
+                                                            JENNIFER ZHAO
+                                                        </option>
+                                                        <option value="SHA019">
+                                                            JESSIE QIAN
+                                                        </option>
+                                                        <option value="ELI001">
+                                                            JOAN DADO
+                                                        </option>
+                                                        <option value="NKG001">
+                                                            JOHNNY GU
+                                                        </option>
+                                                        <option value="ORD002">
+                                                            JONATHAN TOLENTINO
+                                                        </option>
+                                                        <option value="VNM004">
+                                                            JOOLY NGA
+                                                        </option>
+                                                        <option value="SZXNS003">
+                                                            JOYE DAI
+                                                        </option>
+                                                        <option value="DAI010">
+                                                            JULIA LIU
+                                                        </option>
+                                                        <option value="VNM005">
+                                                            JULIA THOAN
+                                                        </option>
+                                                        <option value="THI002">
+                                                            KANOKPORN DUANGKOOL
+                                                        </option>
+                                                        <option value="DAI012">
+                                                            KATHY ZHU
+                                                        </option>
+                                                        <option value="SFO008">
+                                                            KATTY SANSO
+                                                        </option>
+                                                        <option value="ORD004">
+                                                            KELLY MYERS
+                                                        </option>
+                                                        <option value="DAINS001">
+                                                            KELLY WANG
+                                                        </option>
+                                                        <option value="ORD007">
+                                                            KENNETH CRUZ
+                                                        </option>
+                                                        <option value="KY0000">
+                                                            KERRY AGENT
+                                                        </option>
+                                                        <option value="SHA016">
+                                                            KICO TAO
+                                                        </option>
+                                                        <option value="GZONS002">
+                                                            LAUREN CHEN
+                                                        </option>
+                                                        <option value="DAI004">
+                                                            LEO MA
+                                                        </option>
+                                                        <option value="SHA014">
+                                                            LIAM LI
+                                                        </option>
+                                                        <option value="TAONS002">
+                                                            LIDIA YANG
+                                                        </option>
+                                                        <option value="SRG005">
+                                                            LILIS YIP
+                                                        </option>
+                                                        <option value="VNM009">
+                                                            LILY BICH
+                                                        </option>
+                                                        <option value="XMN008">
+                                                            LILY LIU
+                                                        </option>
+                                                        <option value="DAI013">
+                                                            LILY SHANG
+                                                        </option>
+                                                        <option value="BLW004">
+                                                            LINDA NOVITA
+                                                        </option>
+                                                        <option value="DAI007">
+                                                            LIU XIN
+                                                        </option>
+                                                        <option value="TAO021">
+                                                            LOUIS ZHANG
+                                                        </option>
+                                                        <option value="TJNNS001">
+                                                            MAGGIE ZHANG
+                                                        </option>
+                                                        <option value="SHA005">
+                                                            MANSON JIANG
+                                                        </option>
+                                                        <option value="SFO013">
+                                                            MELANIE TOWNSEND
+                                                        </option>
+                                                        <option value="XMN011">
+                                                            MICHAEL ZHAO
+                                                        </option>
+                                                        <option value="SZX006">
+                                                            MICHELLE CAI
+                                                        </option>
+                                                        <option value="SHA028">
+                                                            MIGA QIAN
+                                                        </option>
+                                                        <option value="NGB006">
+                                                            MIKE ZHANG
+                                                        </option>
+                                                        <option value="XMNNS004">
+                                                            MILLY ZHOU
+                                                        </option>
+                                                        <option value="SRG002">
+                                                            MONA NIKA
+                                                        </option>
+                                                        <option value="XMN019">
+                                                            NAKI DENG
+                                                        </option>
+                                                        <option value="TJNNS002">
+                                                            NATALIE ZHANG
+                                                        </option>
+                                                        <option value="LAX055">
+                                                            NATHALIE MORENO
+                                                        </option>
+                                                        <option value="BAL001">
+                                                            NI MADE YULIANTI
+                                                        </option>
+                                                        <option value="NGB003">
+                                                            NICK HUANG
+                                                        </option>
+                                                        <option value="NYC012">
+                                                            NICK KAZAKIS
+                                                        </option>
+                                                        <option value="SUR001">
+                                                            NICKY SUJADI
+                                                        </option>
+                                                        <option value="XMNNS002">
+                                                            NINA SU
+                                                        </option>
+                                                        <option value="SHA001">
+                                                            NOLAND WANG
+                                                        </option>
+                                                        <option value="XMNNS012">
+                                                            NOVIA DAI
+                                                        </option>
+                                                        <option value="TAONS007">
+                                                            OLIVIA LIU
+                                                        </option>
+                                                        <option value="SHANS004">
+                                                            OPHELIA WU
+                                                        </option>
+                                                        <option value="GZO001">
+                                                            PAUL HE
+                                                        </option>
+                                                        <option value="SFO003">
+                                                            PHILLIP ZHEN
+                                                        </option>
+                                                        <option value="THI001">
+                                                            PONGSATHORN CHULASAPPAYAKUL
+                                                        </option>
+                                                        <option value="XMN007">
+                                                            PRINCE LIN
+                                                        </option>
+                                                        <option value="SHA023">
+                                                            RACHEL ZHU
+                                                        </option>
+                                                        <option value="LAX046">
+                                                            RANDY LU
+                                                        </option>
+                                                        <option value="SHA035">
+                                                            RAY CHEN
+                                                        </option>
+                                                        <option value="DAI006">
+                                                            REBECCA WANG
+                                                        </option>
+                                                        <option value="JKT002">
+                                                            RETTY ROSE
+                                                        </option>
+                                                        <option value="SZXNS001">
+                                                            RHODA SUN
+                                                        </option>
+                                                        <option value="THI011">
+                                                            RILRANEE NOREE
+                                                        </option>
+                                                        <option value="BAL002">
+                                                            ROBERT HENDRA
+                                                        </option>
+                                                        <option value="SHANS006">
+                                                            ROCK ZHANG
+                                                        </option>
+                                                        <option value="SHA036">
+                                                            ROSE FU
+                                                        </option>
+                                                        <option value="VNM002">
+                                                            ROSY DAO
+                                                        </option>
+                                                        <option value="LAX039">
+                                                            ROY CHANG
+                                                        </option>
+                                                        <option value="ORD001">
+                                                            RYAN JIRMASEK
+                                                        </option>
+                                                        <option value="NGB007">
+                                                            RYAN ZHANG
+                                                        </option>
+                                                        <option value="LAX054">
+                                                            SAMMI YU
+                                                        </option>
+                                                        <option value="SFO012">
+                                                            SAMUEL CHANG
+                                                        </option>
+                                                        <option value="VNM007">
+                                                            SARA YEN
+                                                        </option>
+                                                        <option value="LAX020">
+                                                            SARAH LAI
+                                                        </option>
+                                                        <option value="SHANS012">
+                                                            SCALING LING
+                                                        </option>
+                                                        <option value="NYC013">
+                                                            SCOTT CHAMBERS
+                                                        </option>
+                                                        <option value="LAX004">
+                                                            SEAN CHEN
+                                                        </option>
+                                                        <option value="PEN002">
+                                                            SHARON CHEW
+                                                        </option>
+                                                        <option value="DAI001">
+                                                            SHAWN GAO
+                                                        </option>
+                                                        <option value="NGBNS001">
+                                                            SHELLY SHI
+                                                        </option>
+                                                        <option value="XMNNS005">
+                                                            SUKIE YE
+                                                        </option>
+                                                        <option value="XMN018">
+                                                            SUSAM TAN
+                                                        </option>
+                                                        <option value="XMNNS003">
+                                                            SUSAN FU
+                                                        </option>
+                                                        <option value="BAL003">
+                                                            SUSI FERIANTI
+                                                        </option>
+                                                        <option value="SHANS001">
+                                                            SUSIE HE
+                                                        </option>
+                                                        <option value="JKT006">
+                                                            SUSY
+                                                        </option>
+                                                        <option value="THI004">
+                                                            TANAT MANKUNNATAM
+                                                        </option>
+                                                        <option value="SHANS002">
+                                                            TANK ZHANG
+                                                        </option>
+                                                        <option value="SFO015">
+                                                            THERESA REED
+                                                        </option>
+                                                        <option value="NYC014">
+                                                            TIFFANY MOREAU
+                                                        </option>
+                                                        <option value="SHANS007">
+                                                            TIM LI
+                                                        </option>
+                                                        <option value="LAX042">
+                                                            TINA LEE
+                                                        </option>
+                                                        <option value="DAI015">
+                                                            TINA LI
+                                                        </option>
+                                                        <option value="SFO014">
+                                                            TOM HSU
+                                                        </option>
+                                                        <option value="XMN004">
+                                                            TONY DAI
+                                                        </option>
+                                                        <option value="SZX007">
+                                                            TUFFY YAN
+                                                        </option>
+                                                        <option value="XMNNS007">
+                                                            TULLY LIN
+                                                        </option>
+                                                        <option value="XMNNS010">
+                                                            VERNOICA WEI
+                                                        </option>
+                                                        <option value="SFO002">
+                                                            VERONICA LUK
+                                                        </option>
+                                                        <option value="ORD006">
+                                                            VICKI HIEMSTRA
+                                                        </option>
+                                                        <option value="SHA010">
+                                                            VIVIAN ZHOU
+                                                        </option>
+                                                        <option value="TAO006">
+                                                            WADE YU
+                                                        </option>
+                                                        <option value="LAX037">
+                                                            WILLIAM  WANG
+                                                        </option>
+                                                        <option value="SHA030">
+                                                            WILLIAM GU
+                                                        </option>
+                                                        <option value="SZX004">
+                                                            WILLIAM TANG
+                                                        </option>
+                                                        <option value="PEN008">
+                                                            WINNIE LEE
+                                                        </option>
+                                                        <option value="PEN001">
+                                                            YL CHENG
+                                                        </option>
+                                                        <option value="PEN006">
+                                                            YUKI TAN
+                                                        </option>
+                                                        <option value="GZO002">
+                                                            YURI YU
+                                                        </option>
+                                                        <option value="SHANS005">
+                                                            YVONNE LI
+                                                        </option>
+                                                        <option value="XMN021">
+                                                            ZOEY ZHONG
+                                                        </option>
+                                                    </select>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Credit Term
+                                                </th>
+                                                <th>
+                                                    <select name="arterms" id="arterms" size="1">
+                                                        <option value="" SELECTED>
+                                                            -- SELECT FROM LIST --
+                                                        </option>
+                                                        <option value="CREDIT - 03">
+                                                            CREDIT - 03
+                                                        </option>
+                                                        <option value="CREDIT - 07">
+                                                            CREDIT - 07
+                                                        </option>
+                                                        <option value="CREDIT - 14">
+                                                            CREDIT - 14
+                                                        </option>
+                                                        <option value="CREDIT - 21">
+                                                            CREDIT - 21
+                                                        </option>
+                                                        <option value="CREDIT - 30">
+                                                            CREDIT - 30
+                                                        </option>
+                                                        <option value="IN COLLECT">
+                                                            IN COLLECTION
+                                                        </option>
+                                                        <option value="PREPAY">
+                                                            PREPAY
+                                                        </option>
+                                                    </select>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Credit Limit
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="7" maxlength="7" id="locallimit" name="locallimit" value="0">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+                                                    <b>
+                                                        Accounting Setup
+                                                    </b>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    A/R Account Code
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="15" maxlength="15" id="aracctcode" name="aracctcode" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    A/R Bank Details
+                                                </th>
+                                                <th>
+<textarea id="arbank" name="arbank" rows="4" cols="99">
+</textarea>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    A/P Account Code
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="15" maxlength="15" id="apacctcode" name="apacctcode" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    A/P Bank Details
+                                                </th>
+                                                <th>
+<textarea id="apbank" name="apbank" rows="4" cols="99">
+</textarea>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    A/P Terms
+                                                </th>
+                                                <th>
+                                                    <select name="apterms" id="apterms" size="1">
+                                                        <option value="" SELECTED>
+                                                            -- SELECT FROM LIST --
+                                                        </option>
+                                                        <option value="CREDIT - 03">
+                                                            CREDIT - 03
+                                                        </option>
+                                                        <option value="CREDIT - 07">
+                                                            CREDIT - 07
+                                                        </option>
+                                                        <option value="CREDIT - 14">
+                                                            CREDIT - 14
+                                                        </option>
+                                                        <option value="CREDIT - 21">
+                                                            CREDIT - 21
+                                                        </option>
+                                                        <option value="CREDIT - 30">
+                                                            CREDIT - 30
+                                                        </option>
+                                                        <option value="IN COLLECT">
+                                                            IN COLLECTION
+                                                        </option>
+                                                        <option value="PREPAY">
+                                                            PREPAY
+                                                        </option>
+                                                    </select>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+                                                    <hr />
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Created By
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="30" maxlength="30" id="adduser" name="adduser" value="">
+                                                    &nbsp; ON &nbsp;
+                                                    <input type="text" size="20" maxlength="20" id="adddate" name="adddate" value="">
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:left;">
+                                                    Modified By
+                                                </th>
+                                                <th style="text-align:left;">
+                                                    <input type="text" size="30" maxlength="30" id="lastuser" name="lastuser" value="">
+                                                    &nbsp; ON &nbsp;
+                                                    <input type="text" size="20" maxlength="20" id="lastdate" name="lastdate" value="">
+                                                </th>
+                                            </tr>
+
+
+
+                                        </table>
+                                        <input type=hidden name="USERID" value="F5025EEE-2DE9-4BC7-B62D-161BE10601E6">
+                                        <input type=hidden name="USERDET" value="support@cdmsoft.com">
+                                        <input type=hidden name="RID" value="10035">
+                                        <input type=hidden name="MID" value="8G0A-8B0-1B5Y">
+                                        <input type=hidden name="STATION1" value="TOSGH">
+                                        <input type=hidden name="RECSTATUS" value="ON">
+                                        <input type="button" name="B1" value=" C A N C E L " style="border:1px solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#ffffff;background-color:#cc5500;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;">
+                                        &nbsp;<input type="button" name="A1" value=" S A V E " style="border:1px solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#ffffff;background-color:#cc5500;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="">
+        <div id="footer_inner">
+            <dl class="copy">
+                <dt>
+                    <strong>
+                        CDM Web Freight&trade; 2025
+                    </strong>
+                    - <em>
+                        May 27, 2025 &nbsp;&bull;&nbsp; 0849
+                    </em>
+                </dt>
+                <dd>
+                    &copy; 1988-2025 CDM Software Solutions, Inc.&nbsp;&bull;&nbsp;All rights reserved&nbsp;&bull;&nbsp;<a href=mailto:support@cdmsoft.com>
+                        <b>
+                            E-Mail Support
+                        </b>
+                    </a>
+                    &nbsp;&bull;&nbsp;(281) 298-8880
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div id="contact-dialog" title="Add New Contact">
+        <div id="divInDialog">
+        </div>
+    </div>
+    <div id="ctnrlist-dialog" title="CONTAINER LIST">
+        <div id="divInDialog">
+        </div>
+    </div>
+    <div id="guide-dialog" title="CDM Web Freight  Dashboard Help">
+        <div id="dialog-content">
+        </div>
+    </div>
+    <div id="camera-dialog">
+        <div id="divInDialog">
+        </div>
+    </div>
+    <div id="signature-dialog" title="Signature Capture">
+        <div id="divInDialog">
+        </div>
+    </div>
+    <div id="qr-reader-container">
+        <div id="qr-reader">
+        </div>
+        <button id="qr-reader-stop" onclick="onStopQRReader();">
+            stop
+        </button>
+    </div>
+    <a href="javascript:void(0);" class="icon-scrolltop" id="gotop">
+        <img src="images/icon-slide-up.png" />
+    </a>
+    <script src="js/dragndrop.js?v=20250527065003">
+    </script>
+    <script src="js/dataentry.js?v=20250527065003">
+    </script>
+    <script src="js/qbpw.js?v=20250527065003">
+    </script>
+    <script src="js/calc.js?v=20250527065003">
+    </script>
+    <script src="js/calc2.js?v=20250527065003">
+    </script>
+    <script src="js/contprof.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Freight Forwarding Operations, Shipment Tracking Powered by CDM Software Solutions, Inc.</title>
+
+    <link REL="SHORTCUT ICON" HREF="https://webfreight.cdmsoft.com/webfreight/images/cdm.ico">
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/jquery.token-input.css" />
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/dataentry.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/jquery.tokeninput.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="head">
+
+            <div id="logo_user_details">
+
+                <h1 id="logo"><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
+
+                <div id="user_details">
+
+                    <ul id="user_details_menu">
+
+                        <li>Welcome <strong>PRESTON ALE</strong></li>
+
+                        <li class="user_details_menu_options">
+
+                            <ul id="user_access">
+
+                                <li class="first"><a href="#">My account</a></li>
+
+                                <li class="user_access_line">|</li>
+
+                                <li class="last"><a href="login.html">Log out</a></li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="content">
+
+            <div id="page">
+
+                <div class="inner">
+
+                    <div class="section table_section">
+
+                        <div class="title_wrapper">
+
+                            <h2><b>GLOBAL EXPRESS</b> - HKG</h2>
+
+                        </div>
+
+                        <div class="section_content">
+
+                            <div class="section_content_padding">
+
+                                <div class="dashboard_menu_wrapper">
+
+                                    <ul class="dashboard_menu">
+
+                                        <li><a class="back" href="#"><span>Back</span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="section table_section">
+
+                        <div class="title_wrapper">
+
+                            <h2>Journal Entry</h2>
+
+                        </div>
+
+                        <div class="section_content">
+
+                            <form action="#" id="journalentry-form" name="journalentry-form">
+
+                                <input type=hidden id="sqid" name="sqid" value="webfrtdemo">
+                                <input type=hidden id="userid" name="userid" value="testuser">
+
+
+                                <div class="table_wrapper">
+
+                                    <div class="table_wrapper_inner" style="padding:0;">
+
+                                        <table>
+                                            <tr>
+                                                <th>Journal Entry Number</th>
+                                                <th><input type="text" size="15" maxlength="15" id="jeno" name="jeno" value=""></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Journal Entry Date</th>
+                                                <th><input type="text" size="10" id="jedate" name="jedate" value=""></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Journal Entry Reference</th>
+                                                <th><input type="text" size="30" maxlength="30" id="jeref" name="jeref" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Division</th>
+                                                <th><select id="division" name="division"><option value="TTS">TTS WORLDWIDE</option><option value="OLU" SELECTED>OL USA</option></select></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Station</th>
+                                                <th><select id="station" name="station"><option value="HOU">HOUSTON</option><option value="LAX" SELECTED>LOS ANGELES</option></select></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Currency</th>
+                                                <th><select id="currency" name="currency"><option value="USD" SELECTED>USD</option><option value="HKD">HKD</option></select></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Exchange Rate</th>
+                                                <th><input type="text" size="12" maxlength="12" id="exrate" name="exrate" value=""></th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan=4>
+                                                    <table id="journalentry-table">
+                                                        <tr>
+                                                            <th>GL Account</th>
+                                                            <th>Account Name</th>
+                                                            <th style="text-align:right;">Credit Amount</th>
+                                                            <th style="text-align:right;">Debit Amount</th>
+                                                            <th style="text-align:right;">Action</th>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th style="display: flex; padding: 8px;"><img id="entry-add-btn" src="images/plus.gif" height="50" width="50" alt=""></th>
+                                                            <th colspan=4><p id="form-error-message" style="color: red;"></p></th>
+                                                        </tr>
+
+
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th style="text-align:right;"><b>TOTALS</b></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="totalcr" name="totalcr" value="" style="text-align:right;" READONLY></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="totaldb" name="totaldb" value="" style="text-align:right;" READONLY></th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+
+                                        </table>
+
+                                        <input name="A1" id="A1" value=" S A V E " style="border:1 solid #CDCDCD; font-family: tahoma,Verdana; width: 116; height: 58; position: relative; color:#111111; padding-left:4px; padding-right:4px; padding-top:4; padding-bottom:4; background-color:#DCDCDC">
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer" style="">
+
+        <div id="footer_inner">
+
+            <dl class="copy">
+
+                <dt><strong>CDM Web Freight 2024&trade;</strong> <em>Build 20240403-1004</em></dt>
+
+                <dd>&copy; 1988-2024 CDM Software Solutions, Inc. &bull; All Rights Reserved &bull; (281) 298-8880</dd>
+
+            </dl>
+
+        </div>
+
+    </div>
+
+
+    <a href="javascript:void(0);" class="icon-scrolltop" id="gotop">
+        <img src="images/icon-slide-up.png" />
+    </a>
+    <script src="js/journalentry.js"></script>
+
+</body>
+
+</html>
+

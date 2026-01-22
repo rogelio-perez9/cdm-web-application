@@ -1,0 +1,236 @@
+﻿ul.token-input-list {
+	height: 30px !important;
+	width: 350px;
+}
+
+li.token-input-token {
+	margin: 0;
+	padding: 0 5px;
+}
+
+	li.token-input-token p,
+	li.token-input-token span {
+		line-height: 30px;
+	}
+
+.quoteno-wrapper ul.token-input-list {
+	width: 100%;
+}
+
+.new-contact-dialog-opener {
+	border: 1px solid #4863a0;
+	font-family: tahoma,Verdana;
+	width: 116px;
+	position: relative;
+	color: #fff;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: #4863a0;
+}
+
+.contact-dialog.ui-widget.ui-widget-content {
+	border: 2px solid #2B60DE;
+	padding: 0;
+	margin-top: 50px;
+}
+
+.contact-dialog.ui-widget .ui-dialog-titlebar {
+	background: #2B60DE;
+}
+
+	.contact-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-title {
+		color: white;
+	}
+
+.contact-dialog.ui-widget .ui-dialog-content {
+	padding: 0;
+	background: #E7F3F8;
+}
+
+.contact-dialog .buttons-container {
+	padding: 10px 20px;
+}
+
+.icon-scrolltop {
+	border-radius: 50%;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: fixed;
+	right: 50px;
+	bottom: -100px;
+	width: 40px;
+	height: 40px;
+	z-index: 999;
+	transition: all ease-in-out .3s;
+}
+
+	.icon-scrolltop img {
+		max-width: 100%;
+	}
+
+	.icon-scrolltop.gotop-show {
+		bottom: 40px;
+	}
+
+.validate-message {
+	display: none;
+}
+
+	.validate-message.error {
+		display: block;
+		color: #dc3545;
+		line-height: 1.4;
+	}
+
+#qr-reader-container {
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	position: fixed !important;
+	top: 0;
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+}
+
+#qr-reader {
+	min-width: 100%;
+}
+
+#qr-reader-stop {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+#label-preview > div:not(:first-child) {
+	display: none;
+}
+
+.action-button {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+
+	.action-button + .action-button {
+		margin-left: 12px;
+	}
+
+.details-dialog-table td:nth-child(odd) {
+	background: rgb(231, 243, 248);
+	font-weight: bold;
+}
+
+.details-dialog-table input:read-only {
+	border: none;
+}
+
+.container-table-th {
+	text-align: center !important;
+	font-size: 10px !important;
+	background: #ffff33 !important;
+}
+
+.container-table-td {
+	text-align: center !important;
+	font-size: 10px !important;
+	background: #ffff33 !important;
+}
+
+.container-table-btn {
+	border: 1 solid #CDCDCD;
+	font-family: tahoma,Verdana;
+	font-size: 14px;
+	font-weight: bolder;
+	height: 29px;
+	position: relative;
+	color: #ffffff;
+	background-color: #1974d2;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.container-bulk-table-th {
+	text-align: left !important;
+	font-size: 18px !important;
+	background: #43bfc7 !important;
+}
+
+.container-bulk-table-td {
+	text-align: center !important;
+	font-size: 10px !important;
+	background: #43bfc7 !important;
+}
+
+.expand-div {
+	max-width: calc(100vw - 50px);
+	overflow: auto;
+}
+
+.toast-center-center {
+	top: 30%;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.custom-select {
+	position: relative;
+	/*font-family: Arial;*/
+}
+
+	.custom-select select {
+		display: none;
+	}
+
+.select-selected {
+	background-color: gray;
+}
+	.select-selected:after {
+		position: absolute;
+		content: "";
+		top: 14px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border: 6px solid transparent;
+		border-color: #fff transparent transparent transparent;
+	}
+	.select-selected.select-arrow-active:after {
+		border-color: transparent transparent #fff transparent;
+		top: 7px;
+	}
+
+.select-items div, .select-selected {
+	color: #ffffff;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	user-select: none;
+}
+
+.select-items {
+	position: absolute;
+	background-color: gray;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+}

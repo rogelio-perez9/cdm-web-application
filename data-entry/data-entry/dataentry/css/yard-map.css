@@ -1,0 +1,70 @@
+﻿.yard-maps-map {
+    position: relative;
+}
+.yard-maps-map img {
+    width: 503px;
+    height: 469px;
+}
+
+.yard-map-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    border: 2px solid yellow;
+    text-align: center;
+    cursor: pointer;
+}
+
+.yard-map-btn:hover {
+    background: #ADD8E6;
+}
+
+.yard-map-btn.is-matched {
+    background: #FDD017;
+    background-image: url(../images/rfid.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 100%;
+}
+
+.yard-map-1 {
+    width: 50px;
+    height: 25px;
+    bottom: 300px;
+    left: 80px;
+    transform: rotate(-45deg);
+}
+
+.yard-map-2 {
+    width: 30px;
+    height: 25px;
+    bottom: 220px;
+    left: 170px;
+    transform: rotate(-45deg);
+}
+
+.yard-map-3 {
+    width: 50px;
+    height: 25px;
+    bottom: 180px;
+    left: 190px;
+    transform: rotate(-45deg);
+}
+
+.yard-map-4 {
+    width: 80px;
+    height: 25px;
+    bottom: 40px;
+    left: 70px;
+    transform: rotate(-45deg);
+}
+
+.yard-map-A {
+    width: 30px;
+    height: 25px;
+    bottom: 210px;
+    left: 300px;
+    transform: rotate(-45deg);
+}

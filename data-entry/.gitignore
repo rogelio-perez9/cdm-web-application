@@ -1,0 +1,62 @@
+# =========================
+# Build outputs
+# =========================
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# ASP.NET / IIS
+# =========================
+*.log
+*.cache
+*.pdb
+*.tmp
+
+# =========================
+# Configuration (local only)
+# =========================
+web.config.local
+app.config.local
+connectionStrings.config
+*.secrets.config
+
+# =========================
+# Packages / dependencies
+# =========================
+packages/
+node_modules/
+
+# =========================
+# Front-end artifacts
+# =========================
+dist/
+build/
+*.map
+
+# =========================
+# OS / Editor junk
+# =========================
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# =========================
+# Backups / temp files
+# =========================
+*.bak
+*.old
+*.orig
+*~

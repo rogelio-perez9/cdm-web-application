@@ -1,0 +1,32 @@
+﻿<div>
+    <table style="background: #cc5500; width: 100%; padding: 12px; border-spacing: 10px;">
+        <tr>
+            <td style="text-align: right; color: yellow; padding-right: 24px;">D.O. NO.</td>
+            <td style="text-align: left"><span id="delivery_order_no" style="background: white; padding: 2px 4px;"></span></td>
+        </tr>
+        <tr>
+            <td style="text-align: right; color: yellow;padding-right: 24px;">Deliver To</td>
+            <td style="text-align: left"><span id="delivery_order_to" style="background: white; padding: 2px 4px;"></span></td>
+            </tr>
+        <tr>
+            <td style="text-align: right; color: yellow;padding-right: 24px;">Trucker</td>
+            <td style="text-align: left"><span id="delivery_order_trucker" style="background: white; padding: 2px 4px;"></span></td>
+            </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <div style="text-align: center;">
+                    <div style="display: flex; align-items: center; width: 100%;">
+                        <span style="margin-right: 12px; color: yellow;">Confirm Void Delivery NO.</span>
+                        <input type="checkbox" id="delivery_delete_confirm" onchange="onChangeVoidConfirm()" />
+                        <span style="margin-left: 12px; color: yellow;">Click Confirm Void and Click Save</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <div style="padding: 12px; float: right;">
+        <button id="void_save_btn" onclick="onConfirmDeliveryDelete();" disabled>Save</button>
+        <button onclick="onCloseDeleteConfirm();">Cancel</button>
+    </div>
+</div>
