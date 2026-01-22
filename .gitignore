@@ -1,89 +1,56 @@
-# =========================
-# Visual Studio / .NET build output
-# =========================
-.vs/
-bin/
-obj/
-Debug/
-Release/
-x64/
-x86/
-*.pdb
-*.cache
-*.log
-*.tmp
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
+# ==========================================
+# IGNORE ABSOLUTELY EVERYTHING BY DEFAULT
+# ==========================================
+*
 
-# =========================
-# Packages / dependencies
-# =========================
-packages/
-node_modules/
+# Keep git control files
+!.gitignore
+!.gitattributes
 
-# =========================
-# Local-only config / secrets
-# (ajusta nombres si él usa otros)
-# =========================
-web.config.local
-app.config.local
-connectionStrings.config
-*.secrets.*
-*.local.*
+# ==========================================
+# ALLOW ONLY "CODE" INSIDE data-entry/
+# (Everything else inside data-entry stays ignored)
+# ==========================================
+!data-entry/
 
-# =========================
-# Attachments / handoff files (your case)
-# =========================
-*.zip
-*.rar
-*.7z
-*.tar
-*.gz
+# Solutions / projects
+!data-entry/**/*.sln
+!data-entry/**/*.csproj
+!data-entry/**/*.vbproj
+!data-entry/**/*.proj
+!data-entry/**/*.targets
+!data-entry/**/*.props
 
-*.doc
-*.docx
-*.xls
-*.xlsx
-*.csv
-*.pdf
-*.ppt
-*.pptx
+# .NET / ASP.NET source
+!data-entry/**/*.cs
+!data-entry/**/*.vb
+!data-entry/**/*.aspx
+!data-entry/**/*.ascx
+!data-entry/**/*.master
+!data-entry/**/*.ashx
+!data-entry/**/*.asmx
+!data-entry/**/*.svc
+!data-entry/**/*.config
+!data-entry/**/*.xml
+!data-entry/**/*.resx
 
-*.txt
-*.rtf
+# Web assets you actually edit
+!data-entry/**/*.js
+!data-entry/**/*.css
+!data-entry/**/*.html
+!data-entry/**/*.htm
 
-# Images often included in handoffs
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tif
-*.tiff
-*.webp
-*.map
-# Emails / exports
-*.msg
-*.eml
-
-# =========================
-# Backups / diff scratch
-# =========================
-*.bak
-*.old
-*.orig
-*~
-*_backup/
-backup/
-_backups/
-temp/
-tmp/
-
-# =========================
-# OS junk
-# =========================
-Thumbs.db
-Desktop.ini
-.DS_Store
+# ==========================================
+# COMMON GARBAGE TO ALWAYS IGNORE (even if allowed by extension)
+# ==========================================
+data-entry/**/bin/
+data-entry/**/obj/
+data-entry/**/.vs/
+data-entry/**/packages/
+data-entry/**/node_modules/
+data-entry/**/*.user
+data-entry/**/*.suo
+data-entry/**/*.cache
+data-entry/**/*.log
+data-entry/**/*.tmp
+data-entry/**/*.map
