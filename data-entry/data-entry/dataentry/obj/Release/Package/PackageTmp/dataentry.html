@@ -1,0 +1,2766 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Freight Forwarding Operations, Shipment Tracking Powered by CDM Software Solutions, Inc.</title>
+
+    <link REL="SHORTCUT ICON" HREF="https://webfreight.cdmsoft.com/webfreight/images/cdm.ico">
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/jquery.token-input.css" />
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/dataentry.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="css/dragndrop.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+
+    <script src="js/jslib-html5-camera-photo.min.js"></script>
+
+    <script src="js/jquery.tokeninput.min.js"></script>
+    <script src="js/html5-qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="head">
+
+            <div id="logo_user_details">
+
+                <h1 id="logo"><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
+
+                <div id="user_details">
+
+                    <ul id="user_details_menu">
+
+                        <li>Welcome <strong>PRESTON ALE</strong></li>
+
+                        <li class="user_details_menu_options">
+
+                            <ul id="user_access">
+
+                                <li class="first"><a href="#">My account</a></li>
+
+                                <li class="user_access_line">|</li>
+
+                                <li class="last"><a href="login.html">Log out</a></li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="content">
+
+            <div id="page">
+
+                <div class="inner">
+
+                    <div class="section table_section">
+
+                        <div class="title_wrapper">
+
+                            <h2><b>GLOBAL EXPRESS</b> - HKG</h2>
+
+                        </div>
+
+                        <div class="section_content">
+
+                            <div class="section_content_padding">
+
+                                <div class="dashboard_menu_wrapper">
+
+                                    <ul class="dashboard_menu">
+
+                                        <li><a class="back" href="dashboard.html"><span>Back</span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="section table_section">
+
+                        <div class="title_wrapper">
+
+                            <h2>Data Entry</h2>
+
+                        </div>
+
+                        <div class="section_content">
+
+                            <form action="#">
+
+                                <input type=hidden id="sqid" name="sqid" value="topoceanusa">
+                                <input type=hidden id="xlsid" name="xlsid" value="e8c-0o8m-m2e7">
+                                <input type=hidden id="xlsupload" name="xlsupload" value="upload\\longo\\sec321\\inbox">
+                                <input type=hidden id="procname" name="procname" value="_dashboard">
+                                <input type=hidden id="stationid" name="stationid" value="HNPCR">
+                                <input type=hidden id="bkgcfmtype" name="bkgcfmtype" value="40RHC">
+
+                                <div class="table_wrapper">
+
+                                    <div class="table_wrapper_inner" style="padding:0;">
+
+                                        <table>
+                                            <tr>
+                                                <th colspan="4" onclick="onOpenGuide('_dashboard', 'en', 'CDM Web Freight™ Dashboard Help', '#191970', '#000');">U S E R * G U I D E - EN</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4" onclick="onOpenGuide('_dashboard', 'es', 'CDM Web Freight™ Dashboard Help', '#191970', '#000');">U S E R * G U I D E - ES</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4" onclick="onOpenGuide('_dashboard', 'cn', 'CDM Web Freight™ Dashboard Help', '#191970', '#000');">U S E R * G U I D E - CN</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4" onclick="onOpenGuide('_dashboard', 'fr', 'CDM Web Freight™ Dashboard Help', '#191970', '#000');">U S E R * G U I D E - FR</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4" onclick="onOpenGuide('_dashboard', 'de', 'CDM Web Freight™ Dashboard Help', '#191970', '#000');">U S E R * G U I D E - DE</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4" onclick="onOpenGuide('_dashboard', 'jp', 'CDM Web Freight™ Dashboard Help', '#191970', '#000');">U S E R * G U I D E - JP</th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4" onclick="onOpenGuide('_dashboard', 'ar', 'CDM Web Freight™ Dashboard Help', '#191970', '#000');">U S E R * G U I D E - AR</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Print Label</th>
+                                                <th><select id="labelid" name="labelid" style="min-width: 100%; max-width: 300px;"></select></th>
+                                                <th colspan=2>
+                                                    <input type="button" id="printlabel" name="printlabel" value="PRINT LABEL" onclick='printLabel();'>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="4" style="text-align: center;">
+                                                    <div id="label-preivew-container" style="border: 1px dashed gray; margin: 24px; width: fit-content;">
+                                                        <div id="label-preview"></div>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th colspan=3><input type="text" size="10" id="date" name="date" value="" placeholder="mm/dd/yyyy"></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Out Gate Container</th>
+                                                <th id="ogid_th"><input type="text" size="11" id="ogctnr" name="ogctnr" value=""></th>
+                                                <th>Container Type</th>
+                                                <th><input type="text" size="10" id="ogtype" name="ogtype" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Out Gate Chassis</th>
+                                                <th id="ogcid_th" colspan=3><input type="text" size="11" id="ogchas" name="ogchas" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>In Gate Container</th>
+                                                <th id="igid_th"><input type="text" size="11" id="igctnr" name="igctnr" value=""></th>
+                                                <th>Container Type</th>
+                                                <th><input type="text" size="10" id="igtype" name="igtype" value=""></th>
+                                            </tr>
+                                            <tr>
+                                                <th>In Gate Chassis</th>
+                                                <th id="igcid_th" colspan=3><input type="text" size="11" id="igchas" name="igchas" value=""></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Rate Type</th>
+                                                <th colspan="3">
+                                                    <input type="radio" name="ratetype" value="1" checked>All-In-Rate&nbsp;&nbsp;
+                                                    <input type="radio" name="ratetype" value="2">Detailed
+                                                </th>
+                                            </tr>
+
+                                            <tr><th colspan=4>&nbsp;</th></tr>
+
+                                            <tr>
+                                                <th colspan=4><img src="images/action_ctnr.gif" alt="Ctnrlist" id="ctnrlist-btn" onclick="onOpenCtnrlistDialog('48E12C14-165C-4232-8513-60E1512A62EC')" /></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan=4><img src="images/xls.png" alt="XLSX" id="xls-btn" /></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan=4><img src="images/signature.png" alt="Signature" id="signature-btn" style="width: 32px; height: 32px" /></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan=2><img src="images/qr-code.png" alt="QR" id="qr-code-btn" style="width: 32px; height: 32px" /></th>
+                                                <th colspan=2><input id="qr-code-value" name="qr-code-value" readonly size="50" /></th>
+                                            </tr>
+
+                                            <tr><th colspan=4>&nbsp;</th></tr>
+
+                                            <tr id="all-in-rate-section">
+                                                <th colspan=4>
+                                                    <table>
+                                                        <tr><th>All-In-Rate</th></tr>
+                                                        <tr><th><input name="allinrate" id="allinrate" type="text" size="10" value="" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"></th></tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+
+                                            <tr id="charge-code-section" style="display: none;">
+                                                <th colspan=4>
+                                                    <table>
+                                                        <tr>
+                                                            <th>Charge Code</th>
+                                                            <th>Description</th>
+                                                            <th style="text-align:right;">Amount</th>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th><input type="text" size="15" id="arcode01" name="arcode01" value=""></th>
+                                                            <th><input type="text" size="45" id="ardesc01" name="ardesc01" value=""></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="arrate01" name="arrate01" value="" onblur="sumAllInputs('arrate','rateamt');" style="text-align:right;" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><input type="text" size="15" id="arcode02" name="arcode02" value=""></th>
+                                                            <th><input type="text" size="45" id="ardesc02" name="ardesc02" value=""></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="arrate02" name="arrate02" value="" onblur="sumAllInputs('arrate','rateamt');" style="text-align:right;" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><input type="text" size="15" id="arcode03" name="arcode03" value=""></th>
+                                                            <th><input type="text" size="45" id="ardesc03" name="ardesc03" value=""></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="arrate03" name="arrate03" value="" onblur="sumAllInputs('arrate','rateamt');" style="text-align:right;" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><input type="text" size="15" id="arcode04" name="arcode04" value=""></th>
+                                                            <th><input type="text" size="45" id="ardesc04" name="ardesc04" value=""></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="arrate04" name="arrate04" value="" onblur="sumAllInputs('arrate','rateamt');" style="text-align:right;" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><input type="text" size="15" id="arcode05" name="arcode05" value=""></th>
+                                                            <th><input type="text" size="45" id="ardesc05" name="ardesc05" value=""></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="arrate05" name="arrate05" value="" onblur="sumAllInputs('arrate','rateamt');" style="text-align:right;" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th><input type="text" size="15" id="arcode06" name="arcode06" value=""></th>
+                                                            <th><input type="text" size="45" id="ardesc06" name="ardesc06" value=""></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="arrate06" name="arrate06" value="" onblur="sumAllInputs('arrate','rateamt');" style="text-align:right;" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>&nbsp;</th>
+                                                            <th style="text-align:right;"><b>TOTAL AMOUNT</b></th>
+                                                            <th style="text-align:right;"><input type="text" size="10" id="rateamt" name="rateamt" value="" style="text-align:right;" READONLY></th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan="4">Item Master</th>
+                                            </tr>
+                                            <tr>
+                                                <th id="itemid_th"><input type="text" size="15" id="itemcode" name="itemcode" value=""></th>
+                                                <th><input type="text" size="35" id="desc" name="desc" value=""></th>
+                                                <th><input type="text" size="10" id="schbcode" name="schbcode" value=""></th>
+                                                <th><input type="text" size="35" id="schbdesc" name="schbdesc" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan="4">Destination Code</th>
+                                            </tr>
+                                            <tr>
+                                                <th id="destcode_th"><input type="text" size="15" id="destcode" name="destcode" value=""></th>
+                                                <th colspan="3"><input type="text" size="45" id="destname" name="destname" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan="4">G/L Account</th>
+                                            </tr>
+                                            <tr>
+                                                <th id="acctcode_th"><input type="text" size="15" id="acctcode" name="acctcode" value=""></th>
+                                                <th colspan="3"><input type="text" size="55" id="acctname" name="acctname" value=""></th>
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>Vessel Name</th>
+
+                                                <th colspan=3><input type="text" size="35" id="vessel" name="vessel" value="COSCO FAITH"></th>
+
+                                                <input type=hidden id="imo" name="imo" value="9472141">
+
+                                                <input type=hidden id="imoflag" name="imoflag" value="HK">
+
+                                            </tr>
+
+                                            <tr><th colspan=4><hr></th></tr>
+
+                                            <tr>
+
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#ffff00;"><b>Ocean Clauses (Auto Fill)</b></th>
+
+                                            </tr>
+
+                                            <tr>
+                                                <th><select id="ocnclscode" name="ocnclscode" style="min-width: 100%; max-width: 300px;"></select></th>
+                                                <th colspan="3"><textarea id="ocnclsdesc" name="ocnclsdesc" rows="10" cols="75"></textarea></th>
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#ffff00;"><b>Clause Auto Fill</b></th>
+
+                                            </tr>
+
+                                            <tr>
+                                                <th><select id="comclscode" name="comclscode" style="min-width: 100%; max-width: 300px;"></select></th>
+                                                <th colspan="3"><textarea id="comclsdesc" name="comclsdesc" rows="10" cols="75"></textarea></th>
+                                            </tr>
+
+
+                                            <tr>
+
+                                                <th colspan=4>
+
+                                                    <table>
+
+                                                        <tr>
+                                                            <th>Assign Container No.</th>
+                                                            <th>Assign Container Type</th>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th id="assign01id_th"><input type="text" size="11" id="ctnrno01" name="ctnrno01" value=""></th>
+                                                            <th><input type="text" size="5" id="ctnrtype01" name="ctnrtype01" value=""></th>
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+
+                                            <tr>
+
+                                                <th colspan=4>
+
+                                                    <table>
+
+                                                        <tr>
+                                                            <th>Sales Code</th>
+                                                            <th>Sales Description</th>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th><input type="text" size="15" id="arcode01" name="arcode01" value=""></th>
+                                                            <th><input type="text" size="45" id="ardesc01" name="ardesc01" value=""></th>
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr><th colspan=4><hr></th></tr>
+                                            <tr>
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#ffff00;"><b>Schedule D Look Up</b></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Schedule D Code</th>
+                                                <th id="schd_th"><input type="text" size="4" id="schdcode" name="schdcode" value=""></th>
+                                                <th>Schedule D Name</th>
+                                                <th><input type="text" size="45" id="schdname" name="schdname" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Port of Entry</th>
+                                                <th id="portentry_th"><input type="text" size="4" id="portentry" name="portentry" value=""></th>
+                                                <th>Port of Entry Name</th>
+                                                <th><input type="text" size="45" id="portentryname" name="portentryname" value=""></th>
+                                            </tr>
+
+                                            <tr><th colspan=4><hr></th></tr>
+                                            <tr>
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#ffff00;"><b>Schedule K Look Up</b></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Schedule K Code</th>
+                                                <th id="schk_th"><input type="text" size="5" id="schkcode" name="schkcode" value=""></th>
+                                                <th>Schedule K Name</th>
+                                                <th><input type="text" size="45" id="schkname" name="schkname" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Schedule K Code 2</th>
+                                                <th id="schk2_th"><input type="text" size="5" id="schkcode2" name="schkcode2" value=""></th>
+                                                <th>Schedule K Name 2</th>
+                                                <th><input type="text" size="45" id="schkname2" name="schkname2" value=""></th>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Schedule K Code 3</th>
+                                                <th id="schk3_th"><input type="text" size="5" id="schkcode3" name="schkcode3" value=""></th>
+                                                <th>Schedule K Name 3</th>
+                                                <th><input type="text" size="45" id="schkname3" name="schkname3" value=""></th>
+                                            </tr>
+
+                                            <tr><th colspan=4><hr></th></tr>
+
+                                            <tr>
+
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#ffff00;"><b>Query List Display = uncode.code - uncode.expand</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(UN) Place of Receipt Code</th>
+
+                                                <th id="porcode_th"><input type="text" size="10" id="porcode" name="porcode" value="HKKWN"></th>
+
+                                                <th>(UN) Place of Receipt</th>
+
+                                                <th><input type="text" size="45" id="porname" name="porname" value="KOWLOON"></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(UN) Port of Loading Code</th>
+
+                                                <th id="polcode_th"><input type="text" size="10" id="polcode" name="polcode" value="HKKWN"></th>
+
+                                                <th>(UN) Port of Loading</th>
+
+                                                <th><input type="text" size="45" id="polname" name="polname" value="KOWLOON"></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(UN) Port of Discharge Code</th>
+
+                                                <th id="poulcode_th"><input type="text" size="10" id="poulcode" name="poulcode" value="HKKWN"></th>
+
+                                                <th>(UN) Port of Discharge</th>
+
+                                                <th><input type="text" size="45" id="poulname" name="poulname" value="KOWLOON"></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(UN) Place of Delivery Code</th>
+
+                                                <th id="podcode_th"><input type="text" size="10" id="podcode" name="podcode" value="HKKWN"></th>
+
+                                                <th>(UN) Place of Delivery</th>
+
+                                                <th><input type="text" size="45" id="podname" name="podname" value="KOWLOON"></th>
+
+                                            </tr>
+
+                                            <tr><th colspan=4><hr></th></tr>
+
+                                            <tr>
+
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#ffff00;"><b>Query List Display = ports.code - ports.expand</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(PORT) Place of Receipt Code</th>
+
+                                                <th id="porcode2_th"><input type="text" size="03" id="porcode2" name="porcode2" value="LAX"></th>
+
+                                                <th>(PORT) Place of Receipt</th>
+
+                                                <th><input type="text" size="45" id="porname2" name="porname2" value="LOS ANGELES, CA"></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(PORT) Port of Loading Code</th>
+
+                                                <th id="polcode2_th"><input type="text" size="03" id="polcode2" name="polcode2" value="LAX"></th>
+
+                                                <th>(PORT) Port of Loading</th>
+
+                                                <th><input type="text" size="45" id="polname2" name="polname2" value="LOS ANGELES, CA"></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(PORT) Port of Discharge Code</th>
+
+                                                <th id="poulcode2_th"><input type="text" size="03" id="poulcode2" name="poulcode2" value="LAX"></th>
+
+                                                <th>(PORT) Port of Discharge</th>
+
+                                                <th><input type="text" size="45" id="poulname2" name="poulname2" value="LOS ANGELES, CA"></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th>(PORT) Place of Delivery Code</th>
+
+                                                <th id="podcode2_th"><input type="text" size="03" id="podcode2" name="podcode2" value="LAX"></th>
+
+                                                <th>(PORT) Place of Delivery</th>
+
+                                                <th><input type="text" size="45" id="podname2" name="podname2" value="LOS ANGELES, CA"></th>
+
+                                            </tr>
+
+                                            <tr><th colspan=4><hr></th></tr>
+
+                                            <tr>
+
+                                                <th colspan=4>
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th>SED Code</th>
+
+                                                            <th>SED Description</th>
+
+                                                            <th>UOM1</th>
+
+                                                            <th>UOM2</th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th id="sed_th"><input type="text" size="10" id="sedcode" name="sedcode" value="4406110000"></th>
+
+                                                            <th><input type="text" size="99" id="seddesc" name="seddesc" value="RAILWAY OR TRAMWAY SLEEPERS (CROSS-TIES) OF CONIFEROUS WOOD, NOT IMPREGNATED"></th>
+
+                                                            <th><input type="text" size="05" id="seduom1" name="seduom1" value="M3"></th>
+
+                                                            <th><input type="text" size="05" id="seduom2" name="seduom2" value="NO"></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>SHIPPER</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>CONSIGNEE</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+                                                            <th id="shipid_th">
+                                                                <input size="15" id="shipid" name="shipid" type="text" value="KNOXVVON001" />&nbsp;
+                                                                <input type="button" id="NEWCONTACT" name="NEWCONTACT" value="NEW CONTACT" class="new-contact-dialog-opener">
+                                                            </th>
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="shipname" name="shipname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="shipadd1" name="shipadd1" type="text" value="90 DEER CROSSING ROAD" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="shipadd2" name="shipadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="shipadd3" name="shipadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="shipcity" name="shipcity" type="text" value="VONORE" />,
+
+                                                                <select id="shipst" name="shipst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                    <option value="TN" SELECTED>TENNESSEE</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="shipzip" name="shipzip" type="text" value="37885" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="shipiso" name="shipiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                    <option value="US" SELECTED>UNITED STATES</option>
+
+                                                                    <option value="HK">KONG KONG</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="shipcont" name="shipcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="shipph" name="shipph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="shipemail" name="shipemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="shiptaxid" name="shiptaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="shipref" name="shipref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th id="consid_th">
+                                                                <input size="15" id="consid" name="consid" type="text" value="ALOHAKAP001" READONLY />&nbsp;
+                                                                <input type="button" id="NEWCONTACT" name="NEWCONTACT" value="NEW CONTACT" class="new-contact-dialog-opener">
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="consname" name="consname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="consadd1" name="consadd1" type="text" value="91-291 KALAELOA BLVD., NO. D1" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="consadd2" name="consadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="consadd3" name="consadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="conscity" name="conscity" type="text" value="KAPOLEI" />,
+
+                                                                <select id="consst" name="consst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                    <option value="HI" SELECTED>HAWAII</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="conszip" name="conszip" type="text" value="96707" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="consiso" name="consiso">
+
+                                                                    <option value="">--- COUNTRY ---</option>
+
+                                                                    <option value="US">UNITED STATES</option>
+
+                                                                    <option value="HK" SELECTED>KONG KONG</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="conscont" name="conscont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="consph" name="consph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="consemail" name="consemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="constaxid" name="constaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="consref" name="consref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>NOTIFY PARTY</b></th>
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>BILL TO</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="notiid_th"><input size="15" id="notiid" name="notiid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="notiname" name="notiname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="notiadd1" name="notiadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="notiadd2" name="notiadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="notiadd3" name="notiadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="noticity" name="noticity" type="text" value="" />,
+
+                                                                <select id="notist" name="notist">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="notizip" name="notizip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="notiiso" name="notiiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="noticont" name="noticont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="notiph" name="notiph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="notiemail" name="notiemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="notitaxid" name="notitaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="notiref" name="notiref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="billid_th"><input size="15" id="billid" name="billid" type="text" value="VEGETCOMA001"></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="billname" name="billname" type="text" value="KM 80 CARRETERA DE TEGUCIGALPA A SPS" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="billadd1" name="billadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="billadd2" name="billadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="billadd3" name="billadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="billcity" name="billcity" type="text" value="COMAYAGUA" />,
+
+                                                                <select id="billst" name="billst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="billzip" name="billzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="billiso" name="billiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="billcont" name="billcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="billph" name="billph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="billemail" name="billemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="billtaxid" name="billtaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="billref" name="billref" type="text" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tariff No.</th>
+
+                                                            <th align="left" id="tariffno_th"><input size="30" id="tariffno" name="tariffno" type="text" /></th>
+
+                                                        </tr>
+
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#f70d1a;"><b>SUPPLIER 2</b></th>
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#045f5f;"><b>BILL TO 2</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="supp2id_th"><input size="15" id="supp2id" name="supp2id" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="supp2name" name="supp2name" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="supp2add1" name="supp2add1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="supp2add2" name="supp2add2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="supp2add3" name="supp2add3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="supp2city" name="supp2city" type="text" value="" />,
+
+                                                                <select id="supp2st" name="supp2st">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="supp2zip" name="supp2zip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="supp2iso" name="supp2iso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="supp2cont" name="supp2cont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="supp2ph" name="supp2ph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="supp2email" name="supp2email" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="supp2taxid" name="supp2taxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="supp2ref" name="supp2ref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="bill2id_th"><input size="15" id="bill2id" name="bill2id" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="bill2name" name="bill2name" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="bill2add1" name="bill2add1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="bill2add2" name="bill2add2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="bill2add3" name="bill2add3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="bill2city" name="bill2city" type="text" value="" />,
+
+                                                                <select id="bill2st" name="bill2st">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="bill2zip" name="bill2zip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="bill2iso" name="bill2iso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="bill2cont" name="bill2cont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="bill2ph" name="bill2ph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="bill2email" name="bill2email" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="bill2taxid" name="bill2taxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="bill2ref" name="bill2ref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+
+
+
+
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>PICK UP</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>DELIVER TO</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="pickid_th"><input size="15" id="pickid" name="pickid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="pickname" name="pickname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="pickadd1" name="pickadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="pickadd2" name="pickadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="pickadd3" name="pickadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="pickcity" name="pickcity" type="text" value="" />,
+
+                                                                <select id="pickst" name="pickst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="pickzip" name="pickzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="pickiso" name="pickiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="pickcont" name="pickcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="pickph" name="pickph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="pickemail" name="pickemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="picktaxid" name="picktaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="pickref" name="pickref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="delvid_th"><input size="15" id="delvid" name="delvid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="delvname" name="delvname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="delvadd1" name="delvadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="delvadd2" name="delvadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="delvadd3" name="delvadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="delvcity" name="delvcity" type="text" value="" />,
+
+                                                                <select id="delvst" name="delvst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="delvzip" name="delvzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="delviso" name="delviso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="delvcont" name="delvcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="delvph" name="delvph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="delvemail" name="delvemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="delvtaxid" name="delvtaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="delvref" name="delvref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>ORIGIN AGENT</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>DESTINATION AGENT</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="oagtid_th"><input size="15" id="oagtid" name="oagtid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="oagtname" name="oagtname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="oagtadd1" name="oagtadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="oagtadd2" name="oagtadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="oagtadd3" name="oagtadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="oagtcity" name="oagtcity" type="text" value="" />,
+
+                                                                <select id="oagtst" name="oagtst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="oagtzip" name="oagtzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="oagtiso" name="oagtiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="oagtcont" name="oagtcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="oagtph" name="oagtph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="oagtemail" name="oagtemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="oagttaxid" name="oagttaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="oagtref" name="oagtref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="dagtid_th"><input size="15" id="dagtid" name="dagtid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="dagtname" name="dagtname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="dagtadd1" name="dagtadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="dagtadd2" name="dagtadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="dagtadd3" name="dagtadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="dagtcity" name="dagtcity" type="text" value="" />,
+
+                                                                <select id="dagtst" name="dagtst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="dagtzip" name="dagtzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="dagtiso" name="dagtiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="dagtcont" name="dagtcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="dagtph" name="dagtph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="dagtemail" name="dagtemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="dagttaxid" name="dagttaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="dagtref" name="dagtref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>FORWARDER</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>SUPPLIER</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="forwid_th"><input size="15" id="forwid" name="forwid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="forwname" name="forwname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="forwadd1" name="forwadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="forwadd2" name="forwadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="forwadd3" name="forwadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="forwcity" name="forwcity" type="text" value="" />,
+
+                                                                <select id="forwst" name="forwst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="forwzip" name="forwzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="forwiso" name="forwiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="forwcont" name="forwcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="forwph" name="forwph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="forwemail" name="forwemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="forwtaxid" name="forwtaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="forwref" name="forwref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="suppid_th"><input size="15" id="suppid" name="suppid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="suppname" name="suppname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="suppadd1" name="suppadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="suppadd2" name="suppadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="suppadd3" name="suppadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="suppcity" name="suppcity" type="text" value="" />,
+
+                                                                <select id="suppst" name="suppst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="suppzip" name="suppzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="suppiso" name="suppiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="suppcont" name="suppcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="suppph" name="suppph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="suppemail" name="suppemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="supptaxid" name="supptaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="suppref" name="suppref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>BROKER</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>USSPI</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="brokid_th"><input size="15" id="brokid" name="brokid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="brokname" name="brokname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="brokadd1" name="brokadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="brokadd2" name="brokadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="brokadd3" name="brokadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="brokcity" name="brokcity" type="text" value="" />,
+
+                                                                <select id="brokst" name="brokst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="brokzip" name="brokzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="brokiso" name="brokiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="brokcont" name="brokcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="brokph" name="brokph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="brokemail" name="brokemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="broktaxid" name="broktaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="brokref" name="brokref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="usppiid_th"><input size="15" id="usppiid" name="usppiid" type="text" value="" READONLY /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="usppiname" name="usppiname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="usppiadd1" name="usppiadd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="usppiadd2" name="usppiadd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="usppiadd3" name="usppiadd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="usppicity" name="usppicity" type="text" value="" />,
+
+                                                                <select id="usppist" name="usppist">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="usppizip" name="usppizip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="usppiiso" name="usppiiso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="usppicont" name="usppicont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="usppiph" name="usppiph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="usppiemail" name="usppiemail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="usppitaxid" name="usppitaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="usppiref" name="usppiref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>OCEAN CARRIER</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>AIR CARRIER</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="ocncarrid_th"><input size="15" id="ocncarrid" name="ocncarrid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="ocncarrname" name="ocncarrname" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="aircarrid_th"><input size="15" id="aircarrid" name="aircarrid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="aircarrname" name="aircarrname" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>CARRIER 3</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>CARRIER 4</b></th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="carr3id_th"><input size="15" id="carr3id" name="carr3id" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="carr3name" name="carr3name" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="carr4id_th"><input size="15" id="carr4id" name="carr4id" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="carr4name" name="carr4name" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#98AFC7;"><b>IMPORTER OF RECORD</b></th>
+
+                                                <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>&nbsp;</b></th>
+
+                                            </tr>
+
+
+
+                                            <tr>
+
+                                                <th colspan=2 align="left">
+
+                                                    <table>
+
+                                                        <tr>
+
+                                                            <th colspan=2 id="iorid_th"><input size="15" id="iorid" name="iorid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Company Name" size="45" id="iorname" name="iorname" type="text" value="XXX" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 1" size="45" id="ioradd1" name="ioradd1" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 2" size="45" id="ioradd2" name="ioradd2" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2><input placeholder="Address Line 3" size="45" id="ioradd3" name="ioradd3" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2 align="left">
+
+                                                                <input placeholder="City" size="45" id="iorcity" name="iorcity" type="text" value="" />,
+
+                                                                <select id="iorst" name="iorst">
+
+                                                                    <option value=""></option>
+
+                                                                    <option value="TX">TEXAS</option>
+
+                                                                </select>
+
+                                                                &nbsp;<input placeholder="Postal Code" size="10" id="iorzip" name="iorzip" type="text" value="" />
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th colspan=2>
+
+                                                                <select id="ioriso" name="ioriso">
+
+                                                                    <option value="">-- COUNTRY --</option>
+                                                                    <option value=""></option>
+                                                                    <option value="US">U.S.A., U.S.A, U.S.A.</option>
+                                                                </select>
+
+                                                            </th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Contact Name</th>
+
+                                                            <th align="left"><input size="30" id="iorcont" name="iorcont" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Telephone</th>
+
+                                                            <th align="left"><input size="20" id="iorph" name="iorph" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">E-mail</th>
+
+                                                            <th align="left"><input size="45" id="ioremail" name="ioremail" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Tax No.</th>
+
+                                                            <th align="left"><input size="30" id="iortaxid" name="iortaxid" type="text" value="" /></th>
+
+                                                        </tr>
+
+                                                        <tr>
+
+                                                            <th align="left">Reference No.</th>
+
+                                                            <th align="left"><input size="30" id="iorref" name="iorref" type="text" /></th>
+
+                                                        </tr>
+
+                                                    </table>
+
+                                                </th>
+
+                                                <th colspan=2 align="left">&nbsp;</th>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>DROP E-COMMERCE XLS HERE</b></th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan=4>
+
+                                                    <table>
+                                                        <tr>
+                                                            <th>Reference No.</th>
+                                                            <th colspan=3><input type="text" size="20" id="documentId" name="documentId" value=""></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>XLS Filename</th>
+                                                            <th colspan=3><input type="text" size="99" id="xlsfilename" name="xlsfilename" value=""></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan=4>
+                                                                <table id="xls_drop_area" class="drop-area">
+                                                                    <tr>
+                                                                        <th style="text-align:center;font-size:30px;">
+                                                                            <div id="xls_drag_label"></div>
+                                                                            <div id="xls_error_message" class="d-none"></div>
+                                                                            <div id="xls_notification" class="d-none">Uploading...</div>
+                                                                            <div id="xls_notification_gif" class="d-none">
+                                                                                <img src="images/cdm-gears.gif" alt="" style="height: 50px;" />
+                                                                            </div>
+                                                                            <input type="file" id="xls-file-input" class="file-input" onchange="handleXlsFiles(this.files)">
+                                                                            <button type="button" id="xls_upload_btn">Click to choose file</button>
+                                                                            <div id="xls_submit_btns" class="d-none">
+                                                                                <button type="button" id="xls_cancel_btn">Cancel</button>
+                                                                                <button type="button" id="xls_submit_btn">Upload File</button>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan=4>
+                                                                <table></table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>ATTACHED DOCUMENTS</b></th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan=4>
+                                                    <table>
+                                                        <tr>
+                                                            <th>
+                                                                <span style="margin-right: 24px;">Document ID</span>
+                                                                <input type="text" size="15" id="attach-documentId" name="attach-documentId" value="">
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan=4>
+                                                    <table>
+                                                        <tr>
+                                                            <th><div id="attached_documents" style="display: flex;"></div></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th style="text-align:center;font-size:30px;">
+                                                                <div id="drop_area">
+                                                                    <div id="drag_label">DRAG -N- DROP NEW DOCUMENT/IMAGE HERE</div>
+                                                                    <div id="error_message"></div>
+                                                                    <div><progress id="uploading_progress" value="0" max="100" style="display: none;">Uploading....</progress></div>
+                                                                    <input type="file" id="file_elem" onchange="handleFiles(this.files)">
+                                                                </div>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+
+                                            <tr>
+                                                <th colspan=4 style="text-align:center;font-size:20px;background-color:#488AC7;"><b>ATTACHED DOCUMENTS</b></th>
+                                            </tr>
+                                            <tr>
+                                                <th colspan=4>
+                                                    <table>
+                                                        <tr>
+                                                            <th id="camera_attached_documents"></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th style="text-align:center;font-size:30px;">
+                                                                <input type=hidden id="uuid" name="uuid" value="48E12C14-165C-4232-8513-60E1512A62EC">
+                                                                <button id="camera-button"><img src="images/camera.gif" /></button>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+
+                                </div>
+                                <input type=hidden id="userid" name="userid" value="xxx">
+                                <input type=hidden id="customerview" name="customerview" value="1">
+                                <div id="upload-file-dialog" title="Document Details">
+                                    <div id="divInDialog"></div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer" style="">
+
+        <div id="footer_inner">
+
+            <dl class="copy">
+
+                <dt><strong>CDM Web Freight 2021&trade;</strong> <em>Build 20210221-1318</em></dt>
+
+                <dd>&copy; 1988-2021 CDM Software Solutions, Inc. &bull; All Rights Reserved &bull; (972) 469-3082</dd>
+
+            </dl>
+
+        </div>
+
+    </div>
+
+    <div id="contact-dialog" title="Add New Contact">
+        <div id="divInDialog"></div>
+    </div>
+
+    <div id="ctnrlist-dialog" title="CONTAINER LIST">
+        <div id="divInDialog"></div>
+    </div>
+
+    <div id="guide-dialog" title="CDM Web Freight™ Dashboard Help">
+        <div id="dialog-content"></div>
+    </div>
+    <div id="camera-dialog">
+        <div id="divInDialog"></div>
+    </div>
+    <div id="signature-dialog" title="Signature Capture">
+        <div id="divInDialog"></div>
+    </div>
+    <div id="qr-reader-container">
+        <div id="qr-reader"></div>
+        <button id="qr-reader-stop" onclick="onStopQRReader();">stop</button>
+    </div>
+
+    <a href="javascript:void(0);" class="icon-scrolltop" id="gotop">
+        <img src="images/icon-slide-up.png" />
+    </a>
+    <script src="js/dragndrop.js"></script>
+    <script src="js/dataentry.js"></script>
+    <script src="js/xlsimport.js"></script>
+    <script>
+        var printLabels = [[
+            {
+                "row": 5,
+                "col": 50,
+                "alignment": "C",
+                "fontName": "Tahoma",
+                "fontSize": "14px",
+                "fontWeight": "bold",
+                "dataType": "TEXT",
+                "data": "ACME LOGISTICS",
+            },
+            {
+                "row": 40,
+                "col": 50,
+                "alignment": "C",
+                "fontName": "",
+                "fontSize": "14px",
+                "fontWeight": "normal",
+                "dataType": "1D",
+                "data": "11412345678",
+            },
+            {
+                "row": 70,
+                "col": 10,
+                "alignment": "L",
+                "fontName": "Tahoma",
+                "fontSize": "14px",
+                "fontWeight": "bold",
+                "dataType": "TEXT",
+                "data": "H.A.W.B.",
+            },
+            {
+                "row": 70,
+                "col": 40,
+                "alignment": "L",
+                "fontName": "Tahoma",
+                "fontSize": "14px",
+                "fontWeight": "normal",
+                "dataType": "TEXT",
+                "data": ": 002971",
+            },
+        ],
+        [
+            {
+                "row": 5,
+                "col": 50,
+                "alignment": "C",
+                "fontName": "Tahoma",
+                "fontSize": "14px",
+                "fontWeight": "bold",
+                "dataType": "TEXT",
+                "data": "ACME LOGISTICS",
+            },
+            {
+                "row": 40,
+                "col": 50,
+                "alignment": "C",
+                "fontName": "",
+                "fontSize": "14px",
+                "fontWeight": "normal",
+                "dataType": "1D",
+                "data": "11412345678",
+            },
+            {
+                "row": 70,
+                "col": 10,
+                "alignment": "L",
+                "fontName": "Tahoma",
+                "fontSize": "14px",
+                "fontWeight": "bold",
+                "dataType": "TEXT",
+                "data": "H.A.W.B.",
+            },
+            {
+                "row": 70,
+                "col": 40,
+                "alignment": "L",
+                "fontName": "Tahoma",
+                "fontSize": "14px",
+                "fontWeight": "normal",
+                "dataType": "TEXT",
+                "data": ": 002971",
+            },
+        ]];
+    </script>
+
+</body>
+
+</html>
+

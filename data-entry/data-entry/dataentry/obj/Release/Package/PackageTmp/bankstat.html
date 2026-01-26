@@ -1,0 +1,357 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>
+		Web Based Freight Forwarding Operations
+	</title>
+	<meta name="Description" content="U.S. Customs certified software provider for freight forwarders, NVOCC and logistics companies">
+	<meta name="Keywords" content="Intermodal,Intermodal Tracking,Container,Container Tracking,Equipment Tracking,Chassis,GPS,RFID">
+	<link rel="shortcut icon" href="images/cdm-logo.jpg" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/cdm-logo.jpg">
+	<link media="screen" rel="stylesheet" type="text/css" href="css/top-blue.css?v=20250715094730" />
+	<link media="screen" rel="stylesheet" type="text/css" href="css/jquery.token-input.css?v=20250715094730" />
+	<link media="screen" rel="stylesheet" type="text/css" href="css/dataentry.css?v=20250715094730" />
+	<link media="screen" rel="stylesheet" type="text/css" href="css/dragndrop.css?v=20250715094730" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js" type="text/javascript"></script>
+	<script src="js/jslib-html5-camera-photo.min.js"></script>
+	<script src="js/jquery.tokeninput.min.js"></script>
+	<script src="js/html5-qrcode.min.js"></script>
+	<script>
+		( function () { window.ldfdr = window.ldfdr || {}; ( function ( d, s, ss, fs ) { fs = d.getElementsByTagName( s )[0]; function ce( src ) { var cs = d.createElement( s ); cs.src = src; setTimeout( function () { fs.parentNode.insertBefore( cs, fs ) }, 1 ) } ce( ss ) } )( document, 'script', 'https://sc.lfeeder.com/lftracker_v1_kn9Eq4Rz1wY4RlvP.js' ) } )()</script>
+	<style>
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			width: 140px;
+			background-color: #4863a0;
+			color: #fff;
+			z-index: 1;
+			top: -6px;
+			right: 105%;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+		}
+
+		.tooltip {
+			position: relative;
+			display: inline-block;
+		}
+
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+			}
+
+		.tooltip2 .tooltiptext2 {
+			visibility: hidden;
+			width: 100px;
+			background-color: #4863a0;
+			color: #fff;
+			z-index: 1;
+			top: -6px;
+			left: 100%;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+		}
+
+		.tooltip2 {
+			position: relative;
+			display: inline-block;
+		}
+
+			.tooltip2:hover .tooltiptext2 {
+				visibility: visible;
+			}
+	</style>
+</head>
+<body>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113444990-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push( arguments ) } gtag( 'js', new Date() ); gtag( 'config', 'UA-113444990-1' )</script>
+	<div id="wrapper">
+		<div id="head">
+			<div id="logo_user_details">
+				<h1 id="logo">
+					<a href="#">
+						<img src="images/TOPOCEAN_USA.JPG" alt="">
+					</a>
+				</h1>
+				<div id="user_details">
+					<ul id="user_details_menu">
+						<li>
+							Welcome <strong>
+								CDM SUPPORT
+							</strong>
+						</li>
+						<li class="user_details_menu_options">
+							<ul id="user_access">
+								<li class="first">
+									<a target="_blank" href="#">
+										User Guide
+									</a>
+								</li>
+								<li class="user_access_line">
+									|
+								</li>
+								<li class="last">
+									<a href="webfrt.dll?MID=g8g0-8g5i-r6l2">
+										Log out
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="page">
+				<div class="inner">
+					<div class="section table_section">
+						<div class="title_wrapper_ocean">
+							<h2>
+								TOPOCEAN CONSOLIDATION SERVICE
+							</h2>
+						</div>
+						<div class="section_content">
+							<div class="section_content_padding">
+								<div class="dashboard_menu_wrapper">
+									<ul class="dashboard_menu">
+										<li>
+											<!--<a class="contact" href="divupd.dll?MID=G8G0-8G5I-R6L2&LINK=1A532120-1B34-4839-907F-3B9E4FFDC59F&RID=TOLAX">-->
+												<a class="contact" href="divupd.dll?MID=G8G0-8G5I-R6L2&LINK=1A532120-1B34-4839-907F-3B9E4FFDC59F&RID=TOSGH">
+													<span>
+														Station Details
+													</span>
+												</a>
+										</li>
+										<li>
+											<a class="d7" href="dashboard.dll?MID=G8G0-8G5I-R6L2&LINK=1A532120-1B34-4839-907F-3B9E4FFDC59F">
+												<span>
+													Dashboard
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section table_section">
+						<div class="title_wrapper_ocean">
+							<h2>
+								Station - TOPOCEAN CONSOLIDATION SERVICE (LOS ANGELES) INC. (TOLAX) Bank Details
+							</h2>
+						</div>
+						<div class="section_content">
+							<div class="table_wrapper">
+								<div class="table_wrapper_inner" style="padding:0;">
+									<table>
+										<tr>
+											<th colspan=4>
+												<table>
+													<tr>
+														<th>
+															Actions
+														</th>
+														<th>
+															Description
+														</th>
+														<th>
+															Acct No.
+														</th>
+														<th>
+															Bank Name
+														</th>
+														<th>
+															Primary
+														</th>
+														<th>
+															Details
+														</th>
+														<th>
+															ABA
+														</th>
+														<th>
+															SWIFT
+														</th>
+													</tr>
+													<tbody id="table-banks">
+													</tbody>
+													<tr>
+														<th colspan=9 style="text-align:center;">
+															<!--<form action="statbank.dll?MID=G8G0-8G5I-R6L2&LINK=1A532120-1B34-4839-907F-3B9E4FFDC59F&RID=TOLAX&PID=378&DID=-1" method="POST">-->
+															<form action="statbank.dll?MID=G8G0-8G5I-R6L2&LINK=1A532120-1B34-4839-907F-3B9E4FFDC59F&RID=TOLAX&PID=385&DID=-1" method="POST">
+																<input type=hidden id="sqid" name="sqid" value="topoceanasia">
+																<table>
+																	<tr>
+																		<th style="text-align:center;font-size:24px;color:#fff;background-color:#2B65EC;" colspan=6>
+																			<b>
+																				Bank Details
+																			</b>
+																		</th>
+																	</tr>
+																	<tr id="confirmation-delete" style="display:none">
+																		<th style="text-align:center;background-color:#FF7900;" colspan=4>
+																			<input type="checkbox" id="deleterecord" name="deleterecord" value="Y">
+																			<br>
+																			Click to Delete Broker<br>
+																			then Click Confirm
+																		</th>
+																	</tr>
+																	<tr valign="top">
+																		<th>
+																			Acct No.
+																		</th>
+																		<th>
+																			Bank Name
+																		</th>
+																		<th>
+																			Primary
+																		</th>
+																		<th>
+																			Details
+																		</th>
+																	</tr>
+																	<tr valign="top">
+																		<th>
+																			<input type="text" size="15" maxlength="15" id="code" name="code" value="">
+																		</th>
+																		<th>
+																			<input type="text" size="45" maxlength="45" id="expand" name="expand" value="">
+																		</th>
+																		<th>
+																			<input type="checkbox" id="primarybank" name="primarybank" value="1">
+																		</th>
+																		<th>
+<textarea id="addr1" name="addr1" rows="2" cols="50">
+</textarea>
+																		</th>
+																	</tr>
+																	<tr valign="top">
+																		<th>
+																			ABA
+																		</th>
+																		<th>
+																			Swift
+																		</th>
+																		<th>
+																			G/L Acct
+																		</th>
+																		<th>
+																			Description
+																		</th>
+																	</tr>
+																	<tr valign="top">
+																		<th>
+																			<input type="text" size="15" maxlength="15" id="aba" name="aba" value="">
+																		</th>
+																		<th>
+																			<input type="text" size="15" maxlength="15" id="swift" name="swift" value="">
+																		</th>
+																		<th>
+																			<input type="text" size="30" maxlength="30" id="glacct" name="glacct" value="">
+																		</th>
+																		<th>
+																			<input type="text" size="30" maxlength="30" id="bankdesc" name="bankdesc" value="">
+																		</th>
+																	</tr>
+																</table>
+																<button type="submit">
+																	S A V E
+																</button>
+																<button type="button">
+																	C A N C E L
+																</button>
+																<input type=hidden id="LINK" name="LINK" value="1A532120-1B34-4839-907F-3B9E4FFDC59F">
+																<input type=hidden id="RECID" name="RECID" value="TOLAX">
+																<input type=hidden id="DID" name="DID" value="-1">
+																<input type=hidden id="PKGUPDATE" name="PKGUPDATE" value="ON">
+																<input type=hidden id="MID" name="MID" value="G8G0-8G5I-R6L2">
+																<input type=hidden id="CUI" name="CUI" value="CN">
+																<input type=hidden id="USERID" name="USERID" value="SUPPORT@CDMSOFT.COM">
+																<input type=hidden id="CUSTID" name="CUSTID" value="TOSGH">
+																<input type=hidden id="CUSTNAME" name="CUSTNAME" value="TOPOCEAN SHANGHAI">
+															</form>
+														</th>
+													</tr>
+												</table>
+											</th>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" style="">
+		<div id="footer_inner">
+			<dl class="copy">
+				<dt>
+					<strong>
+						CDM Web Freight&reg; 2025
+					</strong>
+					- <em>
+						July 15, 2025 &nbsp;&bull;&nbsp; 1100
+					</em>
+				</dt>
+				<dd>
+					&copy; 1988-2025 CDM Software Solutions, Inc.&nbsp;&bull;&nbsp;All rights reserved&nbsp;&bull;&nbsp;<a href=mailto:support@cdmsoft.com>
+						<b>
+							E-Mail Support
+						</b>
+					</a>
+					&nbsp;&bull;&nbsp;(281) 298-8880
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div id="contact-dialog" title="Add New Contact">
+		<div id="divInDialog">
+		</div>
+	</div>
+	<div id="ctnrlist-dialog" title="CONTAINER LIST">
+		<div id="divInDialog">
+		</div>
+	</div>
+	<div id="guide-dialog" title="CDM Web Freight� Dashboard Help">
+		<div id="dialog-content">
+		</div>
+	</div>
+	<div id="camera-dialog">
+		<div id="divInDialog">
+		</div>
+	</div>
+	<div id="signature-dialog" title="Signature Capture">
+		<div id="divInDialog">
+		</div>
+	</div>
+	<div id="qr-reader-container">
+		<div id="qr-reader">
+		</div>
+		<button id="qr-reader-stop" onclick="onStopQRReader();">
+			stop
+		</button>
+	</div>
+	<a href="javascript:void(0);" class="icon-scrolltop" id="gotop">
+		<img src="images/icon-slide-up.png" />
+	</a>
+	<script src="js/dragndrop.js?v=20250715094730"></script>
+	<script src="js/dataentry.js?v=20250715094730"></script>
+	<script src="js/qbpw.js?v=20250715094730"></script>
+	<script src="js/calc.js?v=20250715094730"></script>
+	<script src="js/calc2.js?v=20250715094730"></script>
+	<script src="js/bankstat.js?v=20250715094730"></script>
+</body>
+</html>

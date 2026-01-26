@@ -1,0 +1,111 @@
+﻿<div class="table_wrapper" style="max-height: calc(100vh - 100px)">
+    <form id="revenue_form" name="revenue_form" action="#">
+        <div class="table_wrapper_inner" style="padding:0;">
+            <table class="details-dialog-table">
+                <tr>
+                    <td>Type</td>
+                    <td><span id="revenue_edit_txtype"></span></td>
+                    <td>R-Type</td>
+                    <td><select id="revenue_edit_rtype" name="revenue_edit_rtype" style="width: 100px"><option value="IN">Inv(+)</option><option value="CR">CR(-)</option><option value="DB">DB(+)</option></select></td>
+                </tr>
+                <tr>
+                    <td>PT</td>
+                    <td colspan="3"><select id="revenue_edit_ppd" name="revenue_edit_ppd" style="width: 100px"><option value="PP">PP</option><option value="CC">CC</option></select></td>
+                </tr>
+                <tr>
+                    <td>Customer ID</td>
+                    <td><input id="revenue_edit_billid" name="revenue_edit_billid" /></td>
+                    <td  style="width: 120px;">Customer Name</td>
+                    <td><input id="revenue_edit_billname" name="revenue_edit_billname" readonly style="width: 100%;" /></td>
+                </tr>
+                <tr>
+                    <td>AR Code</td>
+                    <td><input id="revenue_edit_arglcode" name="revenue_edit_arglcode" readonly style="width: 100%;" /></td>
+                    <td>AR</td>
+                    <td><input id="revenue_edit_arcode" name="revenue_edit_arcode"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td colspan="3"><input id="revenue_edit_ardesc" name="revenue_edit_ardesc" readonly style="width: 100%;" /></td>
+                </tr>
+                <tr>
+                    <td>Append Description</td>
+                    <td colspan="3"><input id="revenue_edit_arnote" name="revenue_edit_arnote" style="width: 80%;" /></td>
+                </tr>
+                <tr>
+                    <td>Unit</td>
+                    <td><select id="revenue_edit_uom" name="revenue_edit_uom" style="width: 100px"></select></td>
+                    <td>Container#</td>
+                    <td><select id="revenue_edit_ctnrno" name="revenue_edit_ctnrno" style="width: 100px"><option value=""></option></select></td>
+                </tr>
+                <tr>
+                    <td>Qty</td>
+                    <td><input id="revenue_edit_qty" name="revenue_edit_qty" /></td>
+                </tr>
+                <tr>
+                    <td>Currency</td>
+                    <td><select id="revenue_edit_curr" name="revenue_edit_curr" style="width: 100px"></select></td>
+                    <td>Unit Price</td>
+                    <td><input id="revenue_edit_rate" name="revenue_edit_rate" /></td>
+                </tr>
+                <tr>
+                    <td>Ex Rate</td>
+                    <td><span id="revenue_edit_exrate"></span></td>
+                    <td>Amount</td>
+                    <td><input id="revenue_edit_amt" name="revenue_edit_amt" /></td>
+                </tr>
+                <tr>
+                    <td>Gen Method</td>
+                    <td><span id="revenue_edit_genmethod"></span></td>
+                    <td>Invoice#</td>
+                    <td><span id="revenue_edit_invno"></span></td>
+                </tr>
+                <tr>
+                    <td>Rls</td>
+                    <td><input type="checkbox" id="revenue_edit_arrls" name="revenue_edit_arrls" /></td>
+                    <td>Inv Date</td>
+                    <td><span id="revenue_edit_invdate"></span></td>
+                </tr>
+                <tr>
+                    <td>Terms</td>
+                    <td><input id="revenue_edit_terms" name="revenue_edit_terms" /></td>
+                    <td>Due Date</td>
+                    <td><span id="revenue_edit_duedate"></span></td>
+                </tr>
+                <tr>
+                    <td>Received</td>
+                    <td><span id="revenue_edit_amtrecv"></span></td>
+                    <td>Recv Date</td>
+                    <td><span id="revenue_edit_pydate"></span></td>
+                </tr>
+                <tr>
+                    <td style="width: 120px;">Customer Ref.</td>
+                    <td><input id="revenue_edit_custref" name="revenue_edit_custref" /></td>
+                    <td>Client Note</td>
+                    <td><input id="revenue_edit_custnote" name="revenue_edit_custnote" /></td>
+                </tr>
+                <tr>
+                    <td>Last User</td>
+                    <td><span id="revenue_edit_lastuser"></span></td>
+                    <td>Last Time</td>
+                    <td><span id="revenue_edit_lastdate"></span></td>
+                </tr>
+                <tr>
+                    <td>Create User</td>
+                    <td><span id="revenue_edit_adduser"></span></td>
+                    <td>Create Time</td>
+                    <td><span id="revenue_edit_adddate"></span></td>
+                </tr>
+                <tr>
+                    <td>JE Number</td>
+                    <td colspan="3"><span id="revenue_edit_jeno"></span></td>
+                </tr>
+            </table>
+        </div>
+        <input type="hidden" id="revenue_edit_detid" name="revenue_edit_detid" />
+    </form>
+    <div class="buttons-container">
+        <button onclick="onCloseRevenueEditDialog()">Cancel</button>
+        <button id="revenue-save-btn" onclick="onSaveRevenue()">Save</button>
+    </div>
+</div>

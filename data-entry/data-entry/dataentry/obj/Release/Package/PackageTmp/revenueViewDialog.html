@@ -1,0 +1,108 @@
+﻿<div class="table_wrapper" style="max-height: calc(100vh - 100px)">
+    <div class="table_wrapper_inner" style="padding:0;">
+        <table class="details-dialog-table">
+            <tr>
+                <td>Type</td>
+                <td><span id="revenue_view_txtype"></span></td>
+                <td>R-Type</td>
+                <td><span id="revenue_view_rtype"></span></td>
+            </tr>
+            <tr>
+                <td>PT</td>
+                <td colspan="3"><span id="revenue_view_ppd"></span></td>
+            </tr>
+            <tr>
+                <td>Customer ID</td>
+                <td><span id="revenue_view_billid"></span></td>
+                <td style="width: 120px;">Customer Name</td>
+                <td><span id="revenue_view_billname"></span></td>
+            </tr>
+            <tr>
+                <td>AR Code</td>
+                <td><span id="revenue_view_arglcode"></span></td>
+                <td>AR</td>
+                <td><span id="revenue_view_arcode"></span></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td colspan="3"><span id="revenue_view_ardesc"></span></td>
+            </tr>
+            <tr>
+                <td>Append Description</td>
+                <td colspan="3"><span id="revenue_view_arnote"></span></td>
+            </tr>
+            <tr>
+                <td>Unit</td>
+                <td><span id="revenue_view_uom"></span></td>
+                <td>Container#</td>
+                <td><span id="revenue_view_ctnrno"></span></td>
+            </tr>
+            <tr>
+                <td>Qty</td>
+                <td><span id="revenue_view_qty"></span></td>
+            </tr>
+            <tr>
+                <td>Currency</td>
+                <td><span id="revenue_view_curr"></span></td>
+                <td>Unit Price</td>
+                <td><span id="revenue_view_rate"></span></td>
+            </tr>
+            <tr>
+                <td>Ex Rate</td>
+                <td><span id="revenue_view_exrate"></span></td>
+                <td>Amount</td>
+                <td><span id="revenue_view_amt"></span></td>
+            </tr>
+            <tr>
+                <td>Gen Method</td>
+                <td><span id="revenue_view_genmethod"></span></td>
+                <td>Invoice#</td>
+                <td><span id="revenue_view_invno"></span></td>
+            </tr>
+            <tr>
+                <td>Rls</td>
+                <td><span id="revenue_view_arrls"></span></td>
+                <td>Inv Date</td>
+                <td><span id="revenue_view_invdate"></span></td>
+            </tr>
+            <tr>
+                <td>Terms</td>
+                <td><span id="revenue_view_terms"></span></td>
+                <td>Due Date</td>
+                <td><span id="revenue_view_duedate"></span></td>
+            </tr>
+            <tr>
+                <td>Received</td>
+                <td><span id="revenue_view_amtrecv"></span></td>
+                <td>Recv Date</td>
+                <td><span id="revenue_view_pydate"></span></td>
+            </tr>
+            <tr>
+                <td style="width: 120px;">Customer Ref.</td>
+                <td><span id="revenue_view_custref"></span></td>
+                <td>Client Note</td>
+                <td><span id="revenue_view_custnote"></span></td>
+            </tr>
+            <tr>
+                <td>Last User</td>
+                <td><span id="revenue_view_lastuser"></span></td>
+                <td>Last Time</td>
+                <td><span id="revenue_view_lastdate"></span></td>
+            </tr>
+            <tr>
+                <td>Create User</td>
+                <td><span id="revenue_view_adduser"></span></td>
+                <td>Create Time</td>
+                <td><span id="revenue_view_adddate"></span></td>
+            </tr>
+            <tr>
+                <td>JE Number</td>
+                <td colspan="3"><span id="revenue_view_jeno"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="buttons-container">
+        <button onclick="onCloseRevenueViewDialog()">Close</button>
+        <button onclick="onOpenEditRevenue()">Edit</button>
+    </div>
+</div>

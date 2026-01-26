@@ -1,0 +1,94 @@
+﻿#drop_area {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+    #drop_area.highlight {
+        background-color: wheat;
+    }
+
+#file_elem {
+    display: none;
+}
+
+.list-item {
+    position: relative;
+    display: inline-block;
+    margin: 3px;
+}
+
+    .list-item a {
+        display: block;
+        line-height: 20px;
+        width: 98px;
+        text-align: center;
+    }
+
+        .list-item a:hover {
+            display: block !important;
+            padding: 0px !important;
+        }
+
+    .list-item img {
+        width: 99px;
+        height: 99px;
+    }
+
+    .list-item .delete-icon {
+        position: absolute;
+        display: none;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/icon-delete.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .list-item .edit-icon {
+        position: absolute;
+        display: none;
+        top: 5px;
+        right: 25px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/icon-edit.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .list-item:hover .delete-icon {
+        display: block;
+    }
+
+    .list-item:hover .edit-icon {
+        display: block;
+    }
+
+#error_message {
+    display: none;
+    color: #C82121;
+    font-size: 14px;
+}
+
+#uploading_progress {
+    display: none;
+    width: 250px;
+    height: 20px;
+}
+
+.fileList:hover,
+.fileList:active {
+    cursor: pointer;
+}
+
+#drag_label {
+    cursor: pointer;
+}

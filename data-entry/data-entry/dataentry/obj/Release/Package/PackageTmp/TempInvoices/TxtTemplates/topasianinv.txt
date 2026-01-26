@@ -1,0 +1,122 @@
+{{- layout_width = 120 -}}
+{{- layout_width_center = 100 -}}
+{{- right_column_start = 50 -}}
+
+{{ # FUNCTIONS }}
+{{- func repeat(c, count) -}}
+  {{- c = c ?? " " -}}
+
+  {{- count = count ?? 0 -}}
+  {{- count = +count -}}
+  {{- count = math.floor(count) -}}
+  {{- count = count < 0 ? 0 : count -}}
+
+  {{- result = "" -}}
+  {{- i = 0 -}}
+  {{- while i < count -}}
+    {{- result = result + c -}}
+    {{- i = i + 1 -}}
+  {{- end -}}
+
+  {{- result -}}
+{{- end -}}
+
+{{- func pad_left(count) -}}
+  {{- result = "" -}}
+  {{- for i in 0..(count - 1) -}}
+    {{- result = result + " " -}}
+  {{- end -}}
+  {{ result }}
+{{- end -}}
+
+{{- func pad_right(text, total_width) -}}
+  {{- text = text ?? "" -}}
+  {{- text_len = text.size ?? 0 -}}
+  {{- pad_len = total_width - text_len -}}
+  {{- pad_len = pad_len < 0 ? 0 : pad_len -}}
+  {{- padding = repeat(" ", pad_len) -}}
+  {{- text + padding -}}
+{{- end -}}
+
+{{- func start_col50(left_text, right_text) -}}
+  {{- left_text = left_text ?? "" -}}
+  {{- right_text = right_text ?? "" -}}
+
+  {{- col = 50 -}}
+  {{- left_len = left_text.size ?? 0 -}}
+
+  {{- pad_len = col - left_len -}}
+  {{- pad_len = pad_len < 1 ? 1 : pad_len -}}
+
+  {{- padding = repeat(" ", pad_len) -}}
+  {{- left_text + padding + right_text -}}
+{{- end -}}
+
+{{- func center(text) -}}
+  {{- text = text ?? "" -}}
+  {{- pad = ((layout_width_center - text.size) / 2) | math.floor -}}
+  {{ text | string.pad_left (text.size + pad) }}
+{{- end -}}
+
+{{- func show_multiline(v) -}}
+  {{- s = (v ?? "") + "" -}}
+  {{- # turn all variants into real \n -}}
+  {{- s = string.replace s "\\r\\n" "\n" -}}
+  {{- s = string.replace s "\\n" "\n" -}}
+  {{- s = string.replace s "\r\n" "\n" -}}
+  {{- ret s -}}
+{{- end -}}
+
+{{- func right_column(label, value) -}}
+  {{- label = label ?? "" -}}
+  {{- value = value ?? "" -}}
+  {{- pad   = right_column_start - label.size - value.size - 2 -}}
+  {{- pad   = pad < 0 ? 0 : pad -}}
+  {{ pad_left pad }}{{ label }}: {{ value }}
+{{- end -}}
+{{ # END OF FUNCTIONS }}
+
+{{ invoiceDataTxt.dateTime | string.pad_left layout_width }}
+{{ center stationProfileInfoTxt.Compname }}
+{{ center stationProfileInfoTxt.Compadd1 }}
+{{ center stationProfileInfoTxt.Compphone + "," + stationProfileInfoTxt.Compcity + ", " + stationProfileInfoTxt.Compzip }}
+{{ center "PH: " + stationProfileInfoTxt.Compphone + "  FAX: " + stationProfileInfoTxt.Compfax + "  EM: " + stationProfileInfoTxt.Compemail }}
+{{ center INVOICE }}
+
+{{ pad_right(customerInfoTxt.CustName, 1) }}{{ pad_right("INVOICE: " +invoiceDataTxt.invno, 50) }} 
+{{ pad_right(customerInfoTxt.Addr1, 1) }}{{ pad_right("DATE: " + invoiceDataTxt.dateOnly, 50) }}
+{{ customerInfoTxt.City }} {{ pad_right("TERMS: " + invoiceDataTxt.terms, 50) }}
+{{ "ATTN: " + customerInfoTxt.Contact1 }} {{ start_col50 "FILE NO " shipmentInfoTxt.Manifest }}
+{{ "PHONE: " + customerInfoTxt.Phone1 }} {{ start_col50  "MBL NO " shipmentInfoTxt.Mbl }}
+{{ shipmentInfoTxt.Consignment + " CONSIGNMENT" }} {{ start_col50 "HBL NO " shipmentInfoTxt.Hbl }}
+{{ pad_right("CUSTOMER ID: " + customerInfoTxt.Custid, 10) }}
+__________________________________________________________________________________________________________________________________________
+VESSEL & VOYAGE: {{ shipmentInfoTxt.Vessel2 }} V.{{ shipmentInfoTxt.Voyage2 }}  {{ start_col50 "NO. OF PKGS " containerInfoTxt.TotalQty }}
+{{ "EDT: " + shipmentInfoTxt.Polcode }} {{ start_col50 "GROSS WEIGHT " containerInfoTxt.TotalGrswt }}
+{{ "DESCRIPTION: " + shipmentInfoTxt.Sicomm }} {{ start_col50  "MEASUREMENT " containerInfoTxt.TotalVolume }}
+{{ "WEEK NO: " + shipmentInfoTxt.Sweek }} {{ pad_right("PORT OF LOADING " + shipmentInfoTxt.Polname, 70) }}
+{{ pad_right("PORT OF DISCHARGE " + shipmentInfoTxt.Poulname, 70) }}
+__________________________________________________________________________________________________________________________________________
+{{ pad_right("ITEMS", 25) }}{{ pad_right("Exchange Rate", 60) }}{{ pad_right(invoiceDataTxt.currId + " AMOUNT", 30) }}{{ pad_right("Tax Code", 15) }}
+__________________________________________________________________________________________________________________________________________
+{{ for item in revenueInfoTxt -}}
+	{{ pad_right(item.Ardesc, 25) }}{{ pad_right(item.Currency + "  " + item.Amt + " / " + item.Uom + " X " + item.Qty, 40) }}{{ pad_right(item.Exrate + "             " +invoiceDataTxt.currId, 30) }}{{ pad_right(item.TotalAmount, 20) }}{{ pad_right("e-General", 15) }}
+{{ end }}
+                                                                                      =============================
+{{ pad_right("Sub Total          " + totalInfoTxt.SubTotal, 115) }}
+{{ pad_right("Total GST Amount          " + totalInfoTxt.TotalGSTAmt, 115) }}
+                                                                                      =============================
+{{ pad_right("Total          " + totalInfoTxt.Total, 115) }}
+{{ pad_right("Grand Total          " + totalInfoTxt.GrandTotal, 115) }}
+__________________________________________________________________________________________________________________________________________
+{{ pad_right("Total: " + totalInfoTxt.WordedAmount, 5) }} ({{ totalInfoTxt.GrandTotal }}) ONLY
+REMARKS:
+
+
+BANKS DETAILS:
+{{ show_multiline bankInfoTxt.Addr1 }}
+
+
+{{ pad_right(stationProfileInfoTxt.Compname,110) }}
+{{ pad_right("_________________________________________________________________",115) }}
+{{ pad_right("Computer generated invoice signature is not required",110) }}

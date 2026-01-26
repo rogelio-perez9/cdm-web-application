@@ -1,0 +1,13 @@
+# ==========================================
+# VISUAL STUDIO / IDE GARBAGE ONLY
+# ==========================================
+
+# Visual Studio workspace
+
+
+.vs/
+bin/
+# User / machine specific files
+
+
+# Build outputs

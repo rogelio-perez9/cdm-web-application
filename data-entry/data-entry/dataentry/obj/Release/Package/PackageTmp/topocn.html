@@ -1,0 +1,5220 @@
+<!DOCTYPE HTML>
+ <html lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <title>
+Web Based Freight Forwarding Operations</title>
+ <meta name="Description" content="U.S. Customs certified software provider for freight forwarders, NVOCC and logistics companies">
+ <meta name="Keywords" content="Intermodal,Intermodal Tracking,Container,Container Tracking,Equipment Tracking,Chassis,GPS,RFID">
+ <link rel="shortcut icon" href="images/cdm-logo.jpg" type="image/x-icon">
+ <link rel="apple-touch-icon" href="images/cdm-logo.jpg">
+ <link media="screen" rel="stylesheet" type="text/css" href="css/top-blue.css?v=20250618063206"/>
+ <link media="screen" rel="stylesheet" type="text/css" href="css/jquery.token-input.css?v=20250618063206" />
+ <link media="screen" rel="stylesheet" type="text/css" href="css/dataentry.css?v=20250618063206" />
+ <link media="screen" rel="stylesheet" type="text/css" href="css/dragndrop.css?v=20250618063206" />
+ <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+ <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" type="text/javascript">
+</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript">
+</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" type="text/javascript">
+</script>
+ <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js" type="text/javascript">
+</script>
+ <script src="js/jslib-html5-camera-photo.min.js">
+</script>
+ <script src="js/jquery.tokeninput.min.js">
+</script>
+ <script src="js/html5-qrcode.min.js">
+</script>
+ <script>
+ (function(){ window.ldfdr = window.ldfdr || {}; (function(d, s, ss, fs){ fs = d.getElementsByTagName(s)[0]; function ce(src){ var cs = d.createElement(s); cs.src = src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)}, 1); } ce(ss); })(document, 'script', 'https://sc.lfeeder.com/lftracker_v1_kn9Eq4Rz1wY4RlvP.js'); })(); </script>
+ <style>
+     .tooltip .tooltiptext {        visibility: hidden;        width: 140px;        background-color: #4863a0;        color: #fff;        z-index: 1;        top: -6px;        right: 105%;        text-align: center;        border-radius: 6px;        padding: 5px 0;        position: absolute;     }     .tooltip {        position: relative;        display: inline-block;     }     .tooltip:hover .tooltiptext {         visibility: visible;     }     .tooltip2 .tooltiptext2 {        visibility: hidden;        width: 100px;        background-color: #4863a0;        color: #fff;        z-index: 1;        top: -6px;        left: 100%;        text-align: center;        border-radius: 6px;        padding: 5px 0;        position: absolute;     }     .tooltip2 {        position: relative;        display: inline-block;     }     .tooltip2:hover .tooltiptext2 {         visibility: visible;     } </style>
+ </head>
+ <body>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113444990-1">
+</script>
+ <script>
+ window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-113444990-1'); </script>
+ <div id="wrapper">
+ 		<div class="sticky">
+            <div class="section table_section">
+             <div class="title_wrapper_ocean">
+                <h2>
+<b>
+TOPOCEAN CONSOLIDATION SERVICE</b>
+ - TALAX;TANYC;TASFO;TODOC;TOLAX;TONYC;TOORD;TOSFO</h2>
+ <h2 style="cursor: pointer; position: absolute; top: 0; right: 12px;">
+WELCOME <strong>
+CDM SUPPORT</strong>
+ (<a href="webfrt.dll?MID=g8g0-8g5i-r6l2">
+LOG OUT</a>
+)</h2>
+             </div>
+             <div class="section_content">
+               <div class="section_content_padding2">
+                 <div class="dashboard_menu_wrapper">
+                    <ul class="dashboard_menu2">
+                        	<li>
+<a class="back"          href="ocnlist.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3">
+<span>
+Shipment List</span>
+</a>
+</li>
+            	   	<li>
+<a class="topcs"         href="topcs.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3">
+<span>
+CS Dashboard</span>
+</a>
+</li>
+             				<li>
+<a class="search"        href="ocnlist.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&SW=ON">
+<span>
+Search</span>
+</a>
+</li>
+                  <li>
+<a class="ctnr05"          href="topctnr.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE">
+<span>
+Container</span>
+</a>
+</li>
+                     <li>
+<a class="d15"             href="ocncls.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE">
+<span>
+Clauses</span>
+</a>
+</li>
+                     <li>
+<a class="invoicenew"      href="cdmrev2.dll??MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+Revenue / Cost</span>
+</a>
+</li>
+                  <li>
+<a class="top06"           href="carrel.dll??MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&HID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+Cargo Release</span>
+</a>
+</li>
+                  <li>
+<a class="top07"        href="dohelp.dll??MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&HID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+Delivery Order</span>
+</a>
+</li>
+                     <li>
+<a class="docs"            href="cdmdoc.dll??MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+Documents</span>
+</a>
+</li>
+                     <li>
+<a class="events"          href="shipevent.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE">
+<span>
+Shipment Events</span>
+</a>
+</li>
+             <li>
+<a class="oceansi"         href="prtsi1.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+Shipping Instructions</span>
+</a>
+</li>
+             <li>
+<a class="oceansi"         href="prthbl1.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+HBL</span>
+</a>
+</li>
+   	         <li>
+<a class="oceanbol"        href="toparr1.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+Arrival Notice</span>
+</a>
+</li>
+          <li>
+<a class="import"          href="prtae1.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE&MOD=OCN">
+<span>
+Entry Authorization</span>
+</a>
+</li>
+                        <li>
+<a class="d7"               href="dashboard.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3">
+<span>
+Dashboard</span>
+</a>
+</li>
+                    </ul>
+                 </div>
+               </div>
+             </div>
+            </div>
+            <div class="section table_section">
+             <div class="title_wrapper_ocean">
+                <h2>
+<b>
+Ocean</b>
+ Shipment No.: TCS4ZP32152,&nbsp;MBL: SJHHSLSNBW05865,&nbsp;FILE NO.: YLP50001</h2>
+ <h2 style="cursor: pointer; position: absolute; top: 0; right: 12px;">
+             		<form action="topocn.dll?MID=G8G0-8G5I-R6L2&LINK=4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3&RID=60426027-47BB-49FB-99A1-CDF685602BAE" method="POST">
+ <input type="button" name="B1"   value=" C A N C E L " style="border:1px solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#ffffff;background-color:#cc5500;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;" onClick="history.go(-1)">
+&nbsp;<input type="submit" name="A1"   value=" S A V E "     style="border:1px solid #CDCDCD;font-family: tahoma,Verdana;font-size:12px;font-weight:bolder;height: 29px;position: relative;color:#ffffff;background-color:#cc5500;padding-left:2px;padding-right:2px;padding-top:2px;padding-bottom:2px;">
+ 					</h2>
+             </div>
+                   <input type=hidden id="sqid" name="sqid" value="topoceanusa">
+                   <input type=hidden id="eustates" name="eustates" value="AT,BE,BG,CZ,DK,DE,EE,IE,EL,ES,FR,GR,IT,CY,LV,LT,LU,HU,HR,MT,NL,NO,PL,PT,RO,SI,SK,FI,SE">
+ </div>
+ </div>
+    <div id="content">
+    <div id="page">
+       <div class="inner">
+           <div class="section table_section">
+             <div class="section_content">
+                   <div class="table_wrapper">
+                      <div class="table_wrapper_inner" style="padding:0;">
+                       <table>
+                       <tr>
+                         <th colspan=4>
+<table>
+                       		<tr>
+                         		<th>
+Create By</th>
+                         		<th>
+<input type="text" name="adduser" id="adduser" size="15" value="JACQUELINEROMAN" READONLY>
+&nbsp;<b>
+ ON 06/17/2025</b>
+</th>
+                         		<th>
+Origin OPS</th>
+                         		<th>
+<input type="text" name="oopsid" id="oopsid" size="15" value="" READONLY>
+</th>
+                         		<th>
+Destination OPS</th>
+                         		<th>
+<input type="text" name="dopsid" id="dopsid" size="15" value="" READONLY>
+</th>
+                         		<th>
+Destination CS</th>
+                         		<th>
+<input type="text" name="csid" id="csid" size="15" value="BONNIEMA" READONLY>
+</th>
+                         		<th>
+Handle By</th>
+                         		<th>
+<select name="handleby" id="handleby" size="1"   >
+<option value="">
+</option>
+<option value="ADAHONG">
+ADA HONG</option>
+<option value="ADELINETSAN">
+ADELINE TSAN</option>
+<option value="ALANFAVICCHIO">
+ALAN FAVICCHIO</option>
+<option value="ALANYANG">
+ALAN YANG</option>
+<option value="ALEXANDRAYU">
+ALEXANDRA YU</option>
+<option value="ALEXYANG">
+ALEX YANG</option>
+<option value="ALLANCHAN">
+ALLAN  CHAN</option>
+<option value="ALLENLIU">
+ALLEN LIU</option>
+<option value="AMANDAWU">
+AMANDA WU</option>
+<option value="AMYFAN">
+AMY FAN</option>
+<option value="AMYLOHRUNGRUANG">
+AMY LOHRUNGRUANG</option>
+<option value="AMYTRAN">
+AMY TRAN</option>
+<option value="AMYTSAN">
+AMY TSAN</option>
+<option value="ANAROJAS">
+ANA ROJAS</option>
+<option value="ANDREWTAN">
+ANDREW TAN</option>
+<option value="ANDYLAM">
+ANDY LAM</option>
+<option value="ANDYTRUONG">
+ANDY TRUONG</option>
+<option value="ANDYWANG">
+ANDY WANG</option>
+<option value="ANGELIXU">
+ANGELI XU</option>
+<option value="ANITACHAREUNE">
+ANITA CHAREUNE</option>
+<option value="ANNIEFONG">
+ANNIE FONG</option>
+<option value="ANTONIACOYOC">
+ANTONIA COYOC</option>
+<option value="AUSTINMEJIA">
+AUSTIN MEJIA</option>
+<option value="BELLAJUAN">
+BELLA JUAN</option>
+<option value="BENSONWANG">
+BENSON WANG</option>
+<option value="BERYLBI">
+BERYL BI</option>
+<option value="BILLIAMLUI">
+BILLIAM LUI</option>
+<option value="BONNIEAU">
+BONNIE AU</option>
+<option value="BONNIEMA" SELECTED>
+BONNIE MA</option>
+<option value="BONNYCHEN">
+BONNY CHEN</option>
+<option value="BRANDONTANG">
+BRANDON TANG</option>
+<option value="BRENDACAM">
+BRENDA CAM</option>
+<option value="BRIANKIM">
+BRIAN KIM</option>
+<option value="BRIANLOUGHNEY">
+BRIAN LOUGHNEY</option>
+<option value="BRUCECHIANG">
+BRUCE CHIANG</option>
+<option value="CALVINKUANG">
+CALVIN KUANG</option>
+<option value="CANDACEWALSH">
+CANDACE WALSH</option>
+<option value="CAREYLAU">
+CAREY LAU</option>
+<option value="CATHARINECHUNG">
+CATHARINE CHUNG</option>
+<option value="CATHERINELOPEZ">
+CATHERINE LOPEZ</option>
+<option value="CDMDR">
+CDM-DR</option>
+<option value="CECILIAYU">
+CECILIA YU</option>
+<option value="CELIALAU">
+CELIA LAU</option>
+<option value="CELIAWONG">
+CELIA WONG</option>
+<option value="CHAPMANKWAN">
+CHAPMAN KWAN</option>
+<option value="CHARMAINEWONG">
+CHARMAINE WONG</option>
+<option value="CHAUPHONG">
+CHAU PHONG</option>
+<option value="CHERYLLIN">
+CHERYL LIN</option>
+<option value="CHRISTINAMILLER">
+CHRISTINA MILLER</option>
+<option value="CINDYCHANG">
+CINDY CHANG</option>
+<option value="CINDYHSU">
+CINDY HSU</option>
+<option value="CINDYRAMOS">
+CINDY RAMOS</option>
+<option value="CLAUDIADOMINGUE">
+CLAUDIA DOMINGUEZ</option>
+<option value="CONNIELAI">
+CONNIE LAI</option>
+<option value="CONNIEYU">
+CONNIE YU</option>
+<option value="CRUZEMA">
+CRUZE MA</option>
+<option value="CYMIEWONG">
+CYMIE WONG</option>
+<option value="DAISYSI">
+DAISY SI</option>
+<option value="DANIELSALVADOR">
+DANIEL  SALVADOR</option>
+<option value="DANNYHA">
+DANNY HA</option>
+<option value="DAVIDPEREZ">
+DAVID PEREZ</option>
+<option value="DAVIDZ">
+DAVID ZHU</option>
+<option value="DEBBIEWANG">
+DEBBIE  WANG</option>
+<option value="DENNISTRIEU">
+DENNIS TRIEU</option>
+<option value="DERRICKCHUE">
+DERRICK CHUE</option>
+<option value="DEVINCHOU">
+DEVIN CHOU</option>
+<option value="DIANAARENAS">
+DIANA ARENAS</option>
+<option value="DILLONAGUILAR">
+DILLON    AGUILAR</option>
+<option value="DONGLIU">
+DONG LIU</option>
+<option value="EFFYNIU">
+EFFY NIU</option>
+<option value="ELAINECHEUNG">
+ELAINE CHEUNG</option>
+<option value="EMILYLE">
+EMILY  LE</option>
+<option value="ETHANCHIN">
+ETHAN CHIN</option>
+<option value="EUNICEKONG">
+EUNICE KONG</option>
+<option value="FIONAZHAO">
+FIONA ZHAO</option>
+<option value="FIONCHIU">
+FION  CHIU</option>
+<option value="FLORAYOUNG">
+FLORA YOUNG</option>
+<option value="GABRIELARAMIREZ">
+GABRIELA RAMIREZ</option>
+<option value="GENECHONG">
+GENE CHONG</option>
+<option value="GLENNEGARCIA">
+GLENNE GARCIA</option>
+<option value="HANAHTRAN">
+HANAH TRAN</option>
+<option value="HELENGIP">
+HELEN GIP</option>
+<option value="HELENYONG">
+HELEN YONG</option>
+<option value="HENNYSALIM">
+HENNY SALIM</option>
+<option value="HNINPHYU">
+HNIN PHYU</option>
+<option value="HOLLYLOHREN">
+HOLLY LOHREN</option>
+<option value="HOWARDLIANG">
+HOWARD LIANG</option>
+<option value="ISAACNGUYEN">
+ISAAC NGUYEN</option>
+<option value="ISABELORTIZ">
+ISABEL ORTIZ</option>
+<option value="JACKCHEN">
+JACK CHEN</option>
+<option value="JACQUELINEGONZA">
+JACQUELINE GONZALEZ</option>
+<option value="JACQUELINEROMAN">
+JACQUELINE ROMAN</option>
+<option value="JAMESLIN">
+JAMES LIN</option>
+<option value="JAMIETANG">
+JAMIE TANG</option>
+<option value="JANICECHEN">
+JANICE CHEN</option>
+<option value="JANICEPEARSON">
+JANICE PEARSON</option>
+<option value="JASONHUANG">
+JASON HUANG</option>
+<option value="JASONTRINH">
+JASON TRINH</option>
+<option value="JASONWEN">
+JASON WEN</option>
+<option value="JAYKONG">
+JAY KONG</option>
+<option value="JEFFCABRADILLA">
+JEFF CABRADILLA</option>
+<option value="JEFFREYSZE">
+JEFFREY SZE</option>
+<option value="JENNYTAO">
+JENNY TAO</option>
+<option value="JESSEHUANG">
+JESSE HUANG</option>
+<option value="JESSICALAM">
+JESSICA LAM</option>
+<option value="JESSICAMLAM">
+JESSICA LAM</option>
+<option value="JESSICARAMIREZ">
+JESSICA  RAMIREZ</option>
+<option value="JESSIEYUE">
+JESSIE YUE</option>
+<option value="JINGLI">
+JING LI</option>
+<option value="JOBITARAMIREZ">
+JOBITA  RAMIREZ</option>
+<option value="JOHNNYLAM">
+JOHNNY LAM</option>
+<option value="JOHNSONGAO">
+JOHNSON GAO</option>
+<option value="JONATHANT">
+JONATHAN TOLENTINO</option>
+<option value="JONATHANYEN">
+JONATHAN YEN</option>
+<option value="JOSEPHHWANG">
+JOSEPH WANG</option>
+<option value="JOSEPHWANG">
+JOSEPH WANG</option>
+<option value="JOSHUAFIGUEROA">
+JOSHUA FIGUEROA</option>
+<option value="JUDIESUN">
+JUDIE SUN</option>
+<option value="JUDYLO">
+JUDY LO</option>
+<option value="JUSTINGAO">
+JUSTIN GAO</option>
+<option value="KAMHO">
+KAM HO</option>
+<option value="KARENKUAN">
+KAREN KUAN</option>
+<option value="KARENZHENG">
+KAREN ZHENG</option>
+<option value="KATTYSANSO">
+KATTY SANSO</option>
+<option value="KELLYMYERS">
+KELLY MYERS</option>
+<option value="KELLYWU">
+KELLY WU</option>
+<option value="KELVINYU">
+KELVIN YU</option>
+<option value="KENNETHCRUZ">
+KENNETH CRUZ</option>
+<option value="KENNYTHAI">
+KENNY THAI</option>
+<option value="KEVINCHIU">
+KEVIN CHIU</option>
+<option value="KEVINJIAN">
+KEVIN JIAN</option>
+<option value="KHAILEESOONG">
+KHAILEE SOONG</option>
+<option value="KHONARYOU">
+KHONARY OU</option>
+<option value="KIETNGO">
+KIET  NGO</option>
+<option value="LAWRENCEWANG">
+LAWRENCE WANG</option>
+<option value="LEOLAI">
+LEO LAI</option>
+<option value="LINMA">
+LIN MA</option>
+<option value="LISACHANG">
+LISA CHANG</option>
+<option value="LOUISWU">
+LOUIS WU</option>
+<option value="LYNNTAM">
+LYNN TAM</option>
+<option value="MAGGIERONG">
+MAGGIE RONG</option>
+<option value="MARIBELREYNA">
+MARIBEL REYNA</option>
+<option value="MAYCHEN">
+MAY CHEN</option>
+<option value="MAYIGLESIA">
+MAY IGLESIA</option>
+<option value="MAYRAVILLALPAND">
+MAYRA VILLALPANDO</option>
+<option value="MEIRYLYNN">
+MEIRY LYNN</option>
+<option value="MELANIETOWNSEND">
+MELANIE TOWNSEND</option>
+<option value="MICHAELMENDOZA">
+MICHAEL MENDOZA</option>
+<option value="MICHELLEPLACZEK">
+MICHELLE PLACZEK</option>
+<option value="MICHELLEYANG">
+MICHELLE YANG</option>
+<option value="MIREJLAMURTIC">
+MIREJLA MURTIC</option>
+<option value="MONICAZAMORA">
+MONICA   ZAMORA</option>
+<option value="MONICAZAVALA">
+MONICA ZAVALA</option>
+<option value="MYRISPOLINTAN">
+MYRIS POLINTAN-GOSE</option>
+<option value="NATHALIEMORENO">
+NATHALIE MORENO</option>
+<option value="NATHANHONG">
+NATHAN HONG</option>
+<option value="NATHANWANG">
+NATHAN WANG</option>
+<option value="NICKKAZAKIS">
+NICK KAZAKIS</option>
+<option value="NIDIAZELAYANDIA">
+NIDIA ZELAYANDIA</option>
+<option value="PEDROMENESES">
+PEDRO MENESES</option>
+<option value="PHILLIPLAU">
+PHILLIP LAU</option>
+<option value="PHILLIPZHEN">
+PHILLIP ZHEN</option>
+<option value="RACHELWEI">
+RACHEL WEI</option>
+<option value="RANDYCHAO">
+RANDY CHAO</option>
+<option value="RANDYLI">
+RANDY LI</option>
+<option value="RANDYLU">
+RANDY LU</option>
+<option value="RAYLOKA">
+RAY LOKA</option>
+<option value="RAYMONDBACH">
+RAYMOND BACH</option>
+<option value="ROYCHANG">
+ROY CHANG</option>
+<option value="RYANGONZALEZ">
+RYAN GONZALEZ</option>
+<option value="RYANJIMASEK">
+RYAN JIRMASEK</option>
+<option value="SABRINACHUNG">
+SABRINA CHUNG</option>
+<option value="SALLYLEE">
+SALLY  LEE</option>
+<option value="SAMANTHAHUANG">
+SAMANTHA HUANG</option>
+<option value="SAMANTHAPONG">
+SAMANTHA PONG</option>
+<option value="SAMMILIU">
+SAMMI LIU</option>
+<option value="SAMMIYU">
+SAMMI YU</option>
+<option value="SAMUELCHANG">
+SAMUEL CHANG</option>
+<option value="SANDYLIN">
+SANDY LIN</option>
+<option value="SANDYLUO">
+SANDY LUO</option>
+<option value="SARAHLAI">
+SARAH LAI</option>
+<option value="SARAHLUI">
+SARAH LUI</option>
+<option value="SCOTTCHAMBERS">
+SCOTT CHAMBERS</option>
+<option value="SEANCHEN">
+SEAN CHEN</option>
+<option value="SERGIOMENESES">
+SERGIO MENESES</option>
+<option value="SHARONCHIANG">
+SHARON CHIANG</option>
+<option value="SHAWNMA">
+SHAWN MA</option>
+<option value="SHERINELYNN">
+SHERINE LYNN</option>
+<option value="SHERRYMUI">
+SHERRY MUI</option>
+<option value="SONNYLEONG">
+SONNY LEONG</option>
+<option value="STACEYSIU">
+STACEY    SIU</option>
+<option value="STANLEYLAU">
+STANLEY LAU</option>
+<option value="STEPHANIESUN">
+STEPHANIE SUN</option>
+<option value="STEPHENWU">
+STEPHEN  WU</option>
+<option value="STEVENCHENG">
+STEVEN CHENG</option>
+<option value="STEVENOU">
+STEVEN OU</option>
+<option value="SUHANILU">
+SUHANI LU</option>
+<option value="SUKLEE">
+SUK LEE</option>
+<option value="SUNNYYSUN">
+SUNNY SUN</option>
+<option value="SUPPORT@CDMSOFT.COM">
+CDM SUPPORT</option>
+<option value="SUZANNECHUNG">
+SUZANNE CHUNG</option>
+<option value="SYLVIALAI">
+SYLVIA LAI</option>
+<option value="THERESAREED">
+THERESA REED</option>
+<option value="TIFFANYQI">
+TIFFANY QI</option>
+<option value="TIFFANYTSENG">
+TIFFANY TSENG</option>
+<option value="TILLIEKWAN">
+TILLIE KWAN</option>
+<option value="TINALEE">
+TINA LEE</option>
+<option value="TOLAX.ADMIN">
+TOLAX.ADMIN</option>
+<option value="TOLAX.IT.ADMIN">
+IT</option>
+<option value="TOMHSU">
+TOM HSU</option>
+<option value="TOMMYLAM">
+TOMMY LAM</option>
+<option value="TONYHUANG">
+TONY HUANG</option>
+<option value="TOORD">
+TEST ORD</option>
+<option value="TOSFO.ADMIN">
+TOSFO.ADMIN</option>
+<option value="TRENTFAIRBANKS">
+TRENT FAIRBANKS</option>
+<option value="TYLERHSIEH">
+TYLER HSIEH</option>
+<option value="ULYCHU">
+ULY CHU</option>
+<option value="USER_LOGIN">
+FULL NAME</option>
+<option value="VANESSAANGULO">
+VANESSA ANGULO</option>
+<option value="VERONICALUK">
+VERONICA LUK</option>
+<option value="VICKIHIEMSTRA">
+VICKI HIEMSTRA</option>
+<option value="VICKITSOI">
+VICKI TSOI</option>
+<option value="VICTORMORALES">
+VICTOR MORALES</option>
+<option value="VIVISUNG">
+VIVIEN SUNG</option>
+<option value="WENDYPOON">
+WENDY POON</option>
+<option value="WILLIAMTIU">
+WILLIAM TIU</option>
+<option value="WILLIAMWANG">
+WILLIAM  WANG</option>
+<option value="WILWONG">
+WIL WONG</option>
+<option value="WINNIENG">
+WINNIE NG</option>
+<option value="WINNIETANG">
+WINNIE TANG</option>
+<option value="ZULEMAHARO">
+ZULEMA HARO</option>
+</select>
+</th>
+                         		<th>
+Kerry Shipment</th>
+                         		<th>
+<input type="checkbox" id="kerry" name="kerry" value="1" >
+</th>
+                         		<th>
+Carrier Door Move</th>
+                         		<th>
+<input type="checkbox" id="cardoormove" name="cardoormove" value="1" >
+</th>
+                         		<th>
+Rolled?</th>
+                         		<th>
+<input type="checkbox" id="isrolled" name="isrolled" value="1" >
+</th>
+                       		</tr>
+                         </table>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Origin Station</th>
+                         <th>
+<select name="station1" id="station1" size="1"   REQUIRED>
+<option value="">
+</option>
+<option value="AADAU">
+AADAU</option>
+<option value="ABBFR">
+ABBFR</option>
+<option value="ABGKW">
+ABGKW</option>
+<option value="ABRAU">
+ABRAU</option>
+<option value="ACCAE">
+ACCAE</option>
+<option value="ACLMESHI6Y001">
+ACLMESHI6Y001</option>
+<option value="ACTIN">
+ACTIN</option>
+<option value="ADASA">
+ADASA</option>
+<option value="AFIIT">
+AFIIT</option>
+<option value="AFRAU">
+AFRAU</option>
+<option value="AGAPE">
+AGAPE</option>
+<option value="AGICO">
+AGICO</option>
+<option value="AIJJP">
+AIJJP</option>
+<option value="ALHTR">
+ALHTR</option>
+<option value="ALLAU">
+ALLAU</option>
+<option value="AMEPT">
+AMEPT</option>
+<option value="AMIAU">
+AMIAU</option>
+<option value="AMMHN">
+AMMHN</option>
+<option value="APEXMIA">
+APEXMIA</option>
+<option value="AQDDO">
+AQDDO</option>
+<option value="AQGUS">
+AQGUS</option>
+<option value="AQGUS2">
+AQGUS2</option>
+<option value="AQUQA">
+AQUQA</option>
+<option value="ARINL">
+ARINL</option>
+<option value="AROFR">
+AROFR</option>
+<option value="ASAAR">
+ASAAR</option>
+<option value="ASGUS">
+ASGUS</option>
+<option value="ASYAU">
+ASYAU</option>
+<option value="AUKNL">
+AUKNL</option>
+<option value="AVNAU">
+AVNAU</option>
+<option value="AVNIT">
+AVNIT</option>
+<option value="AVNITM">
+AVNITM</option>
+<option value="AZLSA">
+AZLSA</option>
+<option value="AZLSA2">
+AZLSA2</option>
+<option value="BBAFR">
+BBAFR</option>
+<option value="BCLGB">
+BCLGB</option>
+<option value="BITIT">
+BITIT</option>
+<option value="BOLAE">
+BOLAE</option>
+<option value="BORFR">
+BORFR</option>
+<option value="BOSES">
+BOSES</option>
+<option value="BTICN">
+BTICN</option>
+<option value="CADAE">
+CADAE</option>
+<option value="CAGAT">
+CAGAT</option>
+<option value="CAPAE">
+CAPAE</option>
+<option value="CARGB">
+CARGB</option>
+<option value="CARHR">
+CARHR</option>
+<option value="CARRS">
+CARRS</option>
+<option value="CBAGR">
+CBAGR</option>
+<option value="CCOARINT6Y001">
+CCOARINT6Y001</option>
+<option value="CGFFR">
+CGFFR</option>
+<option value="CGFFRN">
+CGFFRN</option>
+<option value="CGLGB">
+CGLGB</option>
+<option value="CMEBG">
+CMEBG</option>
+<option value="CMIIE">
+CMIIE</option>
+<option value="COSGT">
+COSGT</option>
+<option value="COSPA">
+COSPA</option>
+<option value="CRCFR">
+CRCFR</option>
+<option value="CSANI">
+CSANI</option>
+<option value="CTGPL">
+CTGPL</option>
+<option value="CTSES">
+CTSES</option>
+<option value="CYETW">
+CYETW</option>
+<option value="CZRCZ">
+CZRCZ</option>
+<option value="DBCNL">
+DBCNL</option>
+<option value="DEUAE">
+DEUAE</option>
+<option value="DGIDE">
+DGIDE</option>
+<option value="DGLIN">
+DGLIN</option>
+<option value="DICCZ">
+DICCZ</option>
+<option value="DISDE">
+DISDE</option>
+<option value="DTCGB">
+DTCGB</option>
+<option value="EAGTH">
+EAGTH</option>
+<option value="EBRCUWOR6Y001">
+EBRCUWOR6Y001</option>
+<option value="ECUEC">
+ECUEC</option>
+<option value="EELMA">
+EELMA</option>
+<option value="EELPH">
+EELPH</option>
+<option value="EKSNL">
+EKSNL</option>
+<option value="ELIIT">
+ELIIT</option>
+<option value="ELIIT2">
+ELIIT2</option>
+<option value="ESACUSAU6Y001">
+ESACUSAU6Y001</option>
+<option value="ESTRO">
+ESTRO</option>
+<option value="EVOSG">
+EVOSG</option>
+<option value="EXCSC">
+EXCSC</option>
+<option value="FDIVN">
+FDIVN</option>
+<option value="FERIT">
+FERIT</option>
+<option value="FFCUS">
+FFCUS</option>
+<option value="FGLEG">
+FGLEG</option>
+<option value="FITET">
+FITET</option>
+<option value="FLDGB">
+FLDGB</option>
+<option value="FMIAU">
+FMIAU</option>
+<option value="FMMAU">
+FMMAU</option>
+<option value="FUKGB">
+FUKGB</option>
+<option value="FUKGBA">
+FUKGBA</option>
+<option value="FUSAE">
+FUSAE</option>
+<option value="FVHFR">
+FVHFR</option>
+<option value="GAFJO">
+GAFJO</option>
+<option value="GAIKH">
+GAIKH</option>
+<option value="GBMMX">
+GBMMX</option>
+<option value="GESMT">
+GESMT</option>
+<option value="GGELOLOG6Y001">
+GGELOLOG6Y001</option>
+<option value="GKZLOTRA6Y001">
+GKZLOTRA6Y001</option>
+<option value="GLBLV">
+GLBLV</option>
+<option value="GLDAE">
+GLDAE</option>
+<option value="GTSIN">
+GTSIN</option>
+<option value="GTSPK">
+GTSPK</option>
+<option value="GWLCA">
+GWLCA</option>
+<option value="HASKR">
+HASKR</option>
+<option value="HFOFI">
+HFOFI</option>
+<option value="HITMA">
+HITMA</option>
+<option value="HKKJP">
+HKKJP</option>
+<option value="HLASE">
+HLASE</option>
+<option value="HLBNO">
+HLBNO</option>
+<option value="HLDDK">
+HLDDK</option>
+<option value="HPLPL">
+HPLPL</option>
+<option value="HPSPL">
+HPSPL</option>
+<option value="HVFNL">
+HVFNL</option>
+<option value="IFGFR">
+IFGFR</option>
+<option value="IRCIE">
+IRCIE</option>
+<option value="JCTJP">
+JCTJP</option>
+<option value="JENIE">
+JENIE</option>
+<option value="KAISC">
+KAISC</option>
+<option value="KGBERLOG6Y001">
+KGBERLOG6Y001</option>
+<option value="KGRTW">
+KGRTW</option>
+<option value="KLOPT">
+KLOPT</option>
+<option value="KUSERLOG6Y001">
+KUSERLOG6Y001</option>
+<option value="KYANR">
+KYANR</option>
+<option value="KYBHMA">
+KYBHMA</option>
+<option value="KYBOMA">
+KYBOMA</option>
+<option value="KYBREA">
+KYBREA</option>
+<option value="KYBRQA">
+KYBRQA</option>
+<option value="KYCEBZ">
+KYCEBZ</option>
+<option value="KYCPQ">
+KYCPQ</option>
+<option value="KYDELA">
+KYDELA</option>
+<option value="KYDXBA">
+KYDXBA</option>
+<option value="KYFRAA">
+KYFRAA</option>
+<option value="KYHBX">
+KYHBX</option>
+<option value="KYHSV">
+KYHSV</option>
+<option value="KYLBAB">
+KYLBAB</option>
+<option value="KYLIM">
+KYLIM</option>
+<option value="KYLONA">
+KYLONA</option>
+<option value="KYLONB">
+KYLONB</option>
+<option value="KYMAAA">
+KYMAAA</option>
+<option value="KYMADA">
+KYMADA</option>
+<option value="KYMCTA">
+KYMCTA</option>
+<option value="KYMEX">
+KYMEX</option>
+<option value="KYMNCA">
+KYMNCA</option>
+<option value="KYMTL">
+KYMTL</option>
+<option value="KYMUCA">
+KYMUCA</option>
+<option value="KYOPOA">
+KYOPOA</option>
+<option value="KYPNH">
+KYPNH</option>
+<option value="KYRGNA">
+KYRGNA</option>
+<option value="KYRNG">
+KYRNG</option>
+<option value="KYVLC">
+KYVLC</option>
+<option value="KYYYZ">
+KYYYZ</option>
+<option value="LAPBB">
+LAPBB</option>
+<option value="LARIN">
+LARIN</option>
+<option value="LBAIN">
+LBAIN</option>
+<option value="LCUIN">
+LCUIN</option>
+<option value="LGUIN">
+LGUIN</option>
+<option value="LLPIN">
+LLPIN</option>
+<option value="LMPMX">
+LMPMX</option>
+<option value="LOGIN">
+LOGIN</option>
+<option value="LPCCL">
+LPCCL</option>
+<option value="LPCCO">
+LPCCO</option>
+<option value="LPTUS">
+LPTUS</option>
+<option value="MAGPL">
+MAGPL</option>
+<option value="MALGB">
+MALGB</option>
+<option value="MARTT">
+MARTT</option>
+<option value="MCLAE">
+MCLAE</option>
+<option value="MDUAE">
+MDUAE</option>
+<option value="MEGES">
+MEGES</option>
+<option value="MELAU">
+MELAU</option>
+<option value="MGFCA">
+MGFCA</option>
+<option value="MGFUS">
+MGFUS</option>
+<option value="MGIUS">
+MGIUS</option>
+<option value="MGMCA">
+MGMCA</option>
+<option value="MGVCA">
+MGVCA</option>
+<option value="MILGR">
+MILGR</option>
+<option value="MILRS">
+MILRS</option>
+<option value="MILUS">
+MILUS</option>
+<option value="MISMX">
+MISMX</option>
+<option value="MISSV">
+MISSV</option>
+<option value="MLBBR">
+MLBBR</option>
+<option value="MLGDE">
+MLGDE</option>
+<option value="MLIBR">
+MLIBR</option>
+<option value="MMMMM">
+MMMMM</option>
+<option value="MNCCL">
+MNCCL</option>
+<option value="MNPBE">
+MNPBE</option>
+<option value="MNYUS">
+MNYUS</option>
+<option value="MPNNL">
+MPNNL</option>
+<option value="MQDBR">
+MQDBR</option>
+<option value="MSGSG">
+MSGSG</option>
+<option value="MTECA">
+MTECA</option>
+<option value="MTLAU">
+MTLAU</option>
+<option value="MTSTR">
+MTSTR</option>
+<option value="MULCL">
+MULCL</option>
+<option value="NABAU">
+NABAU</option>
+<option value="NAMAU">
+NAMAU</option>
+<option value="NEENL">
+NEENL</option>
+<option value="NLPAU">
+NLPAU</option>
+<option value="NNCSE">
+NNCSE</option>
+<option value="NOBBE">
+NOBBE</option>
+<option value="NPLLK">
+NPLLK</option>
+<option value="NVFFI">
+NVFFI</option>
+<option value="OMEPL">
+OMEPL</option>
+<option value="OSBNL">
+OSBNL</option>
+<option value="OSLNL">
+OSLNL</option>
+<option value="PANZA">
+PANZA</option>
+<option value="PPLVU">
+PPLVU</option>
+<option value="QCNDE">
+QCNDE</option>
+<option value="QCSAT">
+QCSAT</option>
+<option value="QCSCH">
+QCSCH</option>
+<option value="QCSDE">
+QCSDE</option>
+<option value="QCSGB">
+QCSGB</option>
+<option value="QCSHU">
+QCSHU</option>
+<option value="QCSNL">
+QCSNL</option>
+<option value="QCSRO">
+QCSRO</option>
+<option value="QCSSK">
+QCSSK</option>
+<option value="QFLDE">
+QFLDE</option>
+<option value="QLICH">
+QLICH</option>
+<option value="QMUDE">
+QMUDE</option>
+<option value="QNUDE">
+QNUDE</option>
+<option value="QRADE">
+QRADE</option>
+<option value="QTORO">
+QTORO</option>
+<option value="RANBE">
+RANBE</option>
+<option value="RBFBG">
+RBFBG</option>
+<option value="RECBE">
+RECBE</option>
+<option value="REIIL">
+REIIL</option>
+<option value="RGLCA">
+RGLCA</option>
+<option value="RGMCA">
+RGMCA</option>
+<option value="RGVCA">
+RGVCA</option>
+<option value="RLNNZ">
+RLNNZ</option>
+<option value="RMTBE">
+RMTBE</option>
+<option value="RODTR">
+RODTR</option>
+<option value="SAEIT">
+SAEIT</option>
+<option value="SAMBA">
+SAMBA</option>
+<option value="SAMSK">
+SAMSK</option>
+<option value="SCHCH">
+SCHCH</option>
+<option value="SCOCR">
+SCOCR</option>
+<option value="SCSCH">
+SCSCH</option>
+<option value="SGISI">
+SGISI</option>
+<option value="SHUHU">
+SHUHU</option>
+<option value="SINSG">
+SINSG</option>
+<option value="SITHK">
+SITHK</option>
+<option value="SKEOVLOG6Y001">
+SKEOVLOG6Y001</option>
+<option value="SLCCY">
+SLCCY</option>
+<option value="SMCHR">
+SMCHR</option>
+<option value="SMICN">
+SMICN</option>
+<option value="SMSRS">
+SMSRS</option>
+<option value="SPPIN">
+SPPIN</option>
+<option value="SPTPT">
+SPTPT</option>
+<option value="STCCZ">
+STCCZ</option>
+<option value="STGDE">
+STGDE</option>
+<option value="STRES">
+STRES</option>
+<option value="SWIDO">
+SWIDO</option>
+<option value="TALAX">
+TALAX</option>
+<option value="TANYC">
+TANYC</option>
+<option value="TASFO">
+TASFO</option>
+<option value="TCNIJFRE1X001">
+TCNIJFRE1X001</option>
+<option value="TECRAGLO6Y001">
+TECRAGLO6Y001</option>
+<option value="TFCIL">
+TFCIL</option>
+<option value="TGCEC">
+TGCEC</option>
+<option value="TGLAT">
+TGLAT</option>
+<option value="TICIT">
+TICIT</option>
+<option value="TISIT">
+TISIT</option>
+<option value="TIZTR">
+TIZTR</option>
+<option value="TLIUS">
+TLIUS</option>
+<option value="TLKKR">
+TLKKR</option>
+<option value="TMETR">
+TMETR</option>
+<option value="TOBKK">
+TOBKK</option>
+<option value="TOBLW">
+TOBLW</option>
+<option value="TOBRK">
+TOBRK</option>
+<option value="TOCAN">
+TOCAN</option>
+<option value="TODAL">
+TODAL</option>
+<option value="TODOC">
+TODOC</option>
+<option value="TODPS">
+TODPS</option>
+<option value="TOFOC">
+TOFOC</option>
+<option value="TOHKG">
+TOHKG</option>
+<option value="TOJHB">
+TOJHB</option>
+<option value="TOJKT">
+TOJKT</option>
+<option value="TOLAX">
+TOLAX</option>
+<option value="TONGB" SELECTED>
+TONGB</option>
+<option value="TONYC">
+TONYC</option>
+<option value="TOORD">
+TOORD</option>
+<option value="TOPEN">
+TOPEN</option>
+<option value="TOPKG">
+TOPKG</option>
+<option value="TOSFO">
+TOSFO</option>
+<option value="TOSGH">
+TOSGH</option>
+<option value="TOSGN">
+TOSGN</option>
+<option value="TOSUB">
+TOSUB</option>
+<option value="TOSZX">
+TOSZX</option>
+<option value="TOTAO">
+TOTAO</option>
+<option value="TOTPE">
+TOTPE</option>
+<option value="TOTSN">
+TOTSN</option>
+<option value="TOXMN">
+TOXMN</option>
+<option value="TOZSN">
+TOZSN</option>
+<option value="TPGRS">
+TPGRS</option>
+<option value="TRAAR">
+TRAAR</option>
+<option value="TRASV">
+TRASV</option>
+<option value="TRBGU">
+TRBGU</option>
+<option value="TRIBN">
+TRIBN</option>
+<option value="TSADE">
+TSADE</option>
+<option value="TSRGR">
+TSRGR</option>
+<option value="TSUJP">
+TSUJP</option>
+<option value="TTLAX">
+TTLAX</option>
+<option value="TUSOPLOG9Z001">
+TUSOPLOG9Z001</option>
+<option value="TWLCL">
+TWLCL</option>
+<option value="TWWMY">
+TWWMY</option>
+<option value="UCTZA">
+UCTZA</option>
+<option value="UFFZA">
+UFFZA</option>
+<option value="UNIBG">
+UNIBG</option>
+<option value="UNTZA">
+UNTZA</option>
+<option value="UUSSTRAL6Y001">
+UUSSTRAL6Y001</option>
+<option value="VGLCA">
+VGLCA</option>
+<option value="VLANL">
+VLANL</option>
+<option value="WFRGB">
+WFRGB</option>
+<option value="WUSOWINC3Z001">
+WUSOWINC3Z001</option>
+<option value="ZACMX">
+ZACMX</option>
+<option value="ZOOPL">
+ZOOPL</option>
+</select>
+</th>
+                         <th>
+Destination Station</th>
+                         <th id="station2_th">
+<input name="station2" id="station2" type="text" size="15" value="TOLAX">
+</th>
+                       </tr>
+                       <tr>
+                         <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+PRINCIPAL</b>
+</th>
+                         <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+BILL TO</b>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Company ID</th>
+                         <th>
+<input name="prinid" id="prinid" type="text" size="15" value="18311">
+</th>
+                         <th>
+Company ID</th>
+                         <th>
+<input name="billid" id="billid" type="text" size="15" value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Company Name</th>
+                         <th>
+<input name="prinname" id="prinname" type="text" size="45" value="BTG S CORP DBA FOUR SEASONS GENERAL MERCHANDISE">
+</th>
+                         <th>
+Company Name</th>
+                         <th>
+<input name="billname" id="billname" type="text" size="45" value="BTG S CORP DBA FOUR SEASONS GENERAL MERCHANDISE">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Sales Rep</th>
+                         <th colspan=2>
+<input name="salesrep" id="salesrep" type="text" size="15" value="LAX004" READONLY>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Sales Office</th>
+                         <th colspan=2>
+<input name="soffid2" id="soffid2" type="text" size="15" value="TOSGH181" READONLY>
+</th>
+                       </tr>
+                       <tr>
+                         <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+SHIPPER</b>
+</th>
+                         <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+CONSIGNEE</b>
+</th>
+                       </tr>
+                       <tr valign="top">
+                           <th colspan=2>
+<table>
+                                 <tr>
+                                     <th>
+Company ID</th>
+                                     <th id="shipid_th">
+<input name="shipid" id="shipid" type="text" size="15" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+Company Name</th>
+                                     <th>
+<input name="shipname" id="shipname" type="text" size="45" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+Address Line 1..3</th>
+                                     <th>
+<input name="shipadd1" id="shipadd1" type="text" size="45" value="">
+<br>
+                                         <input name="shipadd2" id="shipadd2" type="text" size="45" value="">
+<br>
+                                         <input name="shipadd3" id="shipadd3" type="text" size="45" value="">
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+City, State, Zip</th>
+                                     <th>
+<input name="shipcity" id="shipcity" type="text" size="45" value="">
+,&nbsp; <select name="shipst" id="shipst" size="1"   >
+<option value="" SELECTED>
+</option>
+<option value="AG">
+AG -  AGUASCALIENTES</option>
+<option value="AL">
+AL -  ALABAMA</option>
+<option value="AK">
+AK -  ALASKA</option>
+<option value="AB">
+AB -  ALBERTA</option>
+<option value="AZ">
+AZ -  ARIZONA</option>
+<option value="AR">
+AR -  ARKANSAS</option>
+<option value="BN">
+BN -  BAJA CALIFORNIA NORT</option>
+<option value="BS">
+BS -  BAJA CALIFORNIA SUR</option>
+<option value="BC">
+BC -  BRITISH COLUMBIA</option>
+<option value="CA">
+CA -  CALIFORNIA</option>
+<option value="CM">
+CM -  CAMPECHE</option>
+<option value="CS">
+CS -  CHIAPAS</option>
+<option value="CH">
+CH -  CHIHUAHUA</option>
+<option value="CO">
+CO -  COAHUILA</option>
+<option value="CL">
+CL -  COLIMA</option>
+<option value="CO">
+CO -  COLORADO</option>
+<option value="CT">
+CT -  CONNECTICUT</option>
+<option value="DE">
+DE -  DELAWARE</option>
+<option value="DC">
+DC -  DISTRICT OF COLUMBIA</option>
+<option value="DF">
+DF -  DISTRITO FEDERAL</option>
+<option value="DG">
+DG -  DURANGO</option>
+<option value="FL">
+FL -  FLORIDA</option>
+<option value="GA">
+GA -  GEORGIA</option>
+<option value="GT">
+GT -  GUANAJUATO</option>
+<option value="GR">
+GR -  GUERRERO</option>
+<option value="HI">
+HI -  HAWAII</option>
+<option value="HG">
+HG -  HIDALGO</option>
+<option value="ID">
+ID -  IDAHO</option>
+<option value="IL">
+IL -  ILLINOIS</option>
+<option value="IN">
+IN -  INDIANA</option>
+<option value="IA">
+IA -  IOWA</option>
+<option value="JA">
+JA -  JALISCO</option>
+<option value="KS">
+KS -  KANSAS</option>
+<option value="KY">
+KY -  KENTUCKY</option>
+<option value="LA">
+LA -  LOUISIANA</option>
+<option value="ME">
+ME -  MAINE</option>
+<option value="MB">
+MB -  MANOTOBA</option>
+<option value="MD">
+MD -  MARYLAND</option>
+<option value="MA">
+MA -  MASSACHUSETTS</option>
+<option value="MX">
+MX -  MEXICO</option>
+<option value="MI">
+MI -  MICHIGAN</option>
+<option value="MI">
+MI -  MICHOACAN</option>
+<option value="MN">
+MN -  MINNESOTA</option>
+<option value="MS">
+MS -  MISSISSIPPI</option>
+<option value="MO">
+MO -  MISSOURI</option>
+<option value="MT">
+MT -  MONTANA</option>
+<option value="MO">
+MO -  MORELOS</option>
+<option value="NA">
+NA -  NAYARIT</option>
+<option value="NE">
+NE -  NEBRASKA</option>
+<option value="NV">
+NV -  NEVEDA</option>
+<option value="NB">
+NB -  NEW BRUNSWICK</option>
+<option value="NH">
+NH -  NEW HAMPSHIRE</option>
+<option value="NJ">
+NJ -  NEW JERSEY</option>
+<option value="NM">
+NM -  NEW MEXICO</option>
+<option value="NY">
+NY -  NEW YORK</option>
+<option value="NF">
+NF -  NEWFOUNDLAND</option>
+<option value="NC">
+NC -  NORTH CAROLINA</option>
+<option value="ND">
+ND -  NORTH DAKOTA</option>
+<option value="NT">
+NT -  NORTHERN TERRITORIES</option>
+<option value="NS">
+NS -  NOVA SCOTIA</option>
+<option value="NL">
+NL -  NUEVO LEON</option>
+<option value="OA">
+OA -  OAXACA</option>
+<option value="OH">
+OH -  OHIO</option>
+<option value="OK">
+OK -  OKLAHOMA</option>
+<option value="ON">
+ON -  ONTARIO</option>
+<option value="OR">
+OR -  OREGON</option>
+<option value="PA">
+PA -  PENNSYLVANIA</option>
+<option value="PE">
+PE -  PRINCE EDWARD ISLAND</option>
+<option value="PU">
+PU -  PUEBLA</option>
+<option value="PR">
+PR -  PUERTO RICO</option>
+<option value="QC">
+QC -  QUEBEC</option>
+<option value="QT">
+QT -  QUERETARO</option>
+<option value="QR">
+QR -  QUINTANA ROO</option>
+<option value="RI">
+RI -  RHODE ISLAND</option>
+<option value="SL">
+SL -  SAN LUIS POTOSI</option>
+<option value="SK">
+SK -  SASKATCHEWAN</option>
+<option value="SI">
+SI -  SINALOA</option>
+<option value="SO">
+SO -  SONORA</option>
+<option value="SC">
+SC -  SOUTH CAROLINA</option>
+<option value="SD">
+SD -  SOUTH DAKOTA</option>
+<option value="TB">
+TB -  TABASCO</option>
+<option value="TM">
+TM -  TAMAULIPAS</option>
+<option value="TN">
+TN -  TENNESSEE</option>
+<option value="TX">
+TX -  TEXAS</option>
+<option value="TL">
+TL -  TLAXCALA</option>
+<option value="UT">
+UT -  UTAH</option>
+<option value="VE">
+VE -  VERACRUZ</option>
+<option value="VT">
+VT -  VERMONT</option>
+<option value="VA">
+VA -  VIRGINIA</option>
+<option value="WA">
+WA -  WASHINGTON</option>
+<option value="WV">
+WV -  WEST VIRGINIA</option>
+<option value="WI">
+WI -  WISCONSIN</option>
+<option value="WY">
+WY -  WYOMING</option>
+<option value="YU">
+YU -  YUCATAN</option>
+<option value="YT">
+YT -  YUKON TERRITORY</option>
+<option value="ZA">
+ZA -  ZACATECAS</option>
+</select>
+                                         &nbsp;                                         <input name="shipzip" id="shipzip" type="text" size="10" value="">
+&nbsp;                                     </th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Country</th>
+                                    <th>
+<select name="shipiso" id="shipiso" size="1"   >
+<option value="" SELECTED>
+-- SELECT FROM LIST --</option>
+<option value="MM">
+*** DO NOT USER *** (MM)</option>
+<option value="AF">
+AFGANISTAN (AF)</option>
+<option value="AL">
+ALBANIA (AL)</option>
+<option value="DZ">
+ALGERIA (DZ)</option>
+<option value="AS">
+AMERICAN SAMOA (AS)</option>
+<option value="AD">
+ANDORRA (AD)</option>
+<option value="AO">
+ANGOLA (AO)</option>
+<option value="AI">
+ANGUILLA (AI)</option>
+<option value="AG">
+ANTIGUA AND BARBUDA (AG)</option>
+<option value="AR">
+ARGENTINA (AR)</option>
+<option value="AM">
+ARMENIA (AM)</option>
+<option value="AW">
+ARUBA (AW)</option>
+<option value="AU">
+AUSTRALIA (AU)</option>
+<option value="AT">
+AUSTRIA (AT)</option>
+<option value="AZ">
+AZERBAIJAN (AZ)</option>
+<option value="BS">
+BAHAMAS (BS)</option>
+<option value="BH">
+BAHRAIN (BH)</option>
+<option value="BD">
+BANGLADESH (BD)</option>
+<option value="BB">
+BARBADOS (BB)</option>
+<option value="BY">
+BELARUS (BY)</option>
+<option value="BE">
+BELGIUM (BE)</option>
+<option value="BZ">
+BELIZE (BZ)</option>
+<option value="BJ">
+BENIN (BJ)</option>
+<option value="BM">
+BERMUDA (BM)</option>
+<option value="BT">
+BHUTAN (BT)</option>
+<option value="BO">
+BOLIVIA (BO)</option>
+<option value="BA">
+BOSNIA-HERCEGOVINA (BA)</option>
+<option value="BW">
+BOTSWANA (BW)</option>
+<option value="BR">
+BRAZIL (BR)</option>
+<option value="IO">
+BRITISH INDIAN OCEAN TERR (IO)</option>
+<option value="VG">
+BRITISH VIRGIN ISLANDS (VG)</option>
+<option value="BN">
+BRUNEI (BN)</option>
+<option value="BG">
+BULGARIA (BG)</option>
+<option value="BF">
+BURKINA (BF)</option>
+<option value="BU">
+BURMA (MYANMAR) (BU)</option>
+<option value="BI">
+BURUNDI (BI)</option>
+<option value="KH">
+CAMBODIA (KH)</option>
+<option value="CM">
+CAMEROON (CM)</option>
+<option value="CA">
+CANADA (CA)</option>
+<option value="CV">
+CAPE VERDE (CV)</option>
+<option value="KY">
+CAYMAN ISLANDS (KY)</option>
+<option value="CF">
+CENTRAL AFRICAN REPUBLIC (CF)</option>
+<option value="TD">
+CHAD (TD)</option>
+<option value="CL">
+CHILE (CL)</option>
+<option value="CN">
+CHINA (CN)</option>
+<option value="CX">
+CHRISTMAS ISLAND (CX)</option>
+<option value="CC">
+COCOS (KEELING) ISLAND (CC)</option>
+<option value="CO">
+COLOMBIA (CO)</option>
+<option value="KM">
+COMOROS (KM)</option>
+<option value="CG">
+CONGO (BRAZZAVILLE) (CG)</option>
+<option value="CD">
+CONGO (KINSHASA) (CD)</option>
+<option value="CK">
+COOK ISLANDS (CK)</option>
+<option value="CR">
+COSTA RICA (CR)</option>
+<option value="HR">
+CROATIA (HR)</option>
+<option value="CU">
+CUBA (CU)</option>
+<option value="CW">
+CURACAO (CW)</option>
+<option value="CY">
+CYPRUS (CY)</option>
+<option value="CZ">
+CZECH REPUBLIC (CZ)</option>
+<option value="DK">
+DENMARK (DK)</option>
+<option value="DJ">
+DJIBOUTI (DJ)</option>
+<option value="DM">
+DOMINICA (DM)</option>
+<option value="DO">
+DOMINICAN REPUBLIC (DO)</option>
+<option value="TL">
+EAST TIMOR (TL)</option>
+<option value="EC">
+ECUADOR (EC)</option>
+<option value="EG">
+EGYPT (EG)</option>
+<option value="SV">
+EL SALVADOR (SV)</option>
+<option value="GQ">
+EQUATORIAL GUINEA (GQ)</option>
+<option value="ER">
+ERITREA (ER)</option>
+<option value="EE">
+ESTONIA (EE)</option>
+<option value="ET">
+ETHIOPIA (ET)</option>
+<option value="FK">
+FALKLAND ISLANDS (FK)</option>
+<option value="FO">
+FAROE ISLANDS (FO)</option>
+<option value="FM">
+FEDRATED STATES OF MICRONESIA (FM)</option>
+<option value="FJ">
+FIJI (FJ)</option>
+<option value="FI">
+FINLAND (FI)</option>
+<option value="FR">
+FRANCE (FR)</option>
+<option value="GF">
+FRENCH GUIANA (GF)</option>
+<option value="PF">
+FRENCH POLYNESIA (PF)</option>
+<option value="TF">
+FRENCH SOUTHERN AND ANTARCTIC LANDS (TF)</option>
+<option value="GA">
+GABON (GA)</option>
+<option value="GM">
+GAMBIA (GM)</option>
+<option value="GZ">
+GAZA STRIP ADMINISTERED BY ISRAEL (GZ)</option>
+<option value="GE">
+GEORGIA (GE)</option>
+<option value="DE">
+GERMANY (DE)</option>
+<option value="GH">
+GHANA (GH)</option>
+<option value="GI">
+GIBRALTAR (GI)</option>
+<option value="GR">
+GREECE (GR)</option>
+<option value="GL">
+GREENLAND (GL)</option>
+<option value="GD">
+GRENADA (GD)</option>
+<option value="GP">
+GUADELOUPE (GP)</option>
+<option value="GU">
+GUAM (GU)</option>
+<option value="GT">
+GUATEMALA (GT)</option>
+<option value="GN">
+GUINEA (GN)</option>
+<option value="GW">
+GUINEA-BISSAU (GW)</option>
+<option value="GY">
+GUYANA (GY)</option>
+<option value="HT">
+HAITI (HT)</option>
+<option value="HM">
+HEARD AND MCDONALD ISLANDS (HM)</option>
+<option value="HN">
+HONDURAS (HN)</option>
+<option value="HK">
+HONG KONG (HK)</option>
+<option value="HU">
+HUNGARY (HU)</option>
+<option value="IS">
+ICELAND (IS)</option>
+<option value="IN">
+INDIA (IN)</option>
+<option value="ID">
+INDONESIA (ID)</option>
+<option value="IR">
+IRAN (IR)</option>
+<option value="IQ">
+IRAQ (IQ)</option>
+<option value="IE">
+IRELAND (IE)</option>
+<option value="IL">
+ISRAEL (IL)</option>
+<option value="IT">
+ITALY (IT)</option>
+<option value="CI">
+IVORY COAST (CI)</option>
+<option value="JM">
+JAMAICA (JM)</option>
+<option value="JP">
+JAPAN (JP)</option>
+<option value="JO">
+JORDAN (JO)</option>
+<option value="KZ">
+KAZAKHSTAN (KZ)</option>
+<option value="KE">
+KENYA (KE)</option>
+<option value="KI">
+KIRIBATI (KI)</option>
+<option value="KR">
+KOREA, SOUTH (KR)</option>
+<option value="KW">
+KUWAIT (KW)</option>
+<option value="KG">
+KYRGYZSTAN (KG)</option>
+<option value="LA">
+LAOS (LA)</option>
+<option value="LV">
+LATVIA (LV)</option>
+<option value="LB">
+LEBANON (LB)</option>
+<option value="LS">
+LESOTHO (LS)</option>
+<option value="LR">
+LIBERIA (LR)</option>
+<option value="LY">
+LIBYA (LY)</option>
+<option value="LI">
+LIECHTENSTEIN (LI)</option>
+<option value="LT">
+LITHUANIA (LT)</option>
+<option value="LU">
+LUXEMBOURG (LU)</option>
+<option value="MO">
+MACAO (MO)</option>
+<option value="MK">
+MACEDONIA (SKOPJE) (MK)</option>
+<option value="MG">
+MADAGASCAR (MG)</option>
+<option value="MW">
+MALAWI (MW)</option>
+<option value="MY">
+MALAYSIA (MY)</option>
+<option value="MV">
+MALDIVES (MV)</option>
+<option value="ML">
+MALI (ML)</option>
+<option value="MT">
+MALTA (MT)</option>
+<option value="MH">
+MARSHALL ISLANDS (MH)</option>
+<option value="MQ">
+MARTINIQUE (MQ)</option>
+<option value="MR">
+MAURITANIA (MR)</option>
+<option value="MU">
+MAURITIUS (MU)</option>
+<option value="YT">
+MAYOTTE (YT)</option>
+<option value="MX">
+MEXICO (MX)</option>
+<option value="MD">
+MOLDOVA (MD)</option>
+<option value="MC">
+MONACO (MC)</option>
+<option value="MN">
+MONGOLIA (MN)</option>
+<option value="ME">
+MONTENEGRO (ME)</option>
+<option value="MS">
+MONTSERRAT (MS)</option>
+<option value="MA">
+MOROCCO (MA)</option>
+<option value="MZ">
+MOZAMBIQUE (MZ)</option>
+<option value="NA">
+NAMIBIA (NA)</option>
+<option value="NR">
+NAURU (NR)</option>
+<option value="NP">
+NEPAL (NP)</option>
+<option value="NL">
+NETHERLANDS (NL)</option>
+<option value="AN">
+NETHERLANDS ANTILLES (AN)</option>
+<option value="NC">
+NEW CALEDONIA (NC)</option>
+<option value="NZ">
+NEW ZEALAND (NZ)</option>
+<option value="NI">
+NICARAGUA (NI)</option>
+<option value="NE">
+NIGER (NE)</option>
+<option value="NG">
+NIGERIA (NG)</option>
+<option value="NU">
+NIUE (NU)</option>
+<option value="NF">
+NORFOLK ISLAND (NF)</option>
+<option value="KP">
+NORTH KOREA (KP)</option>
+<option value="MP">
+NORTHERN MARIANA ISLANDS (MP)</option>
+<option value="NO">
+NORWAY (NO)</option>
+<option value="OM">
+OMAN (OM)</option>
+<option value="PK">
+PAKISTAN (PK)</option>
+<option value="PW">
+PALAU (PW)</option>
+<option value="PA">
+PANAMA (PA)</option>
+<option value="PG">
+PAPUA NEW GUINEA (PG)</option>
+<option value="PY">
+PARAGUAY (PY)</option>
+<option value="PE">
+PERU (PE)</option>
+<option value="PH">
+PHILIPPINES (PH)</option>
+<option value="PN">
+PITCAIRN ISLAND (PN)</option>
+<option value="PL">
+POLAND (PL)</option>
+<option value="PT">
+PORTUGAL (PT)</option>
+<option value="PR">
+PUERTO RICO (PR)</option>
+<option value="QA">
+QATAR (QA)</option>
+<option value="YE">
+REPUBLIC OF YEMEN (YE)</option>
+<option value="RE">
+REUNION (RE)</option>
+<option value="RO">
+ROMANIA (RO)</option>
+<option value="RU">
+RUSSIA (RU)</option>
+<option value="RW">
+RWANDA (RW)</option>
+<option value="SM">
+SAN MARINO (SM)</option>
+<option value="ST">
+SAO TOME AND PRINCIPE (ST)</option>
+<option value="SA">
+SAUDI ARABIA (SA)</option>
+<option value="SN">
+SENEGAL (SN)</option>
+<option value="RS">
+SERBIA (RS)</option>
+<option value="SC">
+SEYCHELLES (SC)</option>
+<option value="SL">
+SIERRA LEONE (SL)</option>
+<option value="SG">
+SINGAPORE (SG)</option>
+<option value="SX">
+SINT MAARTEN (SX)</option>
+<option value="SK">
+SLOVAKIA (SK)</option>
+<option value="SI">
+SLOVENIA (SI)</option>
+<option value="SB">
+SOLOMON ISLANDS (SB)</option>
+<option value="SO">
+SOMALIA (SO)</option>
+<option value="ZA">
+SOUTH AFRICA (ZA)</option>
+<option value="SS">
+SOUTH SUDAN (SS)</option>
+<option value="ES">
+SPAIN (ES)</option>
+<option value="LK">
+SRI LANKA (LK)</option>
+<option value="BL">
+ST BARTHELEMY (BL)</option>
+<option value="SH">
+ST HELENA (SH)</option>
+<option value="KN">
+ST KITTS AND NEVIS (KN)</option>
+<option value="LC">
+ST LUCIA (LC)</option>
+<option value="PM">
+ST PIERRE AND MIQUELON (PM)</option>
+<option value="VC">
+ST VINCENT AND THE GRENADINES (VC)</option>
+<option value="SD">
+SUDAN (SD)</option>
+<option value="SR">
+SURINAME (SR)</option>
+<option value="SJ">
+SVALBARD, JAN MAYEN ISLAND (SJ)</option>
+<option value="SZ">
+SWAZILAND (SZ)</option>
+<option value="SE">
+SWEDEN (SE)</option>
+<option value="CH">
+SWITZERLAND (CH)</option>
+<option value="SY">
+SYRIA (SY)</option>
+<option value="TW">
+TAIWAN (TW)</option>
+<option value="TJ">
+TAJIKISTAN (TJ)</option>
+<option value="TZ">
+TANZANIA (TZ)</option>
+<option value="TH">
+THAILAND (TH)</option>
+<option value="TG">
+TOGO (TG)</option>
+<option value="TK">
+TOKELAU (TK)</option>
+<option value="TO">
+TONGA (TO)</option>
+<option value="TT">
+TRINIDAD AND TOBAGO (TT)</option>
+<option value="TN">
+TUNISIA (TN)</option>
+<option value="TR">
+TURKEY (TR)</option>
+<option value="TM">
+TURKMENISTAN (TM)</option>
+<option value="TC">
+TURKS AND CAICOS ISLANDS (TC)</option>
+<option value="TV">
+TUVALU (TV)</option>
+<option value="UG">
+UGANDA (UG)</option>
+<option value="UA">
+UKRAINE (UA)</option>
+<option value="AE">
+UNITED ARAB EMIRATES (AE)</option>
+<option value="GB">
+UNITED KINGDOM (GB)</option>
+<option value="US">
+UNITED STATES (US)</option>
+<option value="UY">
+URUGUAY (UY)</option>
+<option value="UM">
+US MINOR OUTLYING ISLANDS (UM)</option>
+<option value="UZ">
+UZBEKISTAN (UZ)</option>
+<option value="VU">
+VANUATU (VU)</option>
+<option value="VA">
+VATICAN CITY (VA)</option>
+<option value="VE">
+VENEZUELA (VE)</option>
+<option value="VN">
+VIETNAM (VN)</option>
+<option value="VI">
+VIRGIN ISLANDS OF THE UNITED STATES (VI)</option>
+<option value="WF">
+WALLIS AND FUTUNA (WF)</option>
+<option value="WE">
+WEST BANK ADMINISTERED BY ISRAEL (WE)</option>
+<option value="EH">
+WESTERN SAHARA (EH)</option>
+<option value="WS">
+WESTERN SAMOA (WS)</option>
+<option value="ZM">
+ZAMBIA (ZM)</option>
+<option value="ZW">
+ZIMBABWE (ZW)</option>
+</select>
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Contact</th>
+                                    <th>
+<input name="shipcont" id="shipcont" type="text" size="30" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+Telephone</th>
+                                   <th>
+<input name="shipph" id="shipph" type="text" size="20" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+E-mail</th>
+                                   <th>
+<input name="shipemail" id="shipemail" type="text" size="50" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+Reference</th>
+                                   <th>
+<input name="shipref" id="shipref" type="text" size="30" value="">
+</th>
+                                 </tr>
+                           </table>
+</th>
+                           <th colspan=2>
+<table>
+                                 <tr>
+                                     <th>
+Company ID</th>
+                                     <th id="consid_th">
+<input name="consid" id="consid" type="text" size="15" value="18311">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+Company Name</th>
+                                   <th>
+<input name="consname" id="consname" type="text" size="45" value="BTG S CORP DBA FOUR SEASONS GENERAL MERCHANDISE">
+</th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+Address Line 1..3</th>
+                                   <th>
+<input name="consadd1" id="consadd1" type="text" size="45" value="2801 E VERNON AVE">
+<br>
+                                       <input name="consadd2" id="consadd2" type="text" size="45" value="">
+<br>
+                                       <input name="consadd3" id="consadd3" type="text" size="45" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+City, State, Zip</th>
+                                   <th>
+<input name="conscity" id="conscity" type="text" size="45" value="LOS ANGELES">
+,&nbsp; <select name="consst" id="consst" size="1"   >
+<option value="" SELECTED>
+</option>
+<option value="AG">
+AG -  AGUASCALIENTES</option>
+<option value="AL">
+AL -  ALABAMA</option>
+<option value="AK">
+AK -  ALASKA</option>
+<option value="AB">
+AB -  ALBERTA</option>
+<option value="AZ">
+AZ -  ARIZONA</option>
+<option value="AR">
+AR -  ARKANSAS</option>
+<option value="BN">
+BN -  BAJA CALIFORNIA NORT</option>
+<option value="BS">
+BS -  BAJA CALIFORNIA SUR</option>
+<option value="BC">
+BC -  BRITISH COLUMBIA</option>
+<option value="CA">
+CA -  CALIFORNIA</option>
+<option value="CM">
+CM -  CAMPECHE</option>
+<option value="CS">
+CS -  CHIAPAS</option>
+<option value="CH">
+CH -  CHIHUAHUA</option>
+<option value="CO">
+CO -  COAHUILA</option>
+<option value="CL">
+CL -  COLIMA</option>
+<option value="CO">
+CO -  COLORADO</option>
+<option value="CT">
+CT -  CONNECTICUT</option>
+<option value="DE">
+DE -  DELAWARE</option>
+<option value="DC">
+DC -  DISTRICT OF COLUMBIA</option>
+<option value="DF">
+DF -  DISTRITO FEDERAL</option>
+<option value="DG">
+DG -  DURANGO</option>
+<option value="FL">
+FL -  FLORIDA</option>
+<option value="GA">
+GA -  GEORGIA</option>
+<option value="GT">
+GT -  GUANAJUATO</option>
+<option value="GR">
+GR -  GUERRERO</option>
+<option value="HI">
+HI -  HAWAII</option>
+<option value="HG">
+HG -  HIDALGO</option>
+<option value="ID">
+ID -  IDAHO</option>
+<option value="IL">
+IL -  ILLINOIS</option>
+<option value="IN">
+IN -  INDIANA</option>
+<option value="IA">
+IA -  IOWA</option>
+<option value="JA">
+JA -  JALISCO</option>
+<option value="KS">
+KS -  KANSAS</option>
+<option value="KY">
+KY -  KENTUCKY</option>
+<option value="LA">
+LA -  LOUISIANA</option>
+<option value="ME">
+ME -  MAINE</option>
+<option value="MB">
+MB -  MANOTOBA</option>
+<option value="MD">
+MD -  MARYLAND</option>
+<option value="MA">
+MA -  MASSACHUSETTS</option>
+<option value="MX">
+MX -  MEXICO</option>
+<option value="MI">
+MI -  MICHIGAN</option>
+<option value="MI">
+MI -  MICHOACAN</option>
+<option value="MN">
+MN -  MINNESOTA</option>
+<option value="MS">
+MS -  MISSISSIPPI</option>
+<option value="MO">
+MO -  MISSOURI</option>
+<option value="MT">
+MT -  MONTANA</option>
+<option value="MO">
+MO -  MORELOS</option>
+<option value="NA">
+NA -  NAYARIT</option>
+<option value="NE">
+NE -  NEBRASKA</option>
+<option value="NV">
+NV -  NEVEDA</option>
+<option value="NB">
+NB -  NEW BRUNSWICK</option>
+<option value="NH">
+NH -  NEW HAMPSHIRE</option>
+<option value="NJ">
+NJ -  NEW JERSEY</option>
+<option value="NM">
+NM -  NEW MEXICO</option>
+<option value="NY">
+NY -  NEW YORK</option>
+<option value="NF">
+NF -  NEWFOUNDLAND</option>
+<option value="NC">
+NC -  NORTH CAROLINA</option>
+<option value="ND">
+ND -  NORTH DAKOTA</option>
+<option value="NT">
+NT -  NORTHERN TERRITORIES</option>
+<option value="NS">
+NS -  NOVA SCOTIA</option>
+<option value="NL">
+NL -  NUEVO LEON</option>
+<option value="OA">
+OA -  OAXACA</option>
+<option value="OH">
+OH -  OHIO</option>
+<option value="OK">
+OK -  OKLAHOMA</option>
+<option value="ON">
+ON -  ONTARIO</option>
+<option value="OR">
+OR -  OREGON</option>
+<option value="PA">
+PA -  PENNSYLVANIA</option>
+<option value="PE">
+PE -  PRINCE EDWARD ISLAND</option>
+<option value="PU">
+PU -  PUEBLA</option>
+<option value="PR">
+PR -  PUERTO RICO</option>
+<option value="QC">
+QC -  QUEBEC</option>
+<option value="QT">
+QT -  QUERETARO</option>
+<option value="QR">
+QR -  QUINTANA ROO</option>
+<option value="RI">
+RI -  RHODE ISLAND</option>
+<option value="SL">
+SL -  SAN LUIS POTOSI</option>
+<option value="SK">
+SK -  SASKATCHEWAN</option>
+<option value="SI">
+SI -  SINALOA</option>
+<option value="SO">
+SO -  SONORA</option>
+<option value="SC">
+SC -  SOUTH CAROLINA</option>
+<option value="SD">
+SD -  SOUTH DAKOTA</option>
+<option value="TB">
+TB -  TABASCO</option>
+<option value="TM">
+TM -  TAMAULIPAS</option>
+<option value="TN">
+TN -  TENNESSEE</option>
+<option value="TX">
+TX -  TEXAS</option>
+<option value="TL">
+TL -  TLAXCALA</option>
+<option value="UT">
+UT -  UTAH</option>
+<option value="VE">
+VE -  VERACRUZ</option>
+<option value="VT">
+VT -  VERMONT</option>
+<option value="VA">
+VA -  VIRGINIA</option>
+<option value="WA">
+WA -  WASHINGTON</option>
+<option value="WV">
+WV -  WEST VIRGINIA</option>
+<option value="WI">
+WI -  WISCONSIN</option>
+<option value="WY">
+WY -  WYOMING</option>
+<option value="YU">
+YU -  YUCATAN</option>
+<option value="YT">
+YT -  YUKON TERRITORY</option>
+<option value="ZA">
+ZA -  ZACATECAS</option>
+</select>
+                                       &nbsp;                                       <input name="conszip" id="conszip" type="text" size="10" value="90058">
+&nbsp;                                   </th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Country</th>
+                                    <th>
+<select name="consiso" id="consiso" size="1"   >
+<option value="">
+-- SELECT FROM LIST --</option>
+<option value="MM">
+*** DO NOT USER *** (MM)</option>
+<option value="AF">
+AFGANISTAN (AF)</option>
+<option value="AL">
+ALBANIA (AL)</option>
+<option value="DZ">
+ALGERIA (DZ)</option>
+<option value="AS">
+AMERICAN SAMOA (AS)</option>
+<option value="AD">
+ANDORRA (AD)</option>
+<option value="AO">
+ANGOLA (AO)</option>
+<option value="AI">
+ANGUILLA (AI)</option>
+<option value="AG">
+ANTIGUA AND BARBUDA (AG)</option>
+<option value="AR">
+ARGENTINA (AR)</option>
+<option value="AM">
+ARMENIA (AM)</option>
+<option value="AW">
+ARUBA (AW)</option>
+<option value="AU">
+AUSTRALIA (AU)</option>
+<option value="AT">
+AUSTRIA (AT)</option>
+<option value="AZ">
+AZERBAIJAN (AZ)</option>
+<option value="BS">
+BAHAMAS (BS)</option>
+<option value="BH">
+BAHRAIN (BH)</option>
+<option value="BD">
+BANGLADESH (BD)</option>
+<option value="BB">
+BARBADOS (BB)</option>
+<option value="BY">
+BELARUS (BY)</option>
+<option value="BE">
+BELGIUM (BE)</option>
+<option value="BZ">
+BELIZE (BZ)</option>
+<option value="BJ">
+BENIN (BJ)</option>
+<option value="BM">
+BERMUDA (BM)</option>
+<option value="BT">
+BHUTAN (BT)</option>
+<option value="BO">
+BOLIVIA (BO)</option>
+<option value="BA">
+BOSNIA-HERCEGOVINA (BA)</option>
+<option value="BW">
+BOTSWANA (BW)</option>
+<option value="BR">
+BRAZIL (BR)</option>
+<option value="IO">
+BRITISH INDIAN OCEAN TERR (IO)</option>
+<option value="VG">
+BRITISH VIRGIN ISLANDS (VG)</option>
+<option value="BN">
+BRUNEI (BN)</option>
+<option value="BG">
+BULGARIA (BG)</option>
+<option value="BF">
+BURKINA (BF)</option>
+<option value="BU">
+BURMA (MYANMAR) (BU)</option>
+<option value="BI">
+BURUNDI (BI)</option>
+<option value="KH">
+CAMBODIA (KH)</option>
+<option value="CM">
+CAMEROON (CM)</option>
+<option value="CA">
+CANADA (CA)</option>
+<option value="CV">
+CAPE VERDE (CV)</option>
+<option value="KY">
+CAYMAN ISLANDS (KY)</option>
+<option value="CF">
+CENTRAL AFRICAN REPUBLIC (CF)</option>
+<option value="TD">
+CHAD (TD)</option>
+<option value="CL">
+CHILE (CL)</option>
+<option value="CN">
+CHINA (CN)</option>
+<option value="CX">
+CHRISTMAS ISLAND (CX)</option>
+<option value="CC">
+COCOS (KEELING) ISLAND (CC)</option>
+<option value="CO">
+COLOMBIA (CO)</option>
+<option value="KM">
+COMOROS (KM)</option>
+<option value="CG">
+CONGO (BRAZZAVILLE) (CG)</option>
+<option value="CD">
+CONGO (KINSHASA) (CD)</option>
+<option value="CK">
+COOK ISLANDS (CK)</option>
+<option value="CR">
+COSTA RICA (CR)</option>
+<option value="HR">
+CROATIA (HR)</option>
+<option value="CU">
+CUBA (CU)</option>
+<option value="CW">
+CURACAO (CW)</option>
+<option value="CY">
+CYPRUS (CY)</option>
+<option value="CZ">
+CZECH REPUBLIC (CZ)</option>
+<option value="DK">
+DENMARK (DK)</option>
+<option value="DJ">
+DJIBOUTI (DJ)</option>
+<option value="DM">
+DOMINICA (DM)</option>
+<option value="DO">
+DOMINICAN REPUBLIC (DO)</option>
+<option value="TL">
+EAST TIMOR (TL)</option>
+<option value="EC">
+ECUADOR (EC)</option>
+<option value="EG">
+EGYPT (EG)</option>
+<option value="SV">
+EL SALVADOR (SV)</option>
+<option value="GQ">
+EQUATORIAL GUINEA (GQ)</option>
+<option value="ER">
+ERITREA (ER)</option>
+<option value="EE">
+ESTONIA (EE)</option>
+<option value="ET">
+ETHIOPIA (ET)</option>
+<option value="FK">
+FALKLAND ISLANDS (FK)</option>
+<option value="FO">
+FAROE ISLANDS (FO)</option>
+<option value="FM">
+FEDRATED STATES OF MICRONESIA (FM)</option>
+<option value="FJ">
+FIJI (FJ)</option>
+<option value="FI">
+FINLAND (FI)</option>
+<option value="FR">
+FRANCE (FR)</option>
+<option value="GF">
+FRENCH GUIANA (GF)</option>
+<option value="PF">
+FRENCH POLYNESIA (PF)</option>
+<option value="TF">
+FRENCH SOUTHERN AND ANTARCTIC LANDS (TF)</option>
+<option value="GA">
+GABON (GA)</option>
+<option value="GM">
+GAMBIA (GM)</option>
+<option value="GZ">
+GAZA STRIP ADMINISTERED BY ISRAEL (GZ)</option>
+<option value="GE">
+GEORGIA (GE)</option>
+<option value="DE">
+GERMANY (DE)</option>
+<option value="GH">
+GHANA (GH)</option>
+<option value="GI">
+GIBRALTAR (GI)</option>
+<option value="GR">
+GREECE (GR)</option>
+<option value="GL">
+GREENLAND (GL)</option>
+<option value="GD">
+GRENADA (GD)</option>
+<option value="GP">
+GUADELOUPE (GP)</option>
+<option value="GU">
+GUAM (GU)</option>
+<option value="GT">
+GUATEMALA (GT)</option>
+<option value="GN">
+GUINEA (GN)</option>
+<option value="GW">
+GUINEA-BISSAU (GW)</option>
+<option value="GY">
+GUYANA (GY)</option>
+<option value="HT">
+HAITI (HT)</option>
+<option value="HM">
+HEARD AND MCDONALD ISLANDS (HM)</option>
+<option value="HN">
+HONDURAS (HN)</option>
+<option value="HK">
+HONG KONG (HK)</option>
+<option value="HU">
+HUNGARY (HU)</option>
+<option value="IS">
+ICELAND (IS)</option>
+<option value="IN">
+INDIA (IN)</option>
+<option value="ID">
+INDONESIA (ID)</option>
+<option value="IR">
+IRAN (IR)</option>
+<option value="IQ">
+IRAQ (IQ)</option>
+<option value="IE">
+IRELAND (IE)</option>
+<option value="IL">
+ISRAEL (IL)</option>
+<option value="IT">
+ITALY (IT)</option>
+<option value="CI">
+IVORY COAST (CI)</option>
+<option value="JM">
+JAMAICA (JM)</option>
+<option value="JP">
+JAPAN (JP)</option>
+<option value="JO">
+JORDAN (JO)</option>
+<option value="KZ">
+KAZAKHSTAN (KZ)</option>
+<option value="KE">
+KENYA (KE)</option>
+<option value="KI">
+KIRIBATI (KI)</option>
+<option value="KR">
+KOREA, SOUTH (KR)</option>
+<option value="KW">
+KUWAIT (KW)</option>
+<option value="KG">
+KYRGYZSTAN (KG)</option>
+<option value="LA">
+LAOS (LA)</option>
+<option value="LV">
+LATVIA (LV)</option>
+<option value="LB">
+LEBANON (LB)</option>
+<option value="LS">
+LESOTHO (LS)</option>
+<option value="LR">
+LIBERIA (LR)</option>
+<option value="LY">
+LIBYA (LY)</option>
+<option value="LI">
+LIECHTENSTEIN (LI)</option>
+<option value="LT">
+LITHUANIA (LT)</option>
+<option value="LU">
+LUXEMBOURG (LU)</option>
+<option value="MO">
+MACAO (MO)</option>
+<option value="MK">
+MACEDONIA (SKOPJE) (MK)</option>
+<option value="MG">
+MADAGASCAR (MG)</option>
+<option value="MW">
+MALAWI (MW)</option>
+<option value="MY">
+MALAYSIA (MY)</option>
+<option value="MV">
+MALDIVES (MV)</option>
+<option value="ML">
+MALI (ML)</option>
+<option value="MT">
+MALTA (MT)</option>
+<option value="MH">
+MARSHALL ISLANDS (MH)</option>
+<option value="MQ">
+MARTINIQUE (MQ)</option>
+<option value="MR">
+MAURITANIA (MR)</option>
+<option value="MU">
+MAURITIUS (MU)</option>
+<option value="YT">
+MAYOTTE (YT)</option>
+<option value="MX">
+MEXICO (MX)</option>
+<option value="MD">
+MOLDOVA (MD)</option>
+<option value="MC">
+MONACO (MC)</option>
+<option value="MN">
+MONGOLIA (MN)</option>
+<option value="ME">
+MONTENEGRO (ME)</option>
+<option value="MS">
+MONTSERRAT (MS)</option>
+<option value="MA">
+MOROCCO (MA)</option>
+<option value="MZ">
+MOZAMBIQUE (MZ)</option>
+<option value="NA">
+NAMIBIA (NA)</option>
+<option value="NR">
+NAURU (NR)</option>
+<option value="NP">
+NEPAL (NP)</option>
+<option value="NL">
+NETHERLANDS (NL)</option>
+<option value="AN">
+NETHERLANDS ANTILLES (AN)</option>
+<option value="NC">
+NEW CALEDONIA (NC)</option>
+<option value="NZ">
+NEW ZEALAND (NZ)</option>
+<option value="NI">
+NICARAGUA (NI)</option>
+<option value="NE">
+NIGER (NE)</option>
+<option value="NG">
+NIGERIA (NG)</option>
+<option value="NU">
+NIUE (NU)</option>
+<option value="NF">
+NORFOLK ISLAND (NF)</option>
+<option value="KP">
+NORTH KOREA (KP)</option>
+<option value="MP">
+NORTHERN MARIANA ISLANDS (MP)</option>
+<option value="NO">
+NORWAY (NO)</option>
+<option value="OM">
+OMAN (OM)</option>
+<option value="PK">
+PAKISTAN (PK)</option>
+<option value="PW">
+PALAU (PW)</option>
+<option value="PA">
+PANAMA (PA)</option>
+<option value="PG">
+PAPUA NEW GUINEA (PG)</option>
+<option value="PY">
+PARAGUAY (PY)</option>
+<option value="PE">
+PERU (PE)</option>
+<option value="PH">
+PHILIPPINES (PH)</option>
+<option value="PN">
+PITCAIRN ISLAND (PN)</option>
+<option value="PL">
+POLAND (PL)</option>
+<option value="PT">
+PORTUGAL (PT)</option>
+<option value="PR">
+PUERTO RICO (PR)</option>
+<option value="QA">
+QATAR (QA)</option>
+<option value="YE">
+REPUBLIC OF YEMEN (YE)</option>
+<option value="RE">
+REUNION (RE)</option>
+<option value="RO">
+ROMANIA (RO)</option>
+<option value="RU">
+RUSSIA (RU)</option>
+<option value="RW">
+RWANDA (RW)</option>
+<option value="SM">
+SAN MARINO (SM)</option>
+<option value="ST">
+SAO TOME AND PRINCIPE (ST)</option>
+<option value="SA">
+SAUDI ARABIA (SA)</option>
+<option value="SN">
+SENEGAL (SN)</option>
+<option value="RS">
+SERBIA (RS)</option>
+<option value="SC">
+SEYCHELLES (SC)</option>
+<option value="SL">
+SIERRA LEONE (SL)</option>
+<option value="SG">
+SINGAPORE (SG)</option>
+<option value="SX">
+SINT MAARTEN (SX)</option>
+<option value="SK">
+SLOVAKIA (SK)</option>
+<option value="SI">
+SLOVENIA (SI)</option>
+<option value="SB">
+SOLOMON ISLANDS (SB)</option>
+<option value="SO">
+SOMALIA (SO)</option>
+<option value="ZA">
+SOUTH AFRICA (ZA)</option>
+<option value="SS">
+SOUTH SUDAN (SS)</option>
+<option value="ES">
+SPAIN (ES)</option>
+<option value="LK">
+SRI LANKA (LK)</option>
+<option value="BL">
+ST BARTHELEMY (BL)</option>
+<option value="SH">
+ST HELENA (SH)</option>
+<option value="KN">
+ST KITTS AND NEVIS (KN)</option>
+<option value="LC">
+ST LUCIA (LC)</option>
+<option value="PM">
+ST PIERRE AND MIQUELON (PM)</option>
+<option value="VC">
+ST VINCENT AND THE GRENADINES (VC)</option>
+<option value="SD">
+SUDAN (SD)</option>
+<option value="SR">
+SURINAME (SR)</option>
+<option value="SJ">
+SVALBARD, JAN MAYEN ISLAND (SJ)</option>
+<option value="SZ">
+SWAZILAND (SZ)</option>
+<option value="SE">
+SWEDEN (SE)</option>
+<option value="CH">
+SWITZERLAND (CH)</option>
+<option value="SY">
+SYRIA (SY)</option>
+<option value="TW">
+TAIWAN (TW)</option>
+<option value="TJ">
+TAJIKISTAN (TJ)</option>
+<option value="TZ">
+TANZANIA (TZ)</option>
+<option value="TH">
+THAILAND (TH)</option>
+<option value="TG">
+TOGO (TG)</option>
+<option value="TK">
+TOKELAU (TK)</option>
+<option value="TO">
+TONGA (TO)</option>
+<option value="TT">
+TRINIDAD AND TOBAGO (TT)</option>
+<option value="TN">
+TUNISIA (TN)</option>
+<option value="TR">
+TURKEY (TR)</option>
+<option value="TM">
+TURKMENISTAN (TM)</option>
+<option value="TC">
+TURKS AND CAICOS ISLANDS (TC)</option>
+<option value="TV">
+TUVALU (TV)</option>
+<option value="UG">
+UGANDA (UG)</option>
+<option value="UA">
+UKRAINE (UA)</option>
+<option value="AE">
+UNITED ARAB EMIRATES (AE)</option>
+<option value="GB">
+UNITED KINGDOM (GB)</option>
+<option value="US" SELECTED>
+UNITED STATES (US)</option>
+<option value="UY">
+URUGUAY (UY)</option>
+<option value="UM">
+US MINOR OUTLYING ISLANDS (UM)</option>
+<option value="UZ">
+UZBEKISTAN (UZ)</option>
+<option value="VU">
+VANUATU (VU)</option>
+<option value="VA">
+VATICAN CITY (VA)</option>
+<option value="VE">
+VENEZUELA (VE)</option>
+<option value="VN">
+VIETNAM (VN)</option>
+<option value="VI">
+VIRGIN ISLANDS OF THE UNITED STATES (VI)</option>
+<option value="WF">
+WALLIS AND FUTUNA (WF)</option>
+<option value="WE">
+WEST BANK ADMINISTERED BY ISRAEL (WE)</option>
+<option value="EH">
+WESTERN SAHARA (EH)</option>
+<option value="WS">
+WESTERN SAMOA (WS)</option>
+<option value="ZM">
+ZAMBIA (ZM)</option>
+<option value="ZW">
+ZIMBABWE (ZW)</option>
+</select>
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Customs No. (EORI)</th>
+                                    <th>
+<input name="conseori" id="conseori" type="text" size="20" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Contact</th>
+                                    <th>
+<input name="conscont" id="conscont" type="text" size="30" value="BRENDA VELA">
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Telephone</th>
+                                    <th>
+<input name="consph" id="consph" type="text" size="20" value="(323) 826-1143">
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+E-mail</th>
+                                    <th>
+<input name="consemail" id="consemail" type="text" size="50" value="BRENDAV@4SGM.COM;CORAP@4SGM.COM;EDDIE@CEDARCOASTLOGISTICS.COM;DISPATCH@CEDA">
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Reference</th>
+                                    <th>
+<input name="consref" id="consref" type="text" size="30" value="">
+</th>
+                                 </tr>
+                           </table>
+</th>
+                       </tr>
+                       <tr>
+                         <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+NOTIFY PARTY</b>
+</th>
+                         <th colspan=2 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+BROKER</b>
+</th>
+                       </tr>
+                       <tr valign="top">
+                           <th colspan=2>
+<table>
+                                 <tr>
+                                     <th>
+Company ID</th>
+                                     <th id="notiid_th">
+<input name="notiid" id="notiid" type="text" size="15" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+Company Name</th>
+                                     <th>
+<input name="notiname" id="notiname" type="text" size="45" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+Address Line 1..3</th>
+                                     <th>
+<input name="notiadd1" id="notiadd1" type="text" size="45" value="">
+<br>
+                                         <input name="notiadd2" id="notiadd2" type="text" size="45" value="">
+<br>
+                                         <input name="notiadd3" id="notiadd3" type="text" size="45" value="">
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+City, State, Zip</th>
+                                     <th>
+<input name="noticity" id="noticity" type="text" size="45" value="">
+,&nbsp; <select name="notist" id="notist" size="1"   >
+<option value="" SELECTED>
+</option>
+<option value="AG">
+AG -  AGUASCALIENTES</option>
+<option value="AL">
+AL -  ALABAMA</option>
+<option value="AK">
+AK -  ALASKA</option>
+<option value="AB">
+AB -  ALBERTA</option>
+<option value="AZ">
+AZ -  ARIZONA</option>
+<option value="AR">
+AR -  ARKANSAS</option>
+<option value="BN">
+BN -  BAJA CALIFORNIA NORT</option>
+<option value="BS">
+BS -  BAJA CALIFORNIA SUR</option>
+<option value="BC">
+BC -  BRITISH COLUMBIA</option>
+<option value="CA">
+CA -  CALIFORNIA</option>
+<option value="CM">
+CM -  CAMPECHE</option>
+<option value="CS">
+CS -  CHIAPAS</option>
+<option value="CH">
+CH -  CHIHUAHUA</option>
+<option value="CO">
+CO -  COAHUILA</option>
+<option value="CL">
+CL -  COLIMA</option>
+<option value="CO">
+CO -  COLORADO</option>
+<option value="CT">
+CT -  CONNECTICUT</option>
+<option value="DE">
+DE -  DELAWARE</option>
+<option value="DC">
+DC -  DISTRICT OF COLUMBIA</option>
+<option value="DF">
+DF -  DISTRITO FEDERAL</option>
+<option value="DG">
+DG -  DURANGO</option>
+<option value="FL">
+FL -  FLORIDA</option>
+<option value="GA">
+GA -  GEORGIA</option>
+<option value="GT">
+GT -  GUANAJUATO</option>
+<option value="GR">
+GR -  GUERRERO</option>
+<option value="HI">
+HI -  HAWAII</option>
+<option value="HG">
+HG -  HIDALGO</option>
+<option value="ID">
+ID -  IDAHO</option>
+<option value="IL">
+IL -  ILLINOIS</option>
+<option value="IN">
+IN -  INDIANA</option>
+<option value="IA">
+IA -  IOWA</option>
+<option value="JA">
+JA -  JALISCO</option>
+<option value="KS">
+KS -  KANSAS</option>
+<option value="KY">
+KY -  KENTUCKY</option>
+<option value="LA">
+LA -  LOUISIANA</option>
+<option value="ME">
+ME -  MAINE</option>
+<option value="MB">
+MB -  MANOTOBA</option>
+<option value="MD">
+MD -  MARYLAND</option>
+<option value="MA">
+MA -  MASSACHUSETTS</option>
+<option value="MX">
+MX -  MEXICO</option>
+<option value="MI">
+MI -  MICHIGAN</option>
+<option value="MI">
+MI -  MICHOACAN</option>
+<option value="MN">
+MN -  MINNESOTA</option>
+<option value="MS">
+MS -  MISSISSIPPI</option>
+<option value="MO">
+MO -  MISSOURI</option>
+<option value="MT">
+MT -  MONTANA</option>
+<option value="MO">
+MO -  MORELOS</option>
+<option value="NA">
+NA -  NAYARIT</option>
+<option value="NE">
+NE -  NEBRASKA</option>
+<option value="NV">
+NV -  NEVEDA</option>
+<option value="NB">
+NB -  NEW BRUNSWICK</option>
+<option value="NH">
+NH -  NEW HAMPSHIRE</option>
+<option value="NJ">
+NJ -  NEW JERSEY</option>
+<option value="NM">
+NM -  NEW MEXICO</option>
+<option value="NY">
+NY -  NEW YORK</option>
+<option value="NF">
+NF -  NEWFOUNDLAND</option>
+<option value="NC">
+NC -  NORTH CAROLINA</option>
+<option value="ND">
+ND -  NORTH DAKOTA</option>
+<option value="NT">
+NT -  NORTHERN TERRITORIES</option>
+<option value="NS">
+NS -  NOVA SCOTIA</option>
+<option value="NL">
+NL -  NUEVO LEON</option>
+<option value="OA">
+OA -  OAXACA</option>
+<option value="OH">
+OH -  OHIO</option>
+<option value="OK">
+OK -  OKLAHOMA</option>
+<option value="ON">
+ON -  ONTARIO</option>
+<option value="OR">
+OR -  OREGON</option>
+<option value="PA">
+PA -  PENNSYLVANIA</option>
+<option value="PE">
+PE -  PRINCE EDWARD ISLAND</option>
+<option value="PU">
+PU -  PUEBLA</option>
+<option value="PR">
+PR -  PUERTO RICO</option>
+<option value="QC">
+QC -  QUEBEC</option>
+<option value="QT">
+QT -  QUERETARO</option>
+<option value="QR">
+QR -  QUINTANA ROO</option>
+<option value="RI">
+RI -  RHODE ISLAND</option>
+<option value="SL">
+SL -  SAN LUIS POTOSI</option>
+<option value="SK">
+SK -  SASKATCHEWAN</option>
+<option value="SI">
+SI -  SINALOA</option>
+<option value="SO">
+SO -  SONORA</option>
+<option value="SC">
+SC -  SOUTH CAROLINA</option>
+<option value="SD">
+SD -  SOUTH DAKOTA</option>
+<option value="TB">
+TB -  TABASCO</option>
+<option value="TM">
+TM -  TAMAULIPAS</option>
+<option value="TN">
+TN -  TENNESSEE</option>
+<option value="TX">
+TX -  TEXAS</option>
+<option value="TL">
+TL -  TLAXCALA</option>
+<option value="UT">
+UT -  UTAH</option>
+<option value="VE">
+VE -  VERACRUZ</option>
+<option value="VT">
+VT -  VERMONT</option>
+<option value="VA">
+VA -  VIRGINIA</option>
+<option value="WA">
+WA -  WASHINGTON</option>
+<option value="WV">
+WV -  WEST VIRGINIA</option>
+<option value="WI">
+WI -  WISCONSIN</option>
+<option value="WY">
+WY -  WYOMING</option>
+<option value="YU">
+YU -  YUCATAN</option>
+<option value="YT">
+YT -  YUKON TERRITORY</option>
+<option value="ZA">
+ZA -  ZACATECAS</option>
+</select>
+                                         &nbsp;                                         <input name="notizip" id="notizip" type="text" size="10" value="">
+&nbsp;                                     </th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Country</th>
+                                    <th>
+<select name="notiiso" id="notiiso" size="1"   >
+<option value="" SELECTED>
+-- SELECT FROM LIST --</option>
+<option value="MM">
+*** DO NOT USER *** (MM)</option>
+<option value="AF">
+AFGANISTAN (AF)</option>
+<option value="AL">
+ALBANIA (AL)</option>
+<option value="DZ">
+ALGERIA (DZ)</option>
+<option value="AS">
+AMERICAN SAMOA (AS)</option>
+<option value="AD">
+ANDORRA (AD)</option>
+<option value="AO">
+ANGOLA (AO)</option>
+<option value="AI">
+ANGUILLA (AI)</option>
+<option value="AG">
+ANTIGUA AND BARBUDA (AG)</option>
+<option value="AR">
+ARGENTINA (AR)</option>
+<option value="AM">
+ARMENIA (AM)</option>
+<option value="AW">
+ARUBA (AW)</option>
+<option value="AU">
+AUSTRALIA (AU)</option>
+<option value="AT">
+AUSTRIA (AT)</option>
+<option value="AZ">
+AZERBAIJAN (AZ)</option>
+<option value="BS">
+BAHAMAS (BS)</option>
+<option value="BH">
+BAHRAIN (BH)</option>
+<option value="BD">
+BANGLADESH (BD)</option>
+<option value="BB">
+BARBADOS (BB)</option>
+<option value="BY">
+BELARUS (BY)</option>
+<option value="BE">
+BELGIUM (BE)</option>
+<option value="BZ">
+BELIZE (BZ)</option>
+<option value="BJ">
+BENIN (BJ)</option>
+<option value="BM">
+BERMUDA (BM)</option>
+<option value="BT">
+BHUTAN (BT)</option>
+<option value="BO">
+BOLIVIA (BO)</option>
+<option value="BA">
+BOSNIA-HERCEGOVINA (BA)</option>
+<option value="BW">
+BOTSWANA (BW)</option>
+<option value="BR">
+BRAZIL (BR)</option>
+<option value="IO">
+BRITISH INDIAN OCEAN TERR (IO)</option>
+<option value="VG">
+BRITISH VIRGIN ISLANDS (VG)</option>
+<option value="BN">
+BRUNEI (BN)</option>
+<option value="BG">
+BULGARIA (BG)</option>
+<option value="BF">
+BURKINA (BF)</option>
+<option value="BU">
+BURMA (MYANMAR) (BU)</option>
+<option value="BI">
+BURUNDI (BI)</option>
+<option value="KH">
+CAMBODIA (KH)</option>
+<option value="CM">
+CAMEROON (CM)</option>
+<option value="CA">
+CANADA (CA)</option>
+<option value="CV">
+CAPE VERDE (CV)</option>
+<option value="KY">
+CAYMAN ISLANDS (KY)</option>
+<option value="CF">
+CENTRAL AFRICAN REPUBLIC (CF)</option>
+<option value="TD">
+CHAD (TD)</option>
+<option value="CL">
+CHILE (CL)</option>
+<option value="CN">
+CHINA (CN)</option>
+<option value="CX">
+CHRISTMAS ISLAND (CX)</option>
+<option value="CC">
+COCOS (KEELING) ISLAND (CC)</option>
+<option value="CO">
+COLOMBIA (CO)</option>
+<option value="KM">
+COMOROS (KM)</option>
+<option value="CG">
+CONGO (BRAZZAVILLE) (CG)</option>
+<option value="CD">
+CONGO (KINSHASA) (CD)</option>
+<option value="CK">
+COOK ISLANDS (CK)</option>
+<option value="CR">
+COSTA RICA (CR)</option>
+<option value="HR">
+CROATIA (HR)</option>
+<option value="CU">
+CUBA (CU)</option>
+<option value="CW">
+CURACAO (CW)</option>
+<option value="CY">
+CYPRUS (CY)</option>
+<option value="CZ">
+CZECH REPUBLIC (CZ)</option>
+<option value="DK">
+DENMARK (DK)</option>
+<option value="DJ">
+DJIBOUTI (DJ)</option>
+<option value="DM">
+DOMINICA (DM)</option>
+<option value="DO">
+DOMINICAN REPUBLIC (DO)</option>
+<option value="TL">
+EAST TIMOR (TL)</option>
+<option value="EC">
+ECUADOR (EC)</option>
+<option value="EG">
+EGYPT (EG)</option>
+<option value="SV">
+EL SALVADOR (SV)</option>
+<option value="GQ">
+EQUATORIAL GUINEA (GQ)</option>
+<option value="ER">
+ERITREA (ER)</option>
+<option value="EE">
+ESTONIA (EE)</option>
+<option value="ET">
+ETHIOPIA (ET)</option>
+<option value="FK">
+FALKLAND ISLANDS (FK)</option>
+<option value="FO">
+FAROE ISLANDS (FO)</option>
+<option value="FM">
+FEDRATED STATES OF MICRONESIA (FM)</option>
+<option value="FJ">
+FIJI (FJ)</option>
+<option value="FI">
+FINLAND (FI)</option>
+<option value="FR">
+FRANCE (FR)</option>
+<option value="GF">
+FRENCH GUIANA (GF)</option>
+<option value="PF">
+FRENCH POLYNESIA (PF)</option>
+<option value="TF">
+FRENCH SOUTHERN AND ANTARCTIC LANDS (TF)</option>
+<option value="GA">
+GABON (GA)</option>
+<option value="GM">
+GAMBIA (GM)</option>
+<option value="GZ">
+GAZA STRIP ADMINISTERED BY ISRAEL (GZ)</option>
+<option value="GE">
+GEORGIA (GE)</option>
+<option value="DE">
+GERMANY (DE)</option>
+<option value="GH">
+GHANA (GH)</option>
+<option value="GI">
+GIBRALTAR (GI)</option>
+<option value="GR">
+GREECE (GR)</option>
+<option value="GL">
+GREENLAND (GL)</option>
+<option value="GD">
+GRENADA (GD)</option>
+<option value="GP">
+GUADELOUPE (GP)</option>
+<option value="GU">
+GUAM (GU)</option>
+<option value="GT">
+GUATEMALA (GT)</option>
+<option value="GN">
+GUINEA (GN)</option>
+<option value="GW">
+GUINEA-BISSAU (GW)</option>
+<option value="GY">
+GUYANA (GY)</option>
+<option value="HT">
+HAITI (HT)</option>
+<option value="HM">
+HEARD AND MCDONALD ISLANDS (HM)</option>
+<option value="HN">
+HONDURAS (HN)</option>
+<option value="HK">
+HONG KONG (HK)</option>
+<option value="HU">
+HUNGARY (HU)</option>
+<option value="IS">
+ICELAND (IS)</option>
+<option value="IN">
+INDIA (IN)</option>
+<option value="ID">
+INDONESIA (ID)</option>
+<option value="IR">
+IRAN (IR)</option>
+<option value="IQ">
+IRAQ (IQ)</option>
+<option value="IE">
+IRELAND (IE)</option>
+<option value="IL">
+ISRAEL (IL)</option>
+<option value="IT">
+ITALY (IT)</option>
+<option value="CI">
+IVORY COAST (CI)</option>
+<option value="JM">
+JAMAICA (JM)</option>
+<option value="JP">
+JAPAN (JP)</option>
+<option value="JO">
+JORDAN (JO)</option>
+<option value="KZ">
+KAZAKHSTAN (KZ)</option>
+<option value="KE">
+KENYA (KE)</option>
+<option value="KI">
+KIRIBATI (KI)</option>
+<option value="KR">
+KOREA, SOUTH (KR)</option>
+<option value="KW">
+KUWAIT (KW)</option>
+<option value="KG">
+KYRGYZSTAN (KG)</option>
+<option value="LA">
+LAOS (LA)</option>
+<option value="LV">
+LATVIA (LV)</option>
+<option value="LB">
+LEBANON (LB)</option>
+<option value="LS">
+LESOTHO (LS)</option>
+<option value="LR">
+LIBERIA (LR)</option>
+<option value="LY">
+LIBYA (LY)</option>
+<option value="LI">
+LIECHTENSTEIN (LI)</option>
+<option value="LT">
+LITHUANIA (LT)</option>
+<option value="LU">
+LUXEMBOURG (LU)</option>
+<option value="MO">
+MACAO (MO)</option>
+<option value="MK">
+MACEDONIA (SKOPJE) (MK)</option>
+<option value="MG">
+MADAGASCAR (MG)</option>
+<option value="MW">
+MALAWI (MW)</option>
+<option value="MY">
+MALAYSIA (MY)</option>
+<option value="MV">
+MALDIVES (MV)</option>
+<option value="ML">
+MALI (ML)</option>
+<option value="MT">
+MALTA (MT)</option>
+<option value="MH">
+MARSHALL ISLANDS (MH)</option>
+<option value="MQ">
+MARTINIQUE (MQ)</option>
+<option value="MR">
+MAURITANIA (MR)</option>
+<option value="MU">
+MAURITIUS (MU)</option>
+<option value="YT">
+MAYOTTE (YT)</option>
+<option value="MX">
+MEXICO (MX)</option>
+<option value="MD">
+MOLDOVA (MD)</option>
+<option value="MC">
+MONACO (MC)</option>
+<option value="MN">
+MONGOLIA (MN)</option>
+<option value="ME">
+MONTENEGRO (ME)</option>
+<option value="MS">
+MONTSERRAT (MS)</option>
+<option value="MA">
+MOROCCO (MA)</option>
+<option value="MZ">
+MOZAMBIQUE (MZ)</option>
+<option value="NA">
+NAMIBIA (NA)</option>
+<option value="NR">
+NAURU (NR)</option>
+<option value="NP">
+NEPAL (NP)</option>
+<option value="NL">
+NETHERLANDS (NL)</option>
+<option value="AN">
+NETHERLANDS ANTILLES (AN)</option>
+<option value="NC">
+NEW CALEDONIA (NC)</option>
+<option value="NZ">
+NEW ZEALAND (NZ)</option>
+<option value="NI">
+NICARAGUA (NI)</option>
+<option value="NE">
+NIGER (NE)</option>
+<option value="NG">
+NIGERIA (NG)</option>
+<option value="NU">
+NIUE (NU)</option>
+<option value="NF">
+NORFOLK ISLAND (NF)</option>
+<option value="KP">
+NORTH KOREA (KP)</option>
+<option value="MP">
+NORTHERN MARIANA ISLANDS (MP)</option>
+<option value="NO">
+NORWAY (NO)</option>
+<option value="OM">
+OMAN (OM)</option>
+<option value="PK">
+PAKISTAN (PK)</option>
+<option value="PW">
+PALAU (PW)</option>
+<option value="PA">
+PANAMA (PA)</option>
+<option value="PG">
+PAPUA NEW GUINEA (PG)</option>
+<option value="PY">
+PARAGUAY (PY)</option>
+<option value="PE">
+PERU (PE)</option>
+<option value="PH">
+PHILIPPINES (PH)</option>
+<option value="PN">
+PITCAIRN ISLAND (PN)</option>
+<option value="PL">
+POLAND (PL)</option>
+<option value="PT">
+PORTUGAL (PT)</option>
+<option value="PR">
+PUERTO RICO (PR)</option>
+<option value="QA">
+QATAR (QA)</option>
+<option value="YE">
+REPUBLIC OF YEMEN (YE)</option>
+<option value="RE">
+REUNION (RE)</option>
+<option value="RO">
+ROMANIA (RO)</option>
+<option value="RU">
+RUSSIA (RU)</option>
+<option value="RW">
+RWANDA (RW)</option>
+<option value="SM">
+SAN MARINO (SM)</option>
+<option value="ST">
+SAO TOME AND PRINCIPE (ST)</option>
+<option value="SA">
+SAUDI ARABIA (SA)</option>
+<option value="SN">
+SENEGAL (SN)</option>
+<option value="RS">
+SERBIA (RS)</option>
+<option value="SC">
+SEYCHELLES (SC)</option>
+<option value="SL">
+SIERRA LEONE (SL)</option>
+<option value="SG">
+SINGAPORE (SG)</option>
+<option value="SX">
+SINT MAARTEN (SX)</option>
+<option value="SK">
+SLOVAKIA (SK)</option>
+<option value="SI">
+SLOVENIA (SI)</option>
+<option value="SB">
+SOLOMON ISLANDS (SB)</option>
+<option value="SO">
+SOMALIA (SO)</option>
+<option value="ZA">
+SOUTH AFRICA (ZA)</option>
+<option value="SS">
+SOUTH SUDAN (SS)</option>
+<option value="ES">
+SPAIN (ES)</option>
+<option value="LK">
+SRI LANKA (LK)</option>
+<option value="BL">
+ST BARTHELEMY (BL)</option>
+<option value="SH">
+ST HELENA (SH)</option>
+<option value="KN">
+ST KITTS AND NEVIS (KN)</option>
+<option value="LC">
+ST LUCIA (LC)</option>
+<option value="PM">
+ST PIERRE AND MIQUELON (PM)</option>
+<option value="VC">
+ST VINCENT AND THE GRENADINES (VC)</option>
+<option value="SD">
+SUDAN (SD)</option>
+<option value="SR">
+SURINAME (SR)</option>
+<option value="SJ">
+SVALBARD, JAN MAYEN ISLAND (SJ)</option>
+<option value="SZ">
+SWAZILAND (SZ)</option>
+<option value="SE">
+SWEDEN (SE)</option>
+<option value="CH">
+SWITZERLAND (CH)</option>
+<option value="SY">
+SYRIA (SY)</option>
+<option value="TW">
+TAIWAN (TW)</option>
+<option value="TJ">
+TAJIKISTAN (TJ)</option>
+<option value="TZ">
+TANZANIA (TZ)</option>
+<option value="TH">
+THAILAND (TH)</option>
+<option value="TG">
+TOGO (TG)</option>
+<option value="TK">
+TOKELAU (TK)</option>
+<option value="TO">
+TONGA (TO)</option>
+<option value="TT">
+TRINIDAD AND TOBAGO (TT)</option>
+<option value="TN">
+TUNISIA (TN)</option>
+<option value="TR">
+TURKEY (TR)</option>
+<option value="TM">
+TURKMENISTAN (TM)</option>
+<option value="TC">
+TURKS AND CAICOS ISLANDS (TC)</option>
+<option value="TV">
+TUVALU (TV)</option>
+<option value="UG">
+UGANDA (UG)</option>
+<option value="UA">
+UKRAINE (UA)</option>
+<option value="AE">
+UNITED ARAB EMIRATES (AE)</option>
+<option value="GB">
+UNITED KINGDOM (GB)</option>
+<option value="US">
+UNITED STATES (US)</option>
+<option value="UY">
+URUGUAY (UY)</option>
+<option value="UM">
+US MINOR OUTLYING ISLANDS (UM)</option>
+<option value="UZ">
+UZBEKISTAN (UZ)</option>
+<option value="VU">
+VANUATU (VU)</option>
+<option value="VA">
+VATICAN CITY (VA)</option>
+<option value="VE">
+VENEZUELA (VE)</option>
+<option value="VN">
+VIETNAM (VN)</option>
+<option value="VI">
+VIRGIN ISLANDS OF THE UNITED STATES (VI)</option>
+<option value="WF">
+WALLIS AND FUTUNA (WF)</option>
+<option value="WE">
+WEST BANK ADMINISTERED BY ISRAEL (WE)</option>
+<option value="EH">
+WESTERN SAHARA (EH)</option>
+<option value="WS">
+WESTERN SAMOA (WS)</option>
+<option value="ZM">
+ZAMBIA (ZM)</option>
+<option value="ZW">
+ZIMBABWE (ZW)</option>
+</select>
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Contact</th>
+                                    <th>
+<input name="noticont" id="noticont" type="text" size="30" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+Telephone</th>
+                                   <th>
+<input name="notiph" id="notiph" type="text" size="20" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+E-mail</th>
+                                   <th>
+<input name="notiemail" id="notiemail" type="text" size="50" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+Reference</th>
+                                   <th>
+<input name="notiref" id="notiref" type="text" size="30" value="">
+</th>
+                                 </tr>
+                           </table>
+</th>
+                           <th colspan=2>
+<table>
+                                 <tr>
+                                     <th>
+Company ID</th>
+                                     <th id="brokid_th">
+<input name="brokid" id="brokid" type="text" size="15" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+Company Name</th>
+                                     <th>
+<input name="brokname" id="brokname" type="text" size="45" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+Address Line 1..3</th>
+                                     <th>
+<input name="brokadd1" id="brokadd1" type="text" size="45" value="">
+<br>
+                                         <input name="brokadd2" id="brokadd2" type="text" size="45" value="">
+<br>
+                                         <input name="brokadd3" id="brokadd3" type="text" size="45" value="">
+                                     </th>
+                                 </tr>
+                                 <tr>
+                                     <th>
+City, State, Zip</th>
+                                     <th>
+<input name="brokcity" id="brokcity" type="text" size="45" value="">
+,&nbsp; <select name="brokst" id="brokst" size="1"   >
+<option value="" SELECTED>
+</option>
+<option value="AG">
+AG -  AGUASCALIENTES</option>
+<option value="AL">
+AL -  ALABAMA</option>
+<option value="AK">
+AK -  ALASKA</option>
+<option value="AB">
+AB -  ALBERTA</option>
+<option value="AZ">
+AZ -  ARIZONA</option>
+<option value="AR">
+AR -  ARKANSAS</option>
+<option value="BN">
+BN -  BAJA CALIFORNIA NORT</option>
+<option value="BS">
+BS -  BAJA CALIFORNIA SUR</option>
+<option value="BC">
+BC -  BRITISH COLUMBIA</option>
+<option value="CA">
+CA -  CALIFORNIA</option>
+<option value="CM">
+CM -  CAMPECHE</option>
+<option value="CS">
+CS -  CHIAPAS</option>
+<option value="CH">
+CH -  CHIHUAHUA</option>
+<option value="CO">
+CO -  COAHUILA</option>
+<option value="CL">
+CL -  COLIMA</option>
+<option value="CO">
+CO -  COLORADO</option>
+<option value="CT">
+CT -  CONNECTICUT</option>
+<option value="DE">
+DE -  DELAWARE</option>
+<option value="DC">
+DC -  DISTRICT OF COLUMBIA</option>
+<option value="DF">
+DF -  DISTRITO FEDERAL</option>
+<option value="DG">
+DG -  DURANGO</option>
+<option value="FL">
+FL -  FLORIDA</option>
+<option value="GA">
+GA -  GEORGIA</option>
+<option value="GT">
+GT -  GUANAJUATO</option>
+<option value="GR">
+GR -  GUERRERO</option>
+<option value="HI">
+HI -  HAWAII</option>
+<option value="HG">
+HG -  HIDALGO</option>
+<option value="ID">
+ID -  IDAHO</option>
+<option value="IL">
+IL -  ILLINOIS</option>
+<option value="IN">
+IN -  INDIANA</option>
+<option value="IA">
+IA -  IOWA</option>
+<option value="JA">
+JA -  JALISCO</option>
+<option value="KS">
+KS -  KANSAS</option>
+<option value="KY">
+KY -  KENTUCKY</option>
+<option value="LA">
+LA -  LOUISIANA</option>
+<option value="ME">
+ME -  MAINE</option>
+<option value="MB">
+MB -  MANOTOBA</option>
+<option value="MD">
+MD -  MARYLAND</option>
+<option value="MA">
+MA -  MASSACHUSETTS</option>
+<option value="MX">
+MX -  MEXICO</option>
+<option value="MI">
+MI -  MICHIGAN</option>
+<option value="MI">
+MI -  MICHOACAN</option>
+<option value="MN">
+MN -  MINNESOTA</option>
+<option value="MS">
+MS -  MISSISSIPPI</option>
+<option value="MO">
+MO -  MISSOURI</option>
+<option value="MT">
+MT -  MONTANA</option>
+<option value="MO">
+MO -  MORELOS</option>
+<option value="NA">
+NA -  NAYARIT</option>
+<option value="NE">
+NE -  NEBRASKA</option>
+<option value="NV">
+NV -  NEVEDA</option>
+<option value="NB">
+NB -  NEW BRUNSWICK</option>
+<option value="NH">
+NH -  NEW HAMPSHIRE</option>
+<option value="NJ">
+NJ -  NEW JERSEY</option>
+<option value="NM">
+NM -  NEW MEXICO</option>
+<option value="NY">
+NY -  NEW YORK</option>
+<option value="NF">
+NF -  NEWFOUNDLAND</option>
+<option value="NC">
+NC -  NORTH CAROLINA</option>
+<option value="ND">
+ND -  NORTH DAKOTA</option>
+<option value="NT">
+NT -  NORTHERN TERRITORIES</option>
+<option value="NS">
+NS -  NOVA SCOTIA</option>
+<option value="NL">
+NL -  NUEVO LEON</option>
+<option value="OA">
+OA -  OAXACA</option>
+<option value="OH">
+OH -  OHIO</option>
+<option value="OK">
+OK -  OKLAHOMA</option>
+<option value="ON">
+ON -  ONTARIO</option>
+<option value="OR">
+OR -  OREGON</option>
+<option value="PA">
+PA -  PENNSYLVANIA</option>
+<option value="PE">
+PE -  PRINCE EDWARD ISLAND</option>
+<option value="PU">
+PU -  PUEBLA</option>
+<option value="PR">
+PR -  PUERTO RICO</option>
+<option value="QC">
+QC -  QUEBEC</option>
+<option value="QT">
+QT -  QUERETARO</option>
+<option value="QR">
+QR -  QUINTANA ROO</option>
+<option value="RI">
+RI -  RHODE ISLAND</option>
+<option value="SL">
+SL -  SAN LUIS POTOSI</option>
+<option value="SK">
+SK -  SASKATCHEWAN</option>
+<option value="SI">
+SI -  SINALOA</option>
+<option value="SO">
+SO -  SONORA</option>
+<option value="SC">
+SC -  SOUTH CAROLINA</option>
+<option value="SD">
+SD -  SOUTH DAKOTA</option>
+<option value="TB">
+TB -  TABASCO</option>
+<option value="TM">
+TM -  TAMAULIPAS</option>
+<option value="TN">
+TN -  TENNESSEE</option>
+<option value="TX">
+TX -  TEXAS</option>
+<option value="TL">
+TL -  TLAXCALA</option>
+<option value="UT">
+UT -  UTAH</option>
+<option value="VE">
+VE -  VERACRUZ</option>
+<option value="VT">
+VT -  VERMONT</option>
+<option value="VA">
+VA -  VIRGINIA</option>
+<option value="WA">
+WA -  WASHINGTON</option>
+<option value="WV">
+WV -  WEST VIRGINIA</option>
+<option value="WI">
+WI -  WISCONSIN</option>
+<option value="WY">
+WY -  WYOMING</option>
+<option value="YU">
+YU -  YUCATAN</option>
+<option value="YT">
+YT -  YUKON TERRITORY</option>
+<option value="ZA">
+ZA -  ZACATECAS</option>
+</select>
+                                         &nbsp;                                         <input name="brokzip" id="brokzip" type="text" size="10" value="">
+&nbsp;                                     </th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Country</th>
+                                    <th>
+<select name="brokiso" id="brokiso" size="1"   >
+<option value="" SELECTED>
+-- SELECT FROM LIST --</option>
+<option value="MM">
+*** DO NOT USER *** (MM)</option>
+<option value="AF">
+AFGANISTAN (AF)</option>
+<option value="AL">
+ALBANIA (AL)</option>
+<option value="DZ">
+ALGERIA (DZ)</option>
+<option value="AS">
+AMERICAN SAMOA (AS)</option>
+<option value="AD">
+ANDORRA (AD)</option>
+<option value="AO">
+ANGOLA (AO)</option>
+<option value="AI">
+ANGUILLA (AI)</option>
+<option value="AG">
+ANTIGUA AND BARBUDA (AG)</option>
+<option value="AR">
+ARGENTINA (AR)</option>
+<option value="AM">
+ARMENIA (AM)</option>
+<option value="AW">
+ARUBA (AW)</option>
+<option value="AU">
+AUSTRALIA (AU)</option>
+<option value="AT">
+AUSTRIA (AT)</option>
+<option value="AZ">
+AZERBAIJAN (AZ)</option>
+<option value="BS">
+BAHAMAS (BS)</option>
+<option value="BH">
+BAHRAIN (BH)</option>
+<option value="BD">
+BANGLADESH (BD)</option>
+<option value="BB">
+BARBADOS (BB)</option>
+<option value="BY">
+BELARUS (BY)</option>
+<option value="BE">
+BELGIUM (BE)</option>
+<option value="BZ">
+BELIZE (BZ)</option>
+<option value="BJ">
+BENIN (BJ)</option>
+<option value="BM">
+BERMUDA (BM)</option>
+<option value="BT">
+BHUTAN (BT)</option>
+<option value="BO">
+BOLIVIA (BO)</option>
+<option value="BA">
+BOSNIA-HERCEGOVINA (BA)</option>
+<option value="BW">
+BOTSWANA (BW)</option>
+<option value="BR">
+BRAZIL (BR)</option>
+<option value="IO">
+BRITISH INDIAN OCEAN TERR (IO)</option>
+<option value="VG">
+BRITISH VIRGIN ISLANDS (VG)</option>
+<option value="BN">
+BRUNEI (BN)</option>
+<option value="BG">
+BULGARIA (BG)</option>
+<option value="BF">
+BURKINA (BF)</option>
+<option value="BU">
+BURMA (MYANMAR) (BU)</option>
+<option value="BI">
+BURUNDI (BI)</option>
+<option value="KH">
+CAMBODIA (KH)</option>
+<option value="CM">
+CAMEROON (CM)</option>
+<option value="CA">
+CANADA (CA)</option>
+<option value="CV">
+CAPE VERDE (CV)</option>
+<option value="KY">
+CAYMAN ISLANDS (KY)</option>
+<option value="CF">
+CENTRAL AFRICAN REPUBLIC (CF)</option>
+<option value="TD">
+CHAD (TD)</option>
+<option value="CL">
+CHILE (CL)</option>
+<option value="CN">
+CHINA (CN)</option>
+<option value="CX">
+CHRISTMAS ISLAND (CX)</option>
+<option value="CC">
+COCOS (KEELING) ISLAND (CC)</option>
+<option value="CO">
+COLOMBIA (CO)</option>
+<option value="KM">
+COMOROS (KM)</option>
+<option value="CG">
+CONGO (BRAZZAVILLE) (CG)</option>
+<option value="CD">
+CONGO (KINSHASA) (CD)</option>
+<option value="CK">
+COOK ISLANDS (CK)</option>
+<option value="CR">
+COSTA RICA (CR)</option>
+<option value="HR">
+CROATIA (HR)</option>
+<option value="CU">
+CUBA (CU)</option>
+<option value="CW">
+CURACAO (CW)</option>
+<option value="CY">
+CYPRUS (CY)</option>
+<option value="CZ">
+CZECH REPUBLIC (CZ)</option>
+<option value="DK">
+DENMARK (DK)</option>
+<option value="DJ">
+DJIBOUTI (DJ)</option>
+<option value="DM">
+DOMINICA (DM)</option>
+<option value="DO">
+DOMINICAN REPUBLIC (DO)</option>
+<option value="TL">
+EAST TIMOR (TL)</option>
+<option value="EC">
+ECUADOR (EC)</option>
+<option value="EG">
+EGYPT (EG)</option>
+<option value="SV">
+EL SALVADOR (SV)</option>
+<option value="GQ">
+EQUATORIAL GUINEA (GQ)</option>
+<option value="ER">
+ERITREA (ER)</option>
+<option value="EE">
+ESTONIA (EE)</option>
+<option value="ET">
+ETHIOPIA (ET)</option>
+<option value="FK">
+FALKLAND ISLANDS (FK)</option>
+<option value="FO">
+FAROE ISLANDS (FO)</option>
+<option value="FM">
+FEDRATED STATES OF MICRONESIA (FM)</option>
+<option value="FJ">
+FIJI (FJ)</option>
+<option value="FI">
+FINLAND (FI)</option>
+<option value="FR">
+FRANCE (FR)</option>
+<option value="GF">
+FRENCH GUIANA (GF)</option>
+<option value="PF">
+FRENCH POLYNESIA (PF)</option>
+<option value="TF">
+FRENCH SOUTHERN AND ANTARCTIC LANDS (TF)</option>
+<option value="GA">
+GABON (GA)</option>
+<option value="GM">
+GAMBIA (GM)</option>
+<option value="GZ">
+GAZA STRIP ADMINISTERED BY ISRAEL (GZ)</option>
+<option value="GE">
+GEORGIA (GE)</option>
+<option value="DE">
+GERMANY (DE)</option>
+<option value="GH">
+GHANA (GH)</option>
+<option value="GI">
+GIBRALTAR (GI)</option>
+<option value="GR">
+GREECE (GR)</option>
+<option value="GL">
+GREENLAND (GL)</option>
+<option value="GD">
+GRENADA (GD)</option>
+<option value="GP">
+GUADELOUPE (GP)</option>
+<option value="GU">
+GUAM (GU)</option>
+<option value="GT">
+GUATEMALA (GT)</option>
+<option value="GN">
+GUINEA (GN)</option>
+<option value="GW">
+GUINEA-BISSAU (GW)</option>
+<option value="GY">
+GUYANA (GY)</option>
+<option value="HT">
+HAITI (HT)</option>
+<option value="HM">
+HEARD AND MCDONALD ISLANDS (HM)</option>
+<option value="HN">
+HONDURAS (HN)</option>
+<option value="HK">
+HONG KONG (HK)</option>
+<option value="HU">
+HUNGARY (HU)</option>
+<option value="IS">
+ICELAND (IS)</option>
+<option value="IN">
+INDIA (IN)</option>
+<option value="ID">
+INDONESIA (ID)</option>
+<option value="IR">
+IRAN (IR)</option>
+<option value="IQ">
+IRAQ (IQ)</option>
+<option value="IE">
+IRELAND (IE)</option>
+<option value="IL">
+ISRAEL (IL)</option>
+<option value="IT">
+ITALY (IT)</option>
+<option value="CI">
+IVORY COAST (CI)</option>
+<option value="JM">
+JAMAICA (JM)</option>
+<option value="JP">
+JAPAN (JP)</option>
+<option value="JO">
+JORDAN (JO)</option>
+<option value="KZ">
+KAZAKHSTAN (KZ)</option>
+<option value="KE">
+KENYA (KE)</option>
+<option value="KI">
+KIRIBATI (KI)</option>
+<option value="KR">
+KOREA, SOUTH (KR)</option>
+<option value="KW">
+KUWAIT (KW)</option>
+<option value="KG">
+KYRGYZSTAN (KG)</option>
+<option value="LA">
+LAOS (LA)</option>
+<option value="LV">
+LATVIA (LV)</option>
+<option value="LB">
+LEBANON (LB)</option>
+<option value="LS">
+LESOTHO (LS)</option>
+<option value="LR">
+LIBERIA (LR)</option>
+<option value="LY">
+LIBYA (LY)</option>
+<option value="LI">
+LIECHTENSTEIN (LI)</option>
+<option value="LT">
+LITHUANIA (LT)</option>
+<option value="LU">
+LUXEMBOURG (LU)</option>
+<option value="MO">
+MACAO (MO)</option>
+<option value="MK">
+MACEDONIA (SKOPJE) (MK)</option>
+<option value="MG">
+MADAGASCAR (MG)</option>
+<option value="MW">
+MALAWI (MW)</option>
+<option value="MY">
+MALAYSIA (MY)</option>
+<option value="MV">
+MALDIVES (MV)</option>
+<option value="ML">
+MALI (ML)</option>
+<option value="MT">
+MALTA (MT)</option>
+<option value="MH">
+MARSHALL ISLANDS (MH)</option>
+<option value="MQ">
+MARTINIQUE (MQ)</option>
+<option value="MR">
+MAURITANIA (MR)</option>
+<option value="MU">
+MAURITIUS (MU)</option>
+<option value="YT">
+MAYOTTE (YT)</option>
+<option value="MX">
+MEXICO (MX)</option>
+<option value="MD">
+MOLDOVA (MD)</option>
+<option value="MC">
+MONACO (MC)</option>
+<option value="MN">
+MONGOLIA (MN)</option>
+<option value="ME">
+MONTENEGRO (ME)</option>
+<option value="MS">
+MONTSERRAT (MS)</option>
+<option value="MA">
+MOROCCO (MA)</option>
+<option value="MZ">
+MOZAMBIQUE (MZ)</option>
+<option value="NA">
+NAMIBIA (NA)</option>
+<option value="NR">
+NAURU (NR)</option>
+<option value="NP">
+NEPAL (NP)</option>
+<option value="NL">
+NETHERLANDS (NL)</option>
+<option value="AN">
+NETHERLANDS ANTILLES (AN)</option>
+<option value="NC">
+NEW CALEDONIA (NC)</option>
+<option value="NZ">
+NEW ZEALAND (NZ)</option>
+<option value="NI">
+NICARAGUA (NI)</option>
+<option value="NE">
+NIGER (NE)</option>
+<option value="NG">
+NIGERIA (NG)</option>
+<option value="NU">
+NIUE (NU)</option>
+<option value="NF">
+NORFOLK ISLAND (NF)</option>
+<option value="KP">
+NORTH KOREA (KP)</option>
+<option value="MP">
+NORTHERN MARIANA ISLANDS (MP)</option>
+<option value="NO">
+NORWAY (NO)</option>
+<option value="OM">
+OMAN (OM)</option>
+<option value="PK">
+PAKISTAN (PK)</option>
+<option value="PW">
+PALAU (PW)</option>
+<option value="PA">
+PANAMA (PA)</option>
+<option value="PG">
+PAPUA NEW GUINEA (PG)</option>
+<option value="PY">
+PARAGUAY (PY)</option>
+<option value="PE">
+PERU (PE)</option>
+<option value="PH">
+PHILIPPINES (PH)</option>
+<option value="PN">
+PITCAIRN ISLAND (PN)</option>
+<option value="PL">
+POLAND (PL)</option>
+<option value="PT">
+PORTUGAL (PT)</option>
+<option value="PR">
+PUERTO RICO (PR)</option>
+<option value="QA">
+QATAR (QA)</option>
+<option value="YE">
+REPUBLIC OF YEMEN (YE)</option>
+<option value="RE">
+REUNION (RE)</option>
+<option value="RO">
+ROMANIA (RO)</option>
+<option value="RU">
+RUSSIA (RU)</option>
+<option value="RW">
+RWANDA (RW)</option>
+<option value="SM">
+SAN MARINO (SM)</option>
+<option value="ST">
+SAO TOME AND PRINCIPE (ST)</option>
+<option value="SA">
+SAUDI ARABIA (SA)</option>
+<option value="SN">
+SENEGAL (SN)</option>
+<option value="RS">
+SERBIA (RS)</option>
+<option value="SC">
+SEYCHELLES (SC)</option>
+<option value="SL">
+SIERRA LEONE (SL)</option>
+<option value="SG">
+SINGAPORE (SG)</option>
+<option value="SX">
+SINT MAARTEN (SX)</option>
+<option value="SK">
+SLOVAKIA (SK)</option>
+<option value="SI">
+SLOVENIA (SI)</option>
+<option value="SB">
+SOLOMON ISLANDS (SB)</option>
+<option value="SO">
+SOMALIA (SO)</option>
+<option value="ZA">
+SOUTH AFRICA (ZA)</option>
+<option value="SS">
+SOUTH SUDAN (SS)</option>
+<option value="ES">
+SPAIN (ES)</option>
+<option value="LK">
+SRI LANKA (LK)</option>
+<option value="BL">
+ST BARTHELEMY (BL)</option>
+<option value="SH">
+ST HELENA (SH)</option>
+<option value="KN">
+ST KITTS AND NEVIS (KN)</option>
+<option value="LC">
+ST LUCIA (LC)</option>
+<option value="PM">
+ST PIERRE AND MIQUELON (PM)</option>
+<option value="VC">
+ST VINCENT AND THE GRENADINES (VC)</option>
+<option value="SD">
+SUDAN (SD)</option>
+<option value="SR">
+SURINAME (SR)</option>
+<option value="SJ">
+SVALBARD, JAN MAYEN ISLAND (SJ)</option>
+<option value="SZ">
+SWAZILAND (SZ)</option>
+<option value="SE">
+SWEDEN (SE)</option>
+<option value="CH">
+SWITZERLAND (CH)</option>
+<option value="SY">
+SYRIA (SY)</option>
+<option value="TW">
+TAIWAN (TW)</option>
+<option value="TJ">
+TAJIKISTAN (TJ)</option>
+<option value="TZ">
+TANZANIA (TZ)</option>
+<option value="TH">
+THAILAND (TH)</option>
+<option value="TG">
+TOGO (TG)</option>
+<option value="TK">
+TOKELAU (TK)</option>
+<option value="TO">
+TONGA (TO)</option>
+<option value="TT">
+TRINIDAD AND TOBAGO (TT)</option>
+<option value="TN">
+TUNISIA (TN)</option>
+<option value="TR">
+TURKEY (TR)</option>
+<option value="TM">
+TURKMENISTAN (TM)</option>
+<option value="TC">
+TURKS AND CAICOS ISLANDS (TC)</option>
+<option value="TV">
+TUVALU (TV)</option>
+<option value="UG">
+UGANDA (UG)</option>
+<option value="UA">
+UKRAINE (UA)</option>
+<option value="AE">
+UNITED ARAB EMIRATES (AE)</option>
+<option value="GB">
+UNITED KINGDOM (GB)</option>
+<option value="US">
+UNITED STATES (US)</option>
+<option value="UY">
+URUGUAY (UY)</option>
+<option value="UM">
+US MINOR OUTLYING ISLANDS (UM)</option>
+<option value="UZ">
+UZBEKISTAN (UZ)</option>
+<option value="VU">
+VANUATU (VU)</option>
+<option value="VA">
+VATICAN CITY (VA)</option>
+<option value="VE">
+VENEZUELA (VE)</option>
+<option value="VN">
+VIETNAM (VN)</option>
+<option value="VI">
+VIRGIN ISLANDS OF THE UNITED STATES (VI)</option>
+<option value="WF">
+WALLIS AND FUTUNA (WF)</option>
+<option value="WE">
+WEST BANK ADMINISTERED BY ISRAEL (WE)</option>
+<option value="EH">
+WESTERN SAHARA (EH)</option>
+<option value="WS">
+WESTERN SAMOA (WS)</option>
+<option value="ZM">
+ZAMBIA (ZM)</option>
+<option value="ZW">
+ZIMBABWE (ZW)</option>
+</select>
+</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+Contact</th>
+                                    <th>
+<input name="brokcont" id="brokcont" type="text" size="30" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+Telephone</th>
+                                   <th>
+<input name="brokph" id="brokph" type="text" size="20" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+E-mail</th>
+                                   <th>
+<input name="brokemail" id="brokemail" type="text" size="50" value="">
+</th>
+                                 </tr>
+                                 <tr>
+                                   <th>
+Reference</th>
+                                   <th>
+<input name="brokref" id="brokref" type="text" size="30" value="">
+</th>
+                                 </tr>
+                           </table>
+</th>
+                       </tr>
+                       <tr>
+<th colspan=4>
+<table>
+                       	<tr>
+                    			<th style="font-size:20px;">
+AMS <input type="checkbox" id="ams" name="ams" value="1" >
+</th>
+                    			<th style="font-size:20px;">
+ISF <input type="checkbox" id="usisf" name="usisf" value="1" CHECKED>
+</th>
+                    			<th style="font-size:20px;">
+ACI <input type="checkbox" id="caaci" name="caaci" value="1" CHECKED>
+</th>
+                    			<th style="font-size:20px;">
+ICS2 <input type="checkbox" id="euics" name="euics" value="1" >
+</th>
+                       	</tr>
+                       </table>
+</th>
+</tr>
+                       <tr>
+                         <th colspan=4 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+ROUTING & SHIPMENT DETAILS</b>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Shipment Mode</th>
+                         <th>
+<select name="trans" id="trans" size="1"   REQUIRED>
+<option value="">
+</option>
+<option value="E">
+EXPORT</option>
+<option value="I" SELECTED>
+IMPORT</option>
+<option value="F">
+FREIGHT LIST</option>
+<option value="L">
+IMPORT & FREIGHT LIST</option>
+</select>
+</th>
+                         <th>
+BOL Type</th>
+                         <th>
+                         	<input type="radio" name="boltype" value="M"  required>
+ Master &nbsp;                        		<input type="radio" name="boltype" value="H" checked required>
+ House &nbsp;                        		<input type="radio" name="boltype" value="S"  required>
+ Sub-House                        		<input type="radio" name="boltype" value="X"  required>
+ Misc                         </th>
+                       </tr>
+                       <tr>
+                      	<th>
+HBL</th>
+                         <th>
+<input name="shipmentno" id="shipmentno" type="text" size="20" value="TCS4ZP32152" READONLY>
+</th>
+                      	<th>
+Sub HBL</th>
+                      	<th>
+<input name="shbill" id="shbill" type="text" size="30" value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+MBL</th>
+                         <th>
+<input name="mbill" id="mbill" type="text" size="30" value="SJHHSLSNBW05865">
+</th>
+                         <th>
+Back To Back</th>
+                  			<th>
+<input type="checkbox" id="b2back" name="b2back" value="1" >
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+File No.</th>
+                         <th colspan=3>
+<input name="manifest" id="manifest" type="text" size="30" value="YLP50001" READONLY>
+<input type="button" name="RF" value=" RESET " style="border:1 solid #CDCDCD;font-family: tahoma,Verdana;height: 29;position: relative;color:#fff;background-color:#cc5500;" onClick="changeValue(this)">
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+Vessel Code</th>
+                      	<th colspan=4>
+<input name="vslcode" id="vslcode" type="text" size="10" value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Ocean Carrier</th>
+                         <th>
+<input name="scacid"   id="scacid"   type="text" size="15" value="SJHH">
+</th>
+                         <th>
+Ocean Carrier Name</th>
+                         <th>
+<input name="scacname" id="scacname" type="text" size="45" value="SEALEAD SHIPPING PTE LTD">
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+First Vessel</th>
+                         <th>
+<input name="vessel2" id="vessel2" type="text" size="35" value="SUEZ CANAL">
+</th>
+ 								<input name="imoflag2" id="imoflag2" type="hidden" size="3" value="LR" READONLY>
+<input name="imo2" id="imo2" type="hidden" value="9230311">
+                      	<th>
+Voyage</th>
+                      	<th>
+<input name="voyage2" id="voyage2" type="text" size="10" value="2502E">
+ 								</th>
+                       </tr>
+                       <tr>
+                      	<th>
+Second Vessel</th>
+                         <th>
+<input name="vessel" id="vessel" type="text" size="35" value="SUEZ CANAL">
+</th>
+ 								<input name="imoflag" id="imoflag" type="hidden" size="3" value="LR" READONLY>
+<input name="imo" id="imo" type="hidden" value="9230311">
+                      	<th>
+Voyage</th>
+                         <th>
+<input name="voyage" id="voyage" type="text" size="10" value="2502E">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+SC Owner</th>
+                         <th>
+<input name="contractown" id="contractown" type="text" size="30" value="">
+</th>
+                         <th>
+Contract</th>
+                         <th>
+<input name="contract" id="contract" type="text" size="30" value="">
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+Buy Rate Type</th>
+                         <th>
+<select name="ratebuy" id="ratebuy" size="1"   >
+<option value="" SELECTED>
+-- SELECT FROM LIST --</option>
+<option value="AGENT">
+AGENT</option>
+<option value="BI-MONTHLY">
+BI-MONTHLY</option>
+<option value="BSA">
+BSA</option>
+<option value="FAK">
+FAK</option>
+<option value="LTA-FIXED">
+LTA-FIXED</option>
+<option value="ONLINE-SPOT">
+ONLINE-SPOT</option>
+</select>
+</th>
+                      	<th>
+Sell Rate Type</th>
+                         <th>
+<select name="ratesell" id="ratesell" size="1"   >
+<option value="" SELECTED>
+-- SELECT FROM LIST --</option>
+<option value="FAK">
+FAK</option>
+<option value="LTA-FIXED">
+LTA-FIXED</option>
+</select>
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+Original E.T.D.</th>
+                         <th>
+<input type="text" size="10" id="oetd"    name="oetd"    value="">
+</th>
+                      	<th>
+Original E.T.A.</th>
+                         <th>
+<input type="text" size="10" id="oeta"    name="oeta"    value="">
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+E.T.D.</th>
+                         <th>
+<input type="text" size="10" id="etd1"    name="etd1"    value="04/04/2025">
+</th>
+                      	<th>
+A.T.D.</th>
+                         <th>
+<input type="text" size="10" id="etd2"    name="etd2"    value="04/04/2025">
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+E.T.A.</th>
+                         <th>
+<input type="text" size="10" id="eta1"     name="eta1"     value="05/10/2025">
+</th>
+                      	<th>
+A.T.A.</th>
+                         <th>
+<input type="text" size="10" id="eta2"     name="eta2"     value="05/10/2025">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Cargo / Delivery Type</th>
+                         <th>
+<select name="service" id="service" size="1"   >
+<option value="">
+</option>
+<option value="BREAKBULK">
+BREAKBULK</option>
+<option value="CFS/CFS">
+CFS/CFS</option>
+<option value="CFS/CFS(DOOR)">
+CFS/CFS(DOOR)</option>
+<option value="CFS/CY">
+CFS/CY</option>
+<option value="CFS/CY(DOOR)">
+CFS/CY(DOOR)</option>
+<option value="CFS/CY(RAMP)">
+CFS/CY(RAMP)</option>
+<option value="CFS/DOOR">
+CFS/DOOR</option>
+<option value="CFS/IPI/DOOR">
+CFS/IPI/DOOR</option>
+<option value="CFS/RAMP">
+CFS/RAMP</option>
+<option value="COMBINED">
+COMBINED</option>
+<option value="CY/CFS">
+CY/CFS</option>
+<option value="CY/CY">
+CY/CY</option>
+<option value="CY/DOOR">
+CY/DOOR</option>
+<option value="CY/I.T/PORT">
+CY/I.T/PORT</option>
+<option value="CY/IPI/DOOR" SELECTED>
+CY/IPI/DOOR</option>
+<option value="CY/RAMP">
+CY/RAMP</option>
+<option value="DOOR/CFS">
+DOOR/CFS</option>
+<option value="DOOR/CY">
+DOOR/CY</option>
+<option value="DOOR/DOOR">
+DOOR/DOOR</option>
+<option value="DOOR/HUB">
+DOOR/HUB</option>
+<option value="DOOR/PORT">
+DOOR/PORT</option>
+<option value="DOOR/RAMP">
+DOOR/RAMP</option>
+<option value="FI/FO">
+FI/FO</option>
+<option value="FI/LO">
+FI/LO</option>
+<option value="FTL">
+FTL</option>
+<option value="FTL CROSS BORDER">
+FTL CROSS BORDER</option>
+<option value="FTL/RAIL">
+FTL/RAIL</option>
+<option value="HEADLOAD">
+HEADLOAD</option>
+<option value="HEADLOAD/DOOR">
+HEADLOAD/DOOR</option>
+<option value="HUB/DOOR">
+HUB/DOOR</option>
+<option value="HUB/HUB">
+HUB/HUB</option>
+<option value="LI/FO">
+LI/FO</option>
+<option value="LI/LO">
+LI/LO</option>
+<option value="LL-FILE">
+LL-FILE</option>
+<option value="LL/DOOR">
+LL/DOOR</option>
+<option value="LL/IPI/DOOR">
+LL/IPI/DOOR</option>
+<option value="LL/PORT">
+LL/PORT</option>
+<option value="LL/RAMP">
+LL/RAMP</option>
+<option value="LTL">
+LTL</option>
+<option value="LTL CROSS BORDER">
+LTL CROSS BORDER</option>
+<option value="NON-USA">
+NON-USA</option>
+<option value="PORT/DOOR">
+PORT/DOOR</option>
+<option value="PORT/PORT">
+PORT/PORT</option>
+<option value="RAMP/CY">
+RAMP/CY</option>
+<option value="RAMP/DOOR">
+RAMP/DOOR</option>
+<option value="RAMP/RAMP">
+RAMP/RAMP</option>
+</select>
+</th>
+                         <th>
+Manifest Type</th>
+                         <th>
+<select name="movetype" id="movetype" size="1"   >
+<option value="" SELECTED>
+</option>
+<option value="B">
+BCN</option>
+<option value="F">
+FCL</option>
+<option value="G">
+GPE</option>
+<option value="K">
+BULK</option>
+<option value="L">
+LCL</option>
+<option value="R">
+ROR (RORO)</option>
+</select>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Booking No.</th>
+                         <th>
+<input name="bkgno" id="bkgno" type="text" size="30" value="">
+</th>
+                         <th>
+Booking Status</th>
+                         <th>
+<input name="bkgstat" id="bkgstato" type="text" size="20" value="BOOKING CONFIRMED" READONLY>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Tradelane</th>
+                         <th>
+<select name="tradelane" id="tradelane" size="1"   >
+<option value="" SELECTED>
+-- SELECT FROM LIST --</option>
+<option value="AFR">
+AFR</option>
+<option value="AUS">
+AUS</option>
+<option value="CAN">
+CAN</option>
+<option value="CHN">
+CHN</option>
+<option value="EUR">
+EUR</option>
+<option value="ISC">
+ISC</option>
+<option value="MDE">
+MDE</option>
+<option value="NEA">
+NEA</option>
+<option value="SAM">
+SAM</option>
+<option value="SEA">
+SEA</option>
+<option value="USA">
+USA</option>
+</select>
+</th>
+                         <th>
+Incoterms</th>
+                         <th>
+<select name="inco" id="inco" size="1"   >
+<option value="" SELECTED>
+</option>
+<option value="CFR">
+CFR</option>
+<option value="CIF">
+CIF</option>
+<option value="CIP">
+CIP</option>
+<option value="CPT">
+CPT</option>
+<option value="DAP">
+DAP</option>
+<option value="DAT">
+DAT</option>
+<option value="DDP">
+DDP</option>
+<option value="DDU">
+DDU</option>
+<option value="EXW">
+EXW</option>
+<option value="FAS">
+FAS</option>
+<option value="FCA">
+FCA</option>
+<option value="FOB">
+FOB</option>
+</select>
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+Year</th>
+                      	<th>
+<input name="syear" id="syear" type="text" size="5" value="2025">
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Week&nbsp;&nbsp;<input name="sweek" id="sweek" type="text" size="3" value="25">
+ 								</th>
+                      	<th>
+Booking Receive Date</th>
+                         <th>
+<input name="bkgdate" id="bkgdate" type="text" size="10" value="">
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+Close Date</th>
+                         <th>
+<input name="clsdate" id="clsdate" type="text" size="10" value="">
+</th>
+                      	<th>
+Onboard Date</th>
+ 								<th>
+<input name="obdate1" id="obdate1" type="text" size="10" value="">
+</th>
+                       </tr>
+                       <tr>
+                      	<th>
+SO Release date</th>
+                         <th>
+<input type="text" size="10" id="soreldate" name="soreldate"  value="">
+</th>
+                      	<th>
+Cargo Ready date</th>
+                         <th>
+<input type="text" size="10" id="cargoready" name="cargoready"  value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th id="porcode_th">
+Place of Receipt&nbsp;<input type="text" size="10" id="porcode" name="porcode" value="CNNBG">
+</th>
+                         <th>
+<input type="text" size="45" id="porname" name="porname" value="NINGBO PT, CN">
+</th>
+                       </tr>
+                       <tr>
+                         <th id="polcode_th">
+Port of Loading&nbsp;<input type="text" size="10" id="polcode" name="polcode" value="CNNBG">
+</th>
+                         <th>
+<input type="text" size="45" id="polname" name="polname" value="NINGBO PT, CN">
+</th>
+                         <th id="trncode_th">
+Transhipment / FROB Port&nbsp;<input type="text" size="10" id="trncode" name="trncode" value="">
+</th>
+                         <th>
+<input type="text" size="45" id="trnname" name="trnname" value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th id="poulcode_th">
+Port of Discharge&nbsp;<input type="text" size="10" id="poulcode" name="poulcode" value="CAVAN">
+</th>
+                         <th>
+<input type="text" size="45" id="poulname" name="poulname" value="VANCOUVER, BC">
+</th>
+                       </tr>
+                       <tr>
+                         <th id="podcode_th">
+Final Destination&nbsp;<input type="text" size="10" id="fdcode"  name="fdcode"  value="USCHI">
+</th>
+                         <th>
+<input type="text" size="45" id="fdname"  name="fdname"  value="CHICAGO, IL">
+</th>
+                         <th id="podcode_th">
+SI Place of Delivery (Carrier Book To)&nbsp;<input type="text" size="10" id="podcode"  name="podcode"  value="USCHI">
+</th>
+                         <th>
+<input type="text" size="45" id="podname"  name="podname"  value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th id="portlocid_th">
+Port Location&nbsp;<input type="text" size="10" id="portlocid" name="portlocid" value="TERDOC1163">
+</th>
+                         <th>
+<input type="text" size="45" id="portlocname" name="portlocname" value="VANCOUVER TERMINAL (VANTERM)">
+ FIRMS: <input name="portlocfirms" id="portlocfirms" type="text" size="4" value="">
+</th>
+                         <th id="entlocid_th">
+Cargo Location&nbsp;<input name="entlocid"   id="entlocid"   type="text" size="15" value="3265">
+</th>
+                         <th>
+<input name="entlocname" id="entlocname" type="text" size="45" value="CHICAGO - BNSF - JOLIET LOGIST - H572">
+ FIRMS: <input name="entlocfirms" id="entlocfirms" type="text" size="4" value="">
+</th>
+                       </tr>
+                       <tr>
+                    		<th>
+I.T. Information No.</th>
+                         <th>
+<input name="entryno" id="entryno" type="text" size="15"  value="">
+&nbsp;<a id="1" onclick="clearAtport(this)" data-product-name="Clear At Port">
+Clear At Port</a>
+                         on <input name="entrydate" id="entrydate" type="text" size="10"  value="">
+                         </th>
+                         <th>
+I.T. Location&nbsp;<input name="entrycode" id="entrycode" type="text" size="4"  value="">
+</th>
+                         <th>
+<input name="entryname" id="entryname" type="text" size="45"  value="">
+</th>
+                       </tr>
+                       <tr>
+                    		<th>
+CN No.</th>
+                         <th colspan=3>
+<input name="cnno" id="cnno" type="text" size="30"  value="">
+</th>
+                       </tr>
+                       <tr>
+                    		<th>
+AMS Commodity</th>
+                         <th colspan=3>
+<input type="text" size="180" maxlength="180" id="amscomm" name="amscomm" value="">
+</th>
+                       </tr>
+                       <tr>
+                    		<th>
+SI Commodity</th>
+                         <th colspan=3>
+<input type="text" size="180" maxlength="180" id="sicomm" name="sicomm" value="">
+</th>
+                       </tr>
+                       <tr>
+                    		<th colspan=4>
+<table>
+                       		<tr>
+                    				<th style="text-align:center;">
+Co-Load</th>
+                    				<th style="text-align:center;">
+Co-Load Type</th>
+                    				<th style="text-align:left;">
+Co-Load ID</th>
+                    				<th style="text-align:left;">
+Co-Load Name</th>
+                    				<th style="text-align:center;">
+Co-Load BOL</th>
+                       		</tr>
+                       		<tr>
+                         		<th style="text-align:center;">
+<input type="checkbox" id="coload" name="coload" value="1"  disabled="disabled">
+</th>
+                         		<th style="text-align:center;">
+<select name="coloadtype" id="coloadtype" size="1"   >
+<option value="" SELECTED>
+</option>
+<option value="I">
+CO-LOAD IN</option>
+<option value="O">
+CO-LOAD OUT</option>
+</select>
+</th>
+                         		<th style="text-align:left;">
+<input type="text" size="10" id="coloadid" name="coloadid" value="">
+</th>
+                         		<th style="text-align:left;">
+<input type="text" size="45" id="coloadname" name="coloadname" value="" READONLY>
+</th>
+                         		<th style="text-align:center;">
+<input type="text" size="30" id="coloadbol" name="coloadbol" value="">
+</th>
+                       		</tr>
+                    		</table>
+</th>
+                       </tr>
+                       <tr>
+                         <th colspan=4 style="text-align:center;font-size:20px;background-color:#488AC7;">
+<b>
+HOUSE BILL OF LADING DETAILS</b>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+BOL Release (HBL)</th>
+                         <th id="bolcode_th">
+<input type="text" size="10" id="bolcode"  name="bolcode"  value="">
+</th>
+                         <th colspan=2>
+<input type="text" size="45" id="bolname"  name="bolname"  value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Freight Payable At (HBL)</th>
+                         <th id="paycode_th">
+<input type="text" size="10" id="paycode"  name="paycode"  value="">
+</th>
+                         <th>
+<input type="text" size="45" id="payname"  name="payname"  value="">
+</th>
+                         <th>
+&nbsp;<b>
+By</b>
+&nbsp;<input type="text" size="45" id="payby"  name="payby"  value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Place of Issue</th>
+                         <th id="isscode_th">
+<input type="text" size="10" id="isscode"  name="isscode"  value="">
+</th>
+                         <th>
+<input type="text" size="45" id="issname"  name="issname"  value="">
+</th>
+                         <th>
+&nbsp;<b>
+Issue Date</b>
+&nbsp;<input type="text" size="10" id="issdate"  name="issdate"  value="">
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+HOBL Set</th>
+                         <th>
+<select name="oblset" id="oblset" size="1"   >
+<option value="">
+N/A</option>
+<option value="3">
+ORIGINAL</option>
+<option value="S">
+SEA WAYBILL</option>
+<option value="X">
+EXPRESS RELEASE</option>
+<option value="0" SELECTED>
+TELEX RELEASE</option>
+<option value="B">
+OBL SURRENDER</option>
+<option value="N">
+COPY NON-NEGOTIABLE</option>
+</select>
+</th>
+                         <th>
+OBL Changed</th>
+                         <th>
+<input type="text" size="10" id="oblchange"  name="oblchange"  value="">
+</th>
+                       </tr>
+                       <tr>
+                  			<th>
+Telex Hold</th>
+                        	<th>
+<input type="checkbox" id="telexhold" name="telexhold" value="1" >
+</th>
+                         <th>
+Telex Hold Reason</th>
+                         <th>
+<select name="telexreason" id="telexreason" size="1"   >
+<option value="" SELECTED>
+-- SELECT FROM LIST --</option>
+<option value="R1">
+REASON 1</option>
+<option value="R2">
+REASON 2</option>
+</select>
+</th>
+                       </tr>
+                       <tr>
+                         <th>
+Waybill Clauses</th>
+                         <th>
+<input type="text" size="45" id="wbln01" name="wbln01" value="">
+</th>
+                         <th colspan=2>
+<input type="text" size="45" id="wbln02" name="wbln02" value="">
+</th>
+                       </tr>
+                       </table>
+ <input type=hidden name="USERID"    value="4EF472AB-46B1-4A33-A0A2-7E159E1A7FC3">
+ <input type=hidden name="RECID"     value="60426027-47BB-49FB-99A1-CDF685602BAE">
+ <input type=hidden name="COPYID2"   value="">
+ <input type=hidden name="PKGUPDATE" value="ON">
+ <input type=hidden id="statuscode=" name="statuscode" value="">
+ <input type=hidden id="statusdesc=" name="statusdesc" value="">
+ <input type=hidden id="statusdate=" name="statusdate" value="">
+ <input type=hidden id="substation=" name="substation" value="">
+ <input type="button" name="B1"   value=" C A N C E L " style="border:1px solid #CDCDCD;font-family: tahoma,Verdana;font-size:16px;font-weight:bolder;height: 58px;position: relative;color:#ffffff;background-color:#0020c2;padding-left:4px;padding-right:4px;padding-top:4px;padding-bottom:4px;" onClick="history.go(-1)">
+&nbsp;<input type="submit" name="A1"   value=" S A V E "     style="border:1px solid #CDCDCD;font-family: tahoma,Verdana;font-size:16px;font-weight:bolder;height: 58px;position: relative;color:#ffffff;background-color:#0020c2;padding-left:4px;padding-right:4px;padding-top:4px;padding-bottom:4px;">
+                      </div>
+                   </div>
+                 </form>
+             </div>
+           </div>
+         </div>
+      </div>
+      </div>
+ </div>
+ <div id="footer" style="">
+      <div id="footer_inner">
+           <dl class="copy">
+               <dt>
+<strong>
+CDM Web Freight&reg; 2025</strong>
+ - <em>
+June 17, 2025 &nbsp;&bull;&nbsp; 2352</em>
+</dt>
+               <dd>
+&copy; 1988-2025 CDM Software Solutions, Inc.&nbsp;&bull;&nbsp;All rights reserved&nbsp;&bull;&nbsp;<a href=mailto:support@cdmsoft.com>
+<b>
+E-Mail Support</b>
+</a>
+&nbsp;&bull;&nbsp;(281) 298-8880</dd>
+           </dl>
+      </div>
+ </div>
+ <div id="contact-dialog" title="Add New Contact">
+       <div id="divInDialog">
+</div>
+ </div>
+ <div id="ctnrlist-dialog" title="CONTAINER LIST">
+       <div id="divInDialog">
+</div>
+   </div>
+ <div id="guide-dialog" title="CDM Web Freight� Dashboard Help">
+       <div id="dialog-content">
+</div>
+   </div>
+ <div id="camera-dialog">
+         <div id="divInDialog">
+</div>
+ </div>
+ <div id="signature-dialog" title="Signature Capture">
+       <div id="divInDialog">
+</div>
+   </div>
+   <div id="qr-reader-container">
+       <div id="qr-reader">
+</div>
+         <button id="qr-reader-stop" onclick="onStopQRReader();">
+stop</button>
+   </div>
+   <a href="javascript:void(0);" class="icon-scrolltop" id="gotop">
+       <img src="images/icon-slide-up.png" />
+   </a>
+ <script src="js/dragndrop.js?v=20250618063206">
+</script>
+ <script src="js/dataentry.js?v=20250618063206">
+</script>
+ <script src="js/qbpw.js?v=20250618063206">
+</script>
+ <script src="js/calc.js?v=20250618063206">
+</script>
+ <script src="js/calc2.js?v=20250618063206">
+</script>
+ <script>
+ function changeValue(o){ 	document.getElementById('manifest').value=""; 	} </script>
+ </body>
+ </html>
+ 

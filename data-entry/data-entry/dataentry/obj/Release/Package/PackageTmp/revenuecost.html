@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Freight Forwarding Operations, Shipment Tracking Powered by CDM Software Solutions, Inc.</title>
+
+    <link REL="SHORTCUT ICON" HREF="https://webfreight.cdmsoft.com/webfreight/images/cdm.ico">
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/top-blue.css" />
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/jquery.token-input.css" />
+
+    <link media="screen" rel="stylesheet" type="text/css" href="css/dataentry.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/jquery.tokeninput.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="head">
+
+            <div id="logo_user_details">
+
+                <h1 id="logo"><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
+
+                <div id="user_details">
+
+                    <ul id="user_details_menu">
+
+                        <li>Welcome <strong>PRESTON ALE</strong></li>
+
+                        <li class="user_details_menu_options">
+
+                            <ul id="user_access">
+
+                                <li class="first"><a href="#">My account</a></li>
+
+                                <li class="user_access_line">|</li>
+
+                                <li class="last"><a href="login.html">Log out</a></li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="content">
+
+            <div id="page">
+
+                <div class="inner">
+
+                    <div class="section table_section">
+
+                        <div class="title_wrapper">
+
+                            <h2><b>GLOBAL EXPRESS</b> - HKG</h2>
+
+                        </div>
+
+                        <div class="section_content">
+
+                            <div class="section_content_padding">
+
+                                <div class="dashboard_menu_wrapper">
+
+                                    <ul class="dashboard_menu">
+
+                                        <li><a class="back" href="#"><span>Back</span></a></li>
+                                        <li><a class="syscfg" href="#"><span>Customize Layout</span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <form action="#" id="revenuecost-form" name="revenuecost-form">
+                        <input type=hidden id="sqid" name="sqid" value="topoceanusa">
+                        <input type=hidden id="userid" name="userid" value="testuser">
+                        <input type=hidden id="uuid" name="uuid" value="007E58A0-9BBB-47A1-A82C-F3DF1920B7D6">
+
+                        <!-- Start Section Table -->
+                        <div class="section table_section">
+                            <div class="title_wrapper">
+                                <h2>Revenue / Cost Entry</h2>
+                            </div>
+                            <div class="section_content">
+                                <div class="table_wrapper">
+                                    <div class="table_wrapper_inner" style="padding:0;">
+                                        <table>
+                                            <tr>
+                                                <th>Shipment No.</th>
+                                                <th><input type="text" size="30" maxlength="30" id="shipmentno" name="shipmentno" value=""></th>
+                                                <th>MBL No.</th>
+                                                <th><input type="text" size="30" maxlength="30" id="mblno" name="mblno" value=""></th>
+                                                <th>HBL No.</th>
+                                                <th><input type="text" size="16" maxlength="16" id="hblno" name="hblno" value=""></th>
+                                                <th>M:</th>
+                                                <th><input type="radio" id="all" name="chargemode" value="A" checked><label for="all">ALL</label>&nbsp;<input type="radio" id="local" name="chargemode" value="L"><label for="local">Local</label>&nbsp;<input type="radio" id="fl" name="chargemode" value="F"><label for="fl">Freight List</label></th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Section Table -->
+                        <!-- Start Section Table -->
+                        <div class="section table_section">
+                            <div class="title_wrapper">
+                                <h2>Revenue Detail</h2>
+                                <h2 style="cursor: pointer; position: absolute; top: 0; right: 12px;" class="add_revenue_cost_btn" onclick="onOpenAddRevenue()">+</h2>
+                            </div>
+                            <div class="section_content">
+                                <div class="table_wrapper">
+                                    <div class="table_wrapper_inner" style="padding:0; min-height: 72px; max-height: 280px; padding-bottom: 10px;">
+                                        <table id="revenue_details_table" style="width: max-content">
+                                            <thead>
+                                                <tr>
+                                                    <th nowrap>Actions</th>
+                                                    <th nowrap>Type</th>
+                                                    <th nowrap>R-Type</th>
+                                                    <th nowrap>PT</th>
+                                                    <th nowrap>Customer ID</th>
+                                                    <th nowrap>Customer</th>
+                                                    <th nowrap>AR Code</th>
+                                                    <th nowrap>AR</th>
+                                                    <th nowrap>Description</th>
+                                                    <th nowrap>Append Description</th>
+                                                    <th nowrap>Unit</th>
+                                                    <th nowrap>Container#</th>
+                                                    <th nowrap>Qty</th>
+                                                    <th nowrap>Currency</th>
+                                                    <th nowrap>Unit Price</th>
+                                                    <th nowrap>Ex Rate</th>
+                                                    <th nowrap>Amount</th>
+                                                    <th nowrap>Gen Method</th>
+                                                    <th nowrap>Invoice#</th>
+                                                    <th nowrap>Rls</th>
+                                                    <th nowrap>Inv Date</th>
+                                                    <th nowrap>Terms</th>
+                                                    <th nowrap>Due Date</th>
+                                                    <th nowrap>Received</th>
+                                                    <th nowrap>Recv Date</th>
+                                                    <th nowrap>Customer Ref.</th>
+                                                    <th nowrap>Client Note</th>
+                                                    <th nowrap>Last User</th>
+                                                    <th nowrap>Last Time</th>
+                                                    <th nowrap>Create User</th>
+                                                    <th nowrap>Create Time</th>
+                                                    <th nowrap>JE Number</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Section Table -->
+                        <!-- Start Section Table -->
+                        <div class="section table_section">
+                            <div class="title_wrapper">
+                                <h2>Cost Detail</h2>
+                                <h2 style="cursor: pointer; position: absolute; top: 0; right: 12px;" class="add_revenue_cost_btn" onclick="onOpenAddCost()">+</h2>
+                            </div>
+                            <div class="section_content">
+                                <div class="table_wrapper">
+                                    <div class="table_wrapper_inner" style="padding:0; min-height: 72px; max-height: 280px; padding-bottom: 10px;">
+                                        <table id="cost_details_table" style="width: max-content">
+                                            <thead>
+                                                <tr>
+                                                    <th nowrap>Actions</th>
+                                                    <th nowrap>Type</th>
+                                                    <th nowrap>R-Type</th>
+                                                    <th nowrap>PT</th>
+                                                    <th nowrap>Vendor ID</th>
+                                                    <th nowrap>Vendor</th>
+                                                    <th nowrap>AP Code</th>
+                                                    <th nowrap>AP</th>
+                                                    <th nowrap>Description</th>
+                                                    <th nowrap>Append Description</th>
+                                                    <th nowrap>Unit</th>
+                                                    <th nowrap>Container#</th>
+                                                    <th nowrap>Qty</th>
+                                                    <th nowrap>Currency</th>
+                                                    <th nowrap>Unit Price</th>
+                                                    <th nowrap>Ex Rate</th>
+                                                    <th nowrap>Amount</th>
+                                                    <th nowrap>Vendor Inv#</th>
+                                                    <th nowrap>Rls</th>
+                                                    <th nowrap>Verify By</th>
+                                                    <th nowrap>Verify Time</th>
+                                                    <th nowrap>PO Date</th>
+                                                    <th nowrap>Terms</th>
+                                                    <th nowrap>Due Date</th>
+                                                    <th nowrap>Paid</th>
+                                                    <th nowrap>Paid Date</th>
+                                                    <th nowrap>Our Ref.</th>
+                                                    <th nowrap>Last User</th>
+                                                    <th nowrap>Last Time</th>
+                                                    <th nowrap>Create User</th>
+                                                    <th nowrap>Create Time</th>
+                                                    <th nowrap>JE Number</th>
+                                                </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Section Table -->
+
+
+                        <input name="A1" id="A1" value=" S A V E " style="border:1 solid #CDCDCD; font-family: tahoma,Verdana; width: 116; height: 58; position: relative; color:#111111; padding-left:4px; padding-right:4px; padding-top:4; padding-bottom:4; background-color:#DCDCDC">
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer" style="">
+
+        <div id="footer_inner">
+
+            <dl class="copy">
+
+                <dt><strong>CDM Web Freight 2024&trade;</strong> <em>Build 20240403-1004</em></dt>
+
+                <dd>&copy; 1988-2024 CDM Software Solutions, Inc. &bull; All Rights Reserved &bull; (281) 298-8880</dd>
+
+            </dl>
+
+        </div>
+
+    </div>
+
+    <div id="revenue-view-dialog" title="Revenue Details">
+        <div id="divInDialog"></div>
+    </div>
+
+    <div id="revenue-edit-dialog" title="Edit Revenue Details">
+        <div id="divInDialog"></div>
+    </div>
+
+    <div id="cost-view-dialog" title="Cost Details">
+        <div id="divInDialog"></div>
+    </div>
+
+    <div id="cost-edit-dialog" title="Edit Cost Details">
+        <div id="divInDialog"></div>
+    </div>
+
+    <a href="javascript:void(0);" class="icon-scrolltop" id="gotop">
+        <img src="images/icon-slide-up.png" />
+    </a>
+    <script src="js/revenuecost.js"></script>
+
+</body>
+
+</html>
+
